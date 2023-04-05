@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Rectangle_140" d="M0 0H80V80H0z" class="prefix__cls-1" data-name="Rectangle 140" transform="translate(256 2432)"/>
+        </clipPath>
+        <style>
+            .prefix__cls-1,.prefix__cls-3{stroke:#f3f9ec;stroke-width:2px}.prefix__cls-3{fill:#5fb709}
+        </style>
+    </defs>
+    <g id="prefix__Mask_Group_8" data-name="Mask Group 8" transform="translate(-256 -2432)">
+        <g id="prefix___16-menu" data-name="16-menu" transform="translate(252.667 2432)">
+            <path id="prefix__Path_1419" d="M70 0H16.667a3.333 3.333 0 0 0-3.333 3.333V20H6.667v6.667h6.667v10H6.667v6.667h6.667v10H6.667V60h6.667v16.667A3.333 3.333 0 0 0 16.667 80H70a10.012 10.012 0 0 0 10-10V10A10.012 10.012 0 0 0 70 0zm3.333 70A3.337 3.337 0 0 1 70 73.333H20V60h3.333v-6.667H20v-10h3.333v-6.666H20v-10h3.333V20H20V6.667h50A3.337 3.337 0 0 1 73.333 10z" class="prefix__cls-1" data-name="Path 1419"/>
+            <path id="prefix__Path_1420" d="M63.333 33.333H30a3.333 3.333 0 0 0-3.333 3.333v6.667A16.664 16.664 0 0 0 58.6 50h4.729A6.675 6.675 0 0 0 70 43.333V40a6.675 6.675 0 0 0-6.667-6.667zm-10 10a10 10 0 0 1-20 0V40h20zm10 0H60V40h3.333z" class="prefix__cls-3" data-name="Path 1420"/>
+            <path id="prefix__Path_1421" d="M40 26.667h6.667A6.675 6.675 0 0 0 53.333 20v-3.333h-6.666V20H40a6.675 6.675 0 0 0-6.667 6.667V30H40z" class="prefix__cls-3" data-name="Path 1421"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1 @@
+[23-Mar-2023 11:03:37 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\front\FrontController::sendMail() in /home/cj9qur5kxhh5/public_html/dw/app/Http/Controllers/front/FrontController.php on line 811
