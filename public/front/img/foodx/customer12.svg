@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Rectangle_140" d="M0 0H80V80H0z" data-name="Rectangle 140" transform="translate(256 2432)" style="fill:#737373"/>
+        </clipPath>
+    </defs>
+    <g id="prefix__Mask_Group_16" data-name="Mask Group 16" transform="translate(-256 -2432)">
+        <g id="prefix__phone" transform="translate(256 2432)">
+            <circle id="prefix__Ellipse_48" cx="2.339" cy="2.339" r="2.339" data-name="Ellipse 48" transform="translate(37.895 9.435)"/>
+            <circle id="prefix__Ellipse_49" cx="2.339" cy="2.339" r="2.339" data-name="Ellipse 49" transform="translate(37.895 18.791)"/>
+            <circle id="prefix__Ellipse_50" cx="2.339" cy="2.339" r="2.339" data-name="Ellipse 50" transform="translate(37.895 28.148)"/>
+            <path id="prefix__Path_1447" d="M57.849 61.329L43.814 56.65a2.34 2.34 0 0 0-2.037.273l-5.953 3.969C29.519 57.886 22.036 50.4 19.03 44.1L23 38.145a2.339 2.339 0 0 0 .273-2.037l-4.68-14.035a2.339 2.339 0 0 0-2.219-1.6H7.018A7.026 7.026 0 0 0 0 27.491C0 40.422 5.847 53.685 16.042 63.88S39.5 79.922 52.431 79.922a7.026 7.026 0 0 0 7.017-7.022v-9.352a2.339 2.339 0 0 0-1.599-2.219zM54.77 72.9a2.342 2.342 0 0 1-2.339 2.339c-24.546 0-47.753-23.207-47.753-47.753a2.342 2.342 0 0 1 2.339-2.339h7.671L18.472 36.5l-4.044 6.066a2.339 2.339 0 0 0-.225 2.166 39 39 0 0 0 8.678 12.307 39 39 0 0 0 12.307 8.681 2.339 2.339 0 0 0 2.166-.226l6.066-4.044 11.35 3.783z" data-name="Path 1447"/>
+            <path id="prefix__Path_1448" d="M77.661.078H30.877a2.339 2.339 0 0 0-2.339 2.339v37.427a2.339 2.339 0 0 0 2.339 2.339h7.018V49.2a2.339 2.339 0 0 0 3.993 1.654l8.671-8.672h27.1A2.339 2.339 0 0 0 80 39.844V2.417A2.339 2.339 0 0 0 77.661.078zM75.322 37.5H49.591a2.339 2.339 0 0 0-1.654.685l-5.364 5.363v-3.704a2.339 2.339 0 0 0-2.339-2.344h-7.018V4.756h42.106z" data-name="Path 1448" style="fill:#5fb709"/>
+            <path id="prefix__Path_1449" d="M49.591 14.113H68.3a2.339 2.339 0 0 0 0-4.678H49.591a2.339 2.339 0 1 0 0 4.678z" data-name="Path 1449"/>
+            <path id="prefix__Path_1450" d="M49.591 23.47H68.3a2.339 2.339 0 0 0 0-4.678H49.591a2.339 2.339 0 1 0 0 4.678z" data-name="Path 1450"/>
+            <path id="prefix__Path_1451" d="M49.591 32.827H68.3a2.339 2.339 0 0 0 0-4.678H49.591a2.339 2.339 0 1 0 0 4.678z" data-name="Path 1451"/>
+        </g>
+    </g>
+</svg>

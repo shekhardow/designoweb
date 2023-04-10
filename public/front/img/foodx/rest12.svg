@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Rectangle_138" d="M0 0H80V80H0z" data-name="Rectangle 138" transform="translate(256 2432)" style="fill:#737373"/>
+        </clipPath>
+        <style>
+            .prefix__cls-3{fill:#5fb709}
+        </style>
+    </defs>
+    <g id="prefix__Mask_Group_32" data-name="Mask Group 32" transform="translate(-256 -2432)">
+        <g id="prefix__toggle" transform="translate(256 2432)">
+            <path id="prefix__Path_1500" d="M61.667 36.667H18.333a18.333 18.333 0 0 1 0-36.667h43.334a18.333 18.333 0 0 1 0 36.667zM18.333 5a13.333 13.333 0 0 0 0 26.667h43.334a13.333 13.333 0 0 0 0-26.667zm0 0" data-name="Path 1500"/>
+            <path id="prefix__Path_1501" d="M18.333 26.667a8.333 8.333 0 1 1 8.334-8.334 8.343 8.343 0 0 1-8.334 8.334zm0-11.667a3.333 3.333 0 1 0 3.334 3.333A3.337 3.337 0 0 0 18.333 15zm0 0" data-name="Path 1501"/>
+            <path id="prefix__Path_1502" d="M61.667 80H18.333a18.333 18.333 0 0 1 0-36.667h43.334a18.333 18.333 0 0 1 0 36.667zM18.333 48.333a13.333 13.333 0 0 0 0 26.667h43.334a13.333 13.333 0 0 0 0-26.667zm0 0" class="prefix__cls-3" data-name="Path 1502"/>
+            <path id="prefix__Path_1503" d="M61.667 70A8.333 8.333 0 1 1 70 61.667 8.343 8.343 0 0 1 61.667 70zm0-11.667A3.333 3.333 0 1 0 65 61.667a3.337 3.337 0 0 0-3.333-3.334zm0 0" class="prefix__cls-3" data-name="Path 1503"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="156" height="72.84" viewBox="0 0 156 72.84">
+    <g id="prefix__Logo" transform="translate(-137.572 -19.467)">
+        <path id="prefix__Rectangle_1_copy_2" d="M250.95 40.063L306.937 40v38.32H251s12.72-9.92 12.72-19.954c0-9.474-12.77-18.303-12.77-18.303z" data-name="Rectangle 1 copy 2" transform="translate(-13.365)"/>
+        <text id="prefix__APP" transform="translate(137.572 78.307)" style="font-size:54px;font-family:CircularStd-Black,Circular Std;font-weight:800;fill:#f2692f">
+            <tspan x="0" y="0">APP</tspan>
+        </text>
+        <text id="prefix__x" transform="translate(258.938 73.467)" style="fill:#fff;font-size:54px;font-family:CircularStd-Black,Circular Std;font-weight:800">
+            <tspan x="0" y="0">x</tspan>
+        </text>
+    </g>
+</svg>

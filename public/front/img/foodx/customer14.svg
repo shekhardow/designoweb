@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Rectangle_140" d="M0 0H80V80H0z" data-name="Rectangle 140" transform="translate(256 2432)" style="fill:#737373"/>
+        </clipPath>
+        <style>
+            .prefix__cls-3{fill:#5fb709}
+        </style>
+    </defs>
+    <g id="prefix__Mask_Group_19" data-name="Mask Group 19" transform="translate(-256 -2432)">
+        <g id="prefix__comment" transform="translate(256 2432)">
+            <path id="prefix__Path_1452" d="M71.992 68.619a32.917 32.917 0 0 0-9.858-50.77A32.887 32.887 0 1 0 8.008 54.4L.7 61.613a2.346 2.346 0 0 0 1.635 4.012l17.649.084A32.858 32.858 0 0 0 47.109 80l30.556-.156a2.346 2.346 0 0 0 1.635-4.012zm-59.06-15.8a28.2 28.2 0 1 1 48.16-19.928c0 14.9-11.793 28.323-29.116 28.188L8.03 60.964l4.89-4.825a2.345 2.345 0 0 0 .012-3.324zm34.177 22.5a28.056 28.056 0 0 1-21.182-9.575c8.922.059 6.554.044 6.964.044a32.926 32.926 0 0 0 31.982-40.572 28.2 28.2 0 0 1 2.195 41.818 2.344 2.344 0 0 0 .012 3.324l4.89 4.825-24.861.129z" data-name="Path 1452"/>
+            <path id="prefix__Path_1453" d="M18.907 25.937H47.03a2.344 2.344 0 0 0 0-4.687H18.907a2.344 2.344 0 0 0 0 4.687z" class="prefix__cls-3" data-name="Path 1453"/>
+            <path id="prefix__Path_1454" d="M18.907 35.312H47.03a2.344 2.344 0 0 0 0-4.687H18.907a2.344 2.344 0 0 0 0 4.687z" class="prefix__cls-3" data-name="Path 1454"/>
+            <path id="prefix__Path_1455" d="M18.907 44.687H47.03a2.344 2.344 0 0 0 0-4.687H18.907a2.344 2.344 0 0 0 0 4.687z" class="prefix__cls-3" data-name="Path 1455"/>
+        </g>
+    </g>
+</svg>

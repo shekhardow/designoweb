@@ -1,0 +1,1974 @@
+@media(max-width:1920px) {}
+
+@media(max-width:1560px) {}
+
+@media(max-width:1367px) {
+	.container {
+		max-width: 100%;
+		padding: 0px 70px;
+	}
+
+	.homeBannerLeft .bannerSubHeading {
+		margin-bottom: 0px;
+	}
+
+	.gainedByComp .awardsListBox .awardBoxInner {
+		height: 174px;
+	}
+}
+
+@media(max-width:1199px) {
+
+	.container {
+		max-width: 92%;
+	}
+
+	.leadPageBanner .bannerRight {
+		width: 400px;
+		min-width: 400px;
+		padding: 25px 25px;
+	}
+
+	/* 	.fontSize30 {
+		font-size: 30px;
+		line-height: 44px;
+	} */
+	.btmLines {
+		padding-bottom: 20px;
+	}
+
+	/* 	.fontSize18 {
+		font-size: 17px;
+		line-height: 30px;
+	} */
+	/* 	.leadPageBanner .bannerContent p{
+		font-size: 20px;
+    	line-height: 32px;
+	} */
+	.leadPageBanner {
+		padding: 60px 0 27px;
+	}
+
+	/* 	.sectionHeadBox .sectionHeadTop h2{
+		font-size: 40px;
+    	line-height: 54px;
+	} */
+	/* 	.sectionHeadBox .sectionHeadContent {
+		font-size: 19px;
+		line-height: 32px;
+	} */
+	/* 	.fontSize24 {
+		font-size: 22px;
+		line-height: 32px;
+	} */
+	.boxDesignSec {
+		padding: 30px 22px;
+	}
+
+	/* 	.fontSize20 {
+		font-size: 18px;
+		line-height: 32px;
+	} */
+	.devSkillsInner .skillsListBox ul li {
+		margin-right: 60px;
+	}
+
+	.devSkillsInner .skillListSec .skillIcon {
+		height: 66px;
+	}
+
+	/* 	.devSkillsInner .skillsListBox ul li .skillType{
+		font-size: 20px;
+		line-height: 24px;
+	} */
+	/* 	.fontSize44 {
+		font-size: 40px;
+		line-height: 50px;
+	} */
+	.beyondValueBottom .beyondValueSec {
+		width: 48%;
+	}
+
+	/* 	.hubOverviewBox .overviewRight p{
+		font-size: 65px;
+    	line-height: 65px;
+	} */
+	.hubOverviewBox .overviewRight .rightOverview .developers {
+		padding: 20px 0 20px 30px;
+	}
+
+	.hubOverviewBox .overviewRight .rightOverview .investmentRaised {
+		padding: 20px 0 20px 30px;
+	}
+
+	/* 	.fontSize64 {
+		font-size: 55px;
+		line-height: 68px;
+	} */
+	.compAnalysisTable table tr th,
+	.compAnalysisTable table tr td {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.hiringModalBox .hiringMethods .methodsBoxs {
+		padding: 30px 20px;
+	}
+
+	.hireEasyStepsBox .easyStepList .easyStepImage {
+		height: 70px;
+	}
+
+	.hiringPosts .hireSoftwareTeam ul li {
+		width: 47%;
+	}
+
+	.hiringPosts .softwareDevTeam ul li {
+		width: 100%;
+	}
+
+	.hiringPosts .hirePostLists ul li {
+		font-size: 15px;
+		line-height: 21px;
+	}
+
+	/*----------New-----------*/
+
+	.container {
+		max-width: 100%;
+		padding: 0 30px;
+	}
+
+	.fontSize62 {
+		font-size: 56px;
+		line-height: 63px;
+	}
+
+	.homeBanner {
+		padding: 55px 0px 80px;
+	}
+
+	.homeBannerLeft .topSubHeading {
+		font-size: 22px;
+		line-height: 27px;
+	}
+
+	.ourSolutions {
+		padding: 50px 0;
+	}
+
+	.devSkillsBox {
+		margin-bottom: 0;
+	}
+
+	.topDevsBox .topDevsLeft {
+		padding: 30px 0px 50px 0px;
+	}
+
+	.secMargin {
+		margin-bottom: 50px;
+	}
+
+	.topCreationBox {
+		padding-top: 0px;
+	}
+
+	.valCoparison {
+		left: -17px;
+	}
+
+	.topCreationSlide .row {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.topCreationSlide .col-sm-6 {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.gainedByComp .awardsListBox .awardBoxInner {
+		height: 150px;
+	}
+
+	.navbar-default .navbar-nav>li {
+		margin-right: 25px;
+	}
+}
+
+@media(max-width:991px) {
+	.leadPageBanner .bannerInner {
+		flex-direction: column;
+	}
+
+	.navbar-default .navbar-nav>li {
+		margin-right: 33px;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	.pageHeader {
+		padding: 12px 0;
+	}
+
+	.topSection {
+		margin-top: 64px;
+	}
+
+	.leadPageBanner .bannerContent {
+		padding-right: 0px;
+	}
+
+	.leadPageBanner .bannerContent p {
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 15px;
+	}
+
+	.leadPageBanner .bannerRight {
+		margin-top: 30px;
+	}
+
+	.fontSize32 {
+		font-size: 30px;
+		line-height: 50px;
+	}
+
+	.formStyle .form-control {
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	.btnStyle {
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	.formStyle .form-control {
+		padding: 18px 20px;
+	}
+
+	.sectionHeadBox .sectionHeadTop h2 {
+		font-size: 36px;
+		line-height: 50px;
+	}
+
+	.sectionHeadBox .sectionHeadContent {
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.whyHireSec .whyHireInner .row {
+		/* flex-direction: column; */
+	}
+
+	.whyHireSec .whyHireInner .row .col-sm-4 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.whyHireSec .whyHireInner .row .col-sm-4 .boxDesignSec {
+		/* width: 30%; */
+	}
+
+	.whyHireSec .whyHireRight .row .col-sm-12,
+	.whyHireSec .whyHireLeft .row .col-sm-12 {
+		flex: 0 0 33.3%;
+		max-width: 33.3%;
+	}
+
+	.whyHireRight .col-sm-12:last-child,
+	.whyHireLeft .col-sm-12:last-child {
+		margin-bottom: 24px;
+	}
+
+	.whyHireInner .col-sm-4.hireBannerImg {
+		margin-bottom: 24px;
+	}
+
+	.fontSize28 {
+		font-size: 25px;
+		line-height: 48px;
+	}
+
+	.devSkillsInner .skillListSec .skillIcon {
+		height: 50px;
+	}
+
+	.whyHireInner .row .col-sm-4:last-child .col-sm-12 {
+		margin-bottom: 0;
+	}
+
+	.devSkillsInner .skillsListBox ul li {
+		margin-right: 35px;
+	}
+
+	.devSkillsInner .skillsListBox ul li .skillType {
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	.devSkillsInner .skillListSec {
+		padding: 35px 30px 30px;
+	}
+
+	.fontSize44 {
+		font-size: 37px;
+		line-height: 47px;
+	}
+
+	.topDevsBox .topDevsLeft p {
+		margin-bottom: 30px;
+		padding-right: 30px;
+	}
+
+	.topDevsBox .topDevsLeft {
+		padding: 20px 0px 45px 0px;
+	}
+
+	.valCoparison span {
+		font-size: 35px;
+		line-height: 35px;
+	}
+
+	.valCoparison {
+		height: 90px;
+		width: 90px;
+	}
+
+	.beyondValueBottom .beyondValueSec {
+		padding: 40px 45px 40px;
+	}
+
+	.fontSize21 {
+		font-size: 20px;
+		line-height: 32px;
+	}
+
+	.fontSize26 {
+		font-size: 24px;
+		line-height: 34px;
+	}
+
+	.hubOverviewBox .overviewInner .row {
+		flex-direction: column-reverse;
+	}
+
+	.hubOverviewBox .overviewInner .row .col-sm-6 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.hubOverviewBox .overviewLeft {
+		padding-left: 0;
+		margin-bottom: 50px;
+	}
+
+	.hubOverviewBox .overviewRight {
+		justify-content: center;
+	}
+
+	.ourTeamBox .onDemandSol .solLeft {
+		height: 100%;
+	}
+
+	.topCreationSlider .row {
+		flex-direction: column;
+	}
+
+	.topCreationSlider .row .col-sm-7,
+	.topCreationSlider .row .col-sm-5 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.fontSize34 {
+		font-size: 28px;
+		line-height: 50px;
+	}
+
+	.readytoHireBox .readytoHireInner .row.rowBoxStats {
+		flex-direction: inherit;
+	}
+
+	.readytoHireBox .readytoHireInner .row {
+		flex-direction: column;
+	}
+
+	.readytoHireBox .readytoHireInner .row .col-sm-6.hireColBox {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.readytoHireBox .readytoHireInner .row .col-sm-6.hireColBox.hireColBox2 {
+		width: 70%;
+		margin: 50px auto 0;
+	}
+
+	.secMargin {
+		margin-bottom: 45px;
+	}
+
+	.compAnalysisTable table tr th,
+	.compAnalysisTable table tr td {
+		font-size: 17px;
+		line-height: 27px;
+		height: 100px;
+		min-height: 100px;
+	}
+
+	.hireEasyStepsBox .easySteps .col-sm-3 {
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-bottom: 20px;
+	}
+
+	.gainedByComp .sectionHeadTop h2 {
+		padding: 0 0 10px;
+	}
+
+	.faqSectionsBox .faqsSecList .faqHeading a {
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.faqSectionsBox .faqContent p {
+		font-size: 17px;
+		line-height: 27px;
+	}
+
+	.btnStyle5 {
+		padding: 25px 20px;
+	}
+
+	.footBtmBoxs .footlogos {
+		width: 25%;
+	}
+
+	.footBtmBoxs .footlogos img {
+		width: 100%;
+	}
+
+	.footBtmBoxs .secMid ul li {
+		height: 33px;
+		width: 33px;
+		margin-right: 13px;
+	}
+
+	.footBtmBoxs .secLeft ul li {
+		height: 45px;
+		width: 45px;
+	}
+
+	.footBtmBoxs .footBtmSecs h5 {
+		font-size: 14px;
+	}
+
+	.fontSize20 {
+		font-size: 17px;
+		line-height: 28px;
+	}
+
+	.hiringPosts .hiringPostInner .row .col-sm-6 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.hiringPosts .hireSoftwareTeam ul li {
+		width: 31%;
+	}
+
+	.hiringPosts .hiringPostInner .row .col-sm-4 {
+		flex: 0 0 60%;
+		max-width: 60%;
+		margin-top: 30px;
+	}
+
+	.hiringPosts .softwareDevTeam ul li {
+		width: 47%;
+	}
+
+	.hiringPosts .hiringPostInner .row .col-sm-2 {
+		flex: 0 0 40%;
+		max-width: 40%;
+		margin-top: 30px;
+	}
+
+	.mainFootBox .mainFootRight ul li {
+		margin-right: 30px;
+	}
+
+	.mainFootBox {
+		padding: 35px 0 30px;
+	}
+
+	.midSecBox {
+		margin-bottom: 45px;
+	}
+
+	.midSectionsBox {
+		padding: 45px 0 0;
+	}
+
+	.hiringPosts {
+		margin: 45px 0;
+	}
+
+	.ourSpecaityBox .specialityBox .secHead {
+		font-size: 18px;
+	}
+
+	/* Sidenav Start */
+
+
+	.headerBox {
+		display: block !important;
+		float: left !important;
+		width: 100%;
+	}
+
+	.navbar-expand-md .navbar-nav .nav-link {
+		padding: 0;
+		display: inline-block;
+	}
+
+	.nav-item {
+		margin-bottom: 18px;
+	}
+
+	.navbar-expand-md .navbar-nav .dropdown-menu {
+		position: relative;
+		background: transparent;
+		border: none;
+		padding-bottom: 0;
+	}
+
+	.topBoxs {
+		margin-top: 85px;
+	}
+
+	.navbar-expand-md .navbar-toggler {
+		display: block;
+	}
+
+	.navbar-expand-md .navbar-collapse {
+		position: fixed;
+		width: 250px;
+		width: 210px;
+		top: 56px;
+		left: -210px;
+		background: #fff;
+		height: 100%;
+		transition: all 0.3s ease;
+		display: initial !important;
+		margin-top: 0px;
+		padding: 35px 15px 0px 30px;
+		z-index: 9;
+		box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.5);
+	}
+
+	.nav-link:hover,
+	.nav-link:focus {
+		border-bottom: none;
+	}
+
+	.navbar-expand-md .navbar-nav {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.navbar-light .navbar-nav .nav-item {
+		margin-bottom: 5px;
+	}
+
+	.navbar-expand-md .navbar-nav .dropdown-menu.show {
+		transition: all 0.3s ease;
+	}
+
+	.dropdown-item {
+		color: #fff;
+	}
+
+	.pageHeader .headerRight ul {
+		display: flex;
+		align-items: center;
+	}
+
+	.pageHeader .headerRight ul li .navbar-toggler {
+		/* padding: 20px 15px; */
+		padding: 12px 15px;
+		margin-left: 20px;
+	}
+
+	.navbar-expand-md .navbar-toggler:focus {
+		border: none;
+		outline: none;
+	}
+
+	/* Sidenav End */
+
+	.fontSize62 {
+		font-size: 52px;
+		line-height: 56px;
+	}
+
+	.stepsList .stepsListItem {
+		margin-bottom: 13px;
+		padding-left: 24px;
+		padding-right: 10px;
+	}
+
+	.appDevelopment .solutionBoxBanner h4 {
+		margin-bottom: 18px;
+	}
+
+	.fontSize26 {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	.ourSolutionBox.ourSolutionBox2 .solutionBoxBanner {
+		width: 55%;
+	}
+
+	.ourSolutionBox.ourSolutionBox2 .solutionBoxContnet {
+		width: 45%;
+	}
+
+	.ourSolutionBox.ourSolutionBox2 .solutionBoxBanner p {
+		padding-right: 0;
+	}
+
+	.fontSize17 {
+		font-size: 15px;
+		line-height: 23px;
+	}
+
+	.stepsList.stepsList2 .stepsListItem,
+	.stepsList .stepsListItem {
+		margin-bottom: 13px;
+	}
+
+	.ourSolutionBox .solutionBoxBanner a,
+	.ourSolutionBox .solutionBoxContnet,
+	.ourSolutionsBottom .col-md-4 .solutionBoxBanner.solutionBoxStartup,
+	.growthHacking .growthHackingInner .grwothInnerBox {
+		padding: 25px 20px;
+	}
+
+	.ourSoluitonsTopNew .row {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.ourSoluitonsTopNew .col-md-8,
+	.ourSoluitonsTopNew .col-md-4,
+	.ourSolutionsBottom .col-md-4,
+	.ourSolutionsBottom .col-sm-12 {
+		margin-bottom: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.guideYouLeft h4 {
+		margin-bottom: 12px;
+	}
+
+	.valCoparison {
+		left: -8px;
+	}
+
+	.topCreationSlider .row {
+		flex-direction: row;
+	}
+
+	.gainedByComp .awardsListBox .awardBoxInner {
+		height: 120px;
+	}
+
+	.hiringPosts .hireSoftwareTeam ul li {
+		width: 47%;
+	}
+
+	.hiringPosts .softwareDevTeam ul li {
+		width: 46%;
+	}
+
+	.mainFootBox {
+		padding: 15px 0;
+	}
+
+	.hiringPosts .hirePostLists ul li {
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	.fontSize24 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.fontSize20 {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.sectionHeadBox .sectionHeadContent,
+	.fontSize18 {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.fontSize16 {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.mainFootInner {
+		flex-direction: column;
+	}
+
+	.mainFootLeft {
+		padding: 10px 0;
+	}
+
+	.topSection {
+		margin-top: 56px;
+	}
+
+	.homeBannerLink {
+		display: block;
+	}
+
+	.collapse.show .menuOverlay{
+		display: block;
+	}
+
+}
+
+@media(max-width:767px) {
+	.container {
+		max-width: 100%;
+		padding: 0 30px;
+	}
+
+	.compAnalysisTable .compTableInner {
+		overflow: auto;
+	}
+
+	.fontSize30 {
+		font-size: 28px;
+		line-height: 40px;
+	}
+
+	.leadPageBanner .bannerContent p {
+		font-size: 17px;
+		line-height: 28px;
+		margin-bottom: 12px;
+	}
+
+	.fontSize32 {
+		font-size: 28px;
+		line-height: 44px;
+	}
+
+	.fontSize18 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.formStyle .form-control {
+		padding: 15px 20px;
+	}
+
+	.uploadFiles label {
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	.sectionHeadBox .sectionHeadTop h2 {
+		font-size: 34px;
+		line-height: 46px;
+	}
+
+	.whyHireSec .whyHireRight .row .col-sm-12,
+	.whyHireSec .whyHireLeft .row .col-sm-12 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.whyHireRight .col-sm-12,
+	.whyHireLeft .col-sm-12 {
+		margin-bottom: 15px;
+	}
+
+	.boxDesignSec {
+		padding: 20px 20px;
+	}
+
+	.whyHireInner .row .col-sm-4:last-child .col-sm-12 {
+		margin-bottom: 15px;
+	}
+
+	.whyHireInner .col-sm-4.hireBannerImg {
+		margin-bottom: 15px;
+	}
+
+	.whyHireRight .col-sm-12:last-child,
+	.whyHireLeft .col-sm-12:last-child {
+		margin-bottom: 15px;
+	}
+
+	.btmLines2::before {
+		height: 6px;
+		width: 140px;
+	}
+
+	.devSkillsInner .skillsListBox ul li {
+		margin-right: 30px;
+		margin-bottom: 10px;
+	}
+
+	.devSkillsInner .skillListSec .skillIcon {
+		height: 44px;
+	}
+
+	.devSkillsInner .skillsListBox ul li .skillType {
+		font-size: 15px;
+		line-height: 18px;
+	}
+
+	.fontSize28 {
+		font-size: 24px;
+		line-height: 44px;
+	}
+
+	.devSkillsInner .skillListSec {
+		padding: 35px 30px 20px;
+	}
+
+	.devSkillsInner .skillListTop h2 {
+		letter-spacing: 4.04px;
+	}
+
+	.hireFromBox .hireFromInner .col-sm-4 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.topDevsBox .topDevsRight {
+		text-align: center;
+	}
+
+	.topDevsBox .topDevsRight img {
+		width: 50%;
+	}
+
+	.beyondValueBottom {
+		flex-direction: column;
+	}
+
+	.beyondValueBottom .beyondValueSec {
+		width: 100%;
+	}
+
+	.beyondValueLeft {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.beyondValueRight {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	.fontSize26 {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.beyondValueSec .costPerHour {
+		margin-top: 10px;
+	}
+
+	.beyondValueSec p.avgCost {
+		margin-bottom: 8px;
+	}
+
+	.clientSaves {
+		margin-top: 20px;
+	}
+
+	.fontSize34 {
+		font-size: 25px;
+		line-height: 45px;
+	}
+
+	.fontSize44 {
+		font-size: 34px;
+		line-height: 44px;
+	}
+
+	.hubOverviewBox .overviewRight p {
+		font-size: 55px;
+		line-height: 56px;
+	}
+
+	.hubOverviewBox .overviewRight span {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.hubOverviewBox .overviewLeft {
+		margin-bottom: 40px;
+	}
+
+	.ourTeamBox .onDemandSol .solRight,
+	.ourTeamBox .onDemandSol .solLeft {
+		width: 100%;
+	}
+
+	.ourTeamBox .onDemandInner .onDemandSol {
+		flex-direction: column;
+	}
+
+	.ourTeamBox .onDemandInner .onDemandSol:nth-child(odd) {
+		flex-direction: column;
+	}
+
+	.ourTeamBox .onDemandSol:nth-child(odd) .solRight {
+		margin-left: 0;
+	}
+
+	.ourTeamBox .onDemandSol .solRight {
+		margin-bottom: 20px;
+	}
+
+	.ourTeamBox .onDemandSol .solLeft {
+		margin-left: 0;
+	}
+
+	.btnStyle span img {
+		width: 30px;
+	}
+
+	.hiringModalInner .hiringMethods .row .col-sm-4 {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.gainedByComp .awardsListBox .row .col-sm-3 {
+		flex: 0 0 33%;
+		max-width: 33%;
+	}
+
+	.gainedByComp .awardsListBox .awardBoxInner {
+		height: 180px;
+	}
+
+	.faqSectionsBox .faqsSecList .faqHeading a {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.ourServicesBox .servicesLists .col-sm-6 {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 45px;
+	}
+
+	.ourServicesBox .servicesLists .col-sm-6:last-child {
+		margin-bottom: 0;
+	}
+
+	.freeProposalBox .propFormBottom .col-sm-5,
+	.freeProposalBox .propFormBottom .col-sm-7 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.freeProposalInner .propFormLeft {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+
+	.footBtmBoxs .footBtmSec {
+		flex-direction: column;
+	}
+
+	.footBtmBoxs .footlogos {
+		width: 100%;
+	}
+
+	.footBtmBoxs .footlogos img {
+		width: 170px;
+	}
+
+	.footBtmBoxs .footBtmSec {
+		text-align: center;
+	}
+
+	.footBtmBoxs .footSecInner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.footBtmBoxs .secLeft.followUs,
+	.footBtmBoxs .secMid {
+		margin: 30px 0;
+	}
+
+	.footBtmBoxs .footBtmSecs h5 {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	.mainFootBox .mainFootLeft {
+		text-align: center;
+		width: 100%;
+		/* margin-bottom: 10px; */
+	}
+
+	.mainFootBox .mainFootRight {
+		width: 100%;
+		text-align: center;
+	}
+
+	.mainFootBox .mainFootRight ul li {
+		float: unset;
+	}
+
+	.mainFootBox {
+		padding: 30px 0 25px;
+	}
+
+	.hiringPosts .hiringPostInner .row .col-sm-4 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.hiringPosts .hiringPostInner .row .col-sm-2 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.hiringPosts .hirePostLists ul li {
+		margin-bottom: 13px;
+	}
+
+	.hiringPosts .hiringPostInner .row .col-sm-4,
+	.hiringPosts .hiringPostInner .row .col-sm-2 {
+		margin-top: 20px;
+	}
+
+	.hiringPosts .softwareSols ul li {
+		width: 50%;
+	}
+
+	.readytoHireBox .readytoHireInner .row.rowBoxStats .col-sm-6 {
+		width: 50%;
+	}
+
+	.readytoHireBox .readytoHireInner .row .col-sm-6.hireColBox.hireColBox2 {
+		width: 82%;
+	}
+
+
+	.btmLines::before {
+		width: 120px;
+	}
+
+	.hireforusBox .ourSpecaityBox .row .col-sm-4 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.ourSpecaityBox .specialityBox {
+		margin-bottom: 30px;
+	}
+
+	.ourTeamBox .onDemandSol .solRight,
+	.ourTeamBox .onDemandSol .solLeft,
+	.ourTeamBox .onDemandInner .onDemandSol img {
+		width: auto;
+	}
+
+	.topCreationBox {
+		margin-top: 0;
+	}
+
+	.slick-dots li button:before,
+	.slick-dots li button,
+	.slick-dots li {
+		width: 10px;
+		height: 10px;
+	}
+
+
+	/*--------------New--------------*/
+	.fontSize62 {
+		font-size: 50px;
+		line-height: 54px;
+	}
+
+	.homeBanner {
+		padding: 50px 0px 50px;
+	}
+
+	.fontSize44 {
+		font-size: 34px;
+		line-height: 40px;
+	}
+
+	.aboutUsSection {
+		padding-top: 40px;
+	}
+
+	.ourSolutions {
+		padding: 40px 0;
+	}
+
+	.devSkillsBox {
+		padding-top: 40px;
+	}
+
+	.midSecBox {
+		margin-bottom: 40px;
+	}
+
+	.sectionHeadBox {
+		margin-bottom: 20px;
+	}
+
+	.guideYouRight {
+		padding-left: 0px;
+		padding-top: 0px;
+	}
+
+	.guideYouBtm {
+		padding: 20px 20px;
+	}
+
+	.stepsListNewDesign.stepsList .stepsListItem:nth-last-child(-n+2) {
+		margin-bottom: 0;
+	}
+
+	.ourSolutionsBottom .col-md-4 .solutionBoxBanner h4 br {
+		display: none;
+	}
+
+	.ourSolutionsBottom .col-sm-12:last-child {
+		margin-bottom: 0;
+	}
+
+	.devSkillsInner .skillListSec {
+		padding: 0px 0px 20px;
+	}
+
+	.stepsList .stepsListItem::before {
+		top: 10px;
+	}
+
+	.guideYouRight ul li {
+		/*width: 50%;*/
+	}
+
+	.devSkillsInner .devSkillsSec {
+		margin-bottom: 10px;
+	}
+
+	.secMargin {
+		margin-bottom: 40px;
+	}
+
+	.topDevsBox {
+		padding: 0;
+	}
+
+	.topDevsBox .topDevsLeft {
+		padding: 40px 0px 40px 0px;
+	}
+
+	.beyondValueBottom .beyondValueSec {
+		padding: 50px 45px 50px;
+	}
+
+	.valCoparison {
+		left: 0;
+	}
+
+	.topCreationSlide .slideRight {
+		margin-top: 30px;
+	}
+
+	.ourTestimonilsBox,
+	.gainedByComp {
+		padding: 40px 0;
+	}
+
+	.quoteAuthorCont {
+		margin-top: 13px;
+	}
+
+	.quoteCont:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	.gainedByComp .awardsListBox .row .col-sm-3,
+	.gainedByComp .awardsListBox .row .col-sm-2 {
+		width: 25%;
+	}
+
+	.gainedByComp .awardsListBox .awardBoxInner {
+		height: 120px;
+	}
+
+	.hiringPostInner .col-sm-12:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.mainFootBox {
+		padding: 15px 0 15px;
+	}
+
+
+}
+
+@media(max-width:560px) {
+	.leadPageBanner .bannerRight {
+		width: 100%;
+		min-width: 100%;
+	}
+
+	.leadPageBanner {
+		padding: 40px 0 27px;
+	}
+
+	.sectionHeadBox .sectionHeadTop h2 {
+		font-size: 32px;
+		line-height: 42px;
+	}
+
+	.midSecBox {
+		margin-bottom: 40px;
+	}
+
+	.whyHireBoxs .cardImageBox {
+		margin-bottom: 20px;
+	}
+
+	.devSkillsInner .skillsListBox ul li {
+		width: 46%;
+		margin-right: 20px;
+		margin-bottom: 15px;
+	}
+
+	.devSkillsInner .skillsListBox ul li:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	.fontSize28 {
+		font-size: 22px;
+		line-height: 34px;
+		letter-spacing: 2.04px;
+	}
+
+	.valCoparison span {
+		font-size: 28px;
+		line-height: 28px;
+	}
+
+	.valCoparison {
+		height: 75px;
+		width: 75px;
+	}
+
+	.fontSize44 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.fontSize34 {
+		font-size: 23px;
+		line-height: 30px;
+	}
+
+	.btmLines2::before {
+		height: 4px;
+		width: 117px;
+	}
+
+	.btmLines::before {
+		bottom: 0;
+	}
+
+	.hubOverviewBox .overviewRight p {
+		font-size: 44px;
+		line-height: 44px;
+	}
+
+	.ourTeamBox .onDemandSol .solRight,
+	.ourTeamBox .onDemandSol .solLeft {
+		height: auto;
+	}
+
+	.ourTeamBox .onDemandSol:nth-child(odd) .solLeft {
+		margin-right: 0;
+	}
+
+	.ourTeamBox .onDemandSol .solLeft p {
+		padding-right: 0;
+	}
+
+	.fontSize22 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.slick-dots li button,
+	.slick-dots li button:before {
+		width: 13px;
+		height: 13px;
+	}
+
+	.readytoHireBox .readytoHireLeft {
+		padding-right: 0;
+	}
+
+	.btnStyle span img {
+		width: 26px;
+	}
+
+	.readytoHireBox .readytoHireInner .row .col-sm-6.hireColBox.hireColBox2 {
+		width: 100%;
+	}
+
+	.fontSize64 {
+		font-size: 45px;
+		line-height: 55px;
+	}
+
+	.hireEasyStepsBox .easySteps .col-sm-3 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.hireEasyStepsBox .stepCount {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	.hireEasyStepsBox .easyStepList .easyStepImage {
+		height: 60px;
+	}
+
+	.gainedByComp .awardsListBox .row .col-sm-3 {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.propFormRight button {
+		font-size: 16px;
+		line-height: 16px;
+		padding: 16px 20px;
+	}
+
+	.hiringPosts .hireSoftwareTeam ul li {
+		width: 47%;
+	}
+
+	.mainFootBox .mainFootLeft p {
+		font-size: 15px;
+	}
+
+	.topDevsBox .topDevsLeft p {
+		padding-right: 0;
+	}
+
+	.ourSpecaityBox .specialityBox .boxTopSec {
+		align-items: center;
+	}
+
+	.propFormLeft ul li {
+		margin-bottom: 15px;
+	}
+
+	.btmLines::before {
+		width: 110px;
+	}
+
+	.custom-logo-link {
+		width: 120px;
+	}
+
+	.btnStyle.headBtn {
+		font-size: 12px;
+		line-height: 12px;
+	}
+
+	/*-------------New------------*/
+	.btmLines {
+		padding-bottom: 10px;
+	}
+
+	.btmLines::before {
+		width: 100px;
+	}
+
+	.btmLines2::before {
+		height: 4px;
+	}
+
+	.sectionHeadBox .sectionHeadTop h2 {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	.container {
+		max-width: 100%;
+		padding: 0 20px;
+	}
+
+	.navIcon,
+	.navIcon::before,
+	.navIcon::after {
+		width: 22px;
+	}
+
+	.pageHeader .headerRight ul li .navbar-toggler {
+		padding: 12px 10px;
+	}
+
+	.topSection {
+		/* margin-top: 62px; */
+	}
+
+	.fontSize62 {
+		font-size: 41px;
+		line-height: 46px;
+	}
+
+	.homeBannerLeft h2 {
+		margin-bottom: 20px;
+	}
+
+	.homeBannerLeft .topSubHeading {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.mottoContent .mottoHeading {
+		margin-bottom: 16px;
+	}
+
+	.ourSolutionBox.ourSolutionBox2 {
+		flex-wrap: wrap;
+	}
+
+	.ourSolutionBox.ourSolutionBox2 .solutionBoxBanner,
+	.ourSolutionBox.ourSolutionBox2 .solutionBoxContnet {
+		width: 100%;
+	}
+
+	/*.stepsList.stepsList2 .stepsListItem, */
+	.stepsList .stepsListItem:last-child {
+		margin-bottom: 0;
+	}
+
+	.ourSolutionsBottom .row {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.fontSize28 {
+		font-size: 21px;
+	}
+
+	.devSkillsInner .skillListTop h2 {
+		margin-bottom: 5px;
+	}
+
+	.devSkillsInner .skillsListBox ul li {
+		width: 33%;
+	}
+
+	.devSkillsInner .skillsListBox ul li,
+	.devSkillsInner .skillsListBox ul li:nth-child(2n) {
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		padding: 0 10px 25px;
+	}
+
+	.fontSize28 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.devSkillsInner .skillListSec {
+		padding: 0px 0px 0px;
+	}
+
+	.devSkillsInner .skillsListBox ul li .skillType {
+		display: inline-block;
+		font-size: 14px;
+		line-height: 18px;
+		/*float: left;*/
+	}
+
+	.topDevsBox .topDevsLeft h3 {
+		font-family: var(--productBold);
+		margin-bottom: 15px;
+	}
+
+	.valCoparison {
+		top: 30px;
+	}
+
+	.gainedByComp .awardsListBox .awardBoxInner {
+		height: 90px;
+		padding: 10px 10px;
+	}
+
+	.sectionHeadBox {
+		margin-bottom: 30px;
+	}
+
+	.propFormLeft ul li::before {
+		height: 20px;
+		width: 20px;
+	}
+
+	.hiringPosts .hirePostHeding {
+		margin-bottom: 20px;
+	}
+
+	.btmLines::before {
+		bottom: -4px;
+	}
+
+	.solutionBoxBanner h4 br {
+		display: none;
+	}
+
+	.hiringPosts .hireSoftwareTeam ul li {
+		width: 46%;
+	}
+
+	.hiringPosts {
+		margin: 30px 0 20px;
+	}
+
+	.propFormRight .btnStyle5 {
+		font-size: 18px;
+		line-height: 18px;
+	}
+
+	.propFormRight button {
+		padding: 14px 22px;
+	}
+
+	.ourSolutionBox .solutionBoxBanner a,
+	.ourSolutionBox .solutionBoxContnet,
+	.ourSolutionsBottom .col-md-4 .solutionBoxBanner.solutionBoxStartup,
+	.growthHacking .growthHackingInner .grwothInnerBox {
+		padding: 20px 20px;
+	}
+
+	.ourSolutionsBottom .col-md-4 .solutionBoxBanner h4 {
+		margin-bottom: 8px;
+	}
+
+	.beyondValueBottom .beyondValueSec.beyondValueLeft {
+		padding: 30px 10px 40px;
+	}
+
+	.beyondValueBottom .beyondValueSec.beyondValueRight {
+		padding: 40px 10px 30px;
+	}
+
+	.appDevelopment .solutionBoxBanner h4 {
+		margin-bottom: 8px;
+	}
+
+	.navbar-expand-md .navbar-collapse {
+		top: 56px;
+	}
+
+	.homeBannerNew {
+		background-image: none;
+		background-color: var(--colorBlack);
+	}
+
+	.homeBanner {
+		/* padding: 60px 0px 60px; */
+	}
+
+	.btnStyleNew {
+		padding: 12px 22px;
+	}
+	
+	.navbar-brand{
+	    max-width: 250px;
+        height: 32px;
+	}
+	.footLogo{
+	    max-width: 200px;
+	}
+	.devSkillsInner .skillListTop h2 {
+        letter-spacing: 2px;
+    }
+    .topDevsBox .topDevsLeft {
+        padding: 30px 0px 40px 0px;
+    }
+    .quoteAuthorCont span {
+        margin-right: 10px;
+    }
+
+}
+
+@media(max-width:414px) {
+	.leadPageBanner .topContent p {
+		font-size: 14px;
+	}
+
+	.btmLines {
+		margin-bottom: 23px;
+	}
+
+	.fontSize32 {
+		font-size: 26px;
+		line-height: 38px;
+	}
+
+	.freeQuoteTop h2 {
+		margin-bottom: 10px;
+	}
+
+	.midSectionsBox {
+		padding: 40px 0 0;
+	}
+
+	.btmLines2::before {
+		width: 100px;
+	}
+
+	.devSkillsInner .skillsListBox ul li {
+		/*width: 45%;*/
+		width: 33%;
+	}
+
+	.sectionHeadBox .sectionHeadTop h2 {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	.beyondValueBottom .beyondValueSec {
+		padding: 40px 10px 40px;
+	}
+
+	.beyondValueSec p.avgCost {
+		font-size: 17px;
+		line-height: 30px;
+	}
+
+	.beyondValueSec p {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.beyondValueSec .costPerHour span {
+		font-size: 26px;
+		line-height: 36px;
+	}
+
+	.hubOverviewBox .overviewRight p {
+		font-size: 35px;
+		line-height: 35px;
+	}
+
+	.fontSize20 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.fontSize44 {
+		font-size: 28px;
+		line-height: 34px;
+	}
+
+	.btnStyle {
+		font-size: 15px;
+		line-height: 15px;
+	}
+
+	.fontSize64 {
+		font-size: 36px;
+		line-height: 52px;
+	}
+
+	.readytohireRight .compDone span {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	.readytoHireBox {
+		padding: 40px 0;
+	}
+
+	.readytohireRight .compAnalysisRight .compDone {
+		margin-bottom: 35px;
+	}
+
+	.hiringModalBox .methodsLists ul li {
+		padding-left: 35px;
+	}
+
+	.hiringModalBox .methodsLists ul li:before {
+		height: 24px;
+		width: 24px;
+	}
+
+	.hiringModalBox .hiringMethods .methodsIcon {
+		margin-bottom: 15px;
+	}
+
+	.hireEasyStepsBox .easyStepList .easyStepInner {
+		padding: 28px 15px 20px 15px;
+	}
+
+	.gainedByComp {
+		background: #1d1d39;
+		padding: 40px 0;
+	}
+
+	.gainedByComp .awardsListBox .awardBoxInner {
+		height: 130px;
+	}
+
+	.faqSectionsBox .faqsSecList .faqHeading a {
+		font-size: 16px;
+		line-height: 21px;
+	}
+
+	.faqSectionsBox .faqsSecList .faqContent {
+		display: none;
+		margin-top: 10px;
+	}
+
+	.faqSectionsBox .faqContent p {
+		font-size: 14px;
+		line-height: 23px;
+	}
+
+	.ourServicesBox .servImageIcon {
+		height: 70px;
+		width: 70px;
+	}
+
+	.freeProposalBox {
+		padding: 40px 0;
+	}
+
+	.propFormLeft ul li::before {
+		height: 24px;
+		width: 24px;
+	}
+
+	.hiringPosts .hireSoftwareTeam ul li,
+	.hiringPosts .softwareDevTeam ul li,
+	.hiringPosts .softwareSols ul li {
+		/*width: 100%;*/
+	}
+
+	.mainFootBox .mainFootRight ul li {
+		margin-right: 10px;
+	}
+
+	.mainFootBox .mainFootRight li img {
+		width: 100px;
+	}
+
+	.mainFootBox .mainFootLeft p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.mainFootBox {
+		padding: 25px 0 20px;
+	}
+
+	.hiringPosts .hirePostLists ul li {
+		margin-bottom: 10px;
+	}
+
+	.hiringPosts {
+		margin: 40px 0;
+	}
+
+	.btmLines::before {
+		width: 90px;
+	}
+
+	.mainFootBox {
+		padding: 15px 0px;
+	}
+
+	/*--------------New---------------*/
+	.sectionHeadBox .sectionHeadTop h2 {
+		font-size: 28px;
+		line-height: 34px;
+	}
+
+	.ourSolutions,
+	.freeProposalBox {
+		padding: 30px 0;
+	}
+
+	.sectionHeadBox {
+		margin-bottom: 20px;
+	}
+
+	.stepsList.stepsList2 .stepsListItem,
+	.stepsList .stepsListItem {
+		margin-bottom: 10px;
+	}
+
+	.midSecBox {
+		margin-bottom: 10px;
+	}
+
+	.devSkillsBox {
+		padding-top: 30px;
+	}
+
+	.valCoparison {
+		top: 0px;
+	}
+
+	.secMargin {
+		margin-bottom: 30px;
+	}
+
+	.ourTestimonilsBox .btmLines {
+		margin-bottom: 4px;
+	}
+
+	.quoteCont:not(:last-child) {
+		margin-bottom: 30px;
+	}
+
+	.gainedByComp .awardsListBox .awardBoxInner {
+		height: 90px;
+		padding: 7px 7px;
+	}
+
+	.gainedByComp {
+		background: #1d1d39;
+		padding: 30px 0;
+	}
+
+	.btnMargin {
+		margin-top: 20px;
+	}
+
+	.mainFootBox .mainFootRight li img {
+		width: auto;
+	}
+
+	.ourSolutionBox.ourSolutionBox2 .solutionBoxBanner h4,
+	.ourSolutionBox.ourSolutionBox2 .solutionBoxBanner p {
+		padding-right: 0;
+	}
+
+	.appDevelopment .solutionBoxBanner h4 {
+		margin-bottom: 10px;
+	}
+
+	.mottoContent .mottoHeading {
+		margin-bottom: 12px;
+	}
+
+	.aboutUsSection {
+		padding-top: 30px;
+	}
+
+	.ourSolutions .sectionHeadBox {
+		margin-bottom: 10px;
+	}
+
+	.stepsList .stepsListItem:last-child {
+		margin-bottom: 0;
+	}
+
+	.stepsList .stepsListItem::before {
+		top: 12px;
+	}
+
+	.fontSize18 {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.devSkillsInner .skillListTop {
+		margin-bottom: 20px;
+	}
+
+	.beyondValueSec p.avgCost {
+		margin-bottom: 4px;
+	}
+
+	.beyondValueSec .costPerHour {
+		margin-top: 7px;
+	}
+
+	.propFormRight .weGuarantee {
+		margin: 4px 0 25px;
+	}
+
+	.formStyle .form-control {
+		padding: 15px 15px;
+	}
+
+	.gainedByComp .awardsListBox .awardBoxInner {
+		height: 80px;
+	}
+
+	.stepsList .stepsListItem::before {
+		top: 10px;
+	}
+
+	.fontSize62 {
+		font-size: 38px;
+		line-height: 44px;
+	}
+	.formModal .modal-content {
+		padding: 40px 15px 30px;
+	}
+
+}
+
+@media(max-width: 370px) {
+	.btnStyle.headBtn {
+		padding: 10px 7px;
+		font-size: 12px;
+		line-height: 12px;
+	}
+
+	.custom-logo-link {
+		width: 100px;
+	}
+
+	.pageHeader .headerRight ul li .navbar-toggler {
+		margin-left: 14px;
+	}
+
+	.pageHeader .headerRight ul {
+		align-items: center;
+	}
+}

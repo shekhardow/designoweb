@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Rectangle_154" d="M0 0H80V80H0z" data-name="Rectangle 154" transform="translate(256 2432)" style="fill:#fff"/>
+        </clipPath>
+    </defs>
+    <g id="prefix__Mask_Group_55" data-name="Mask Group 55" transform="translate(-256 -2432)">
+        <g id="prefix__banner" transform="translate(256 2432)">
+            <path id="prefix__Path_1605" d="M0 21.25v46.875h80V21.25zm75.312 42.187H4.687v-37.5h70.625z" data-name="Path 1605"/>
+            <path id="prefix__Path_1606" d="M41.747 58.06L28.924 32.415l-5.706 11.412-3.423-6.847-10.54 21.08zM16.641 53.5l3.154-6.308 3.154 6.308zm9.129-4.565l3.154-6.308L34.361 53.5h-6.309z" data-name="Path 1606" transform="translate(-.242 -.292)" style="fill:#5fb709"/>
+            <path id="prefix__Path_1607" d="M47.031 54.063h22.824v4.565H47.031z" data-name="Path 1607" transform="translate(-1.232 -.859)"/>
+            <path id="prefix__Path_1608" d="M47.031 44.688h22.824v4.565H47.031z" data-name="Path 1608" transform="translate(-1.232 -.614)"/>
+            <path id="prefix__Path_1609" d="M47.031 35.312h22.824v4.565H47.031z" data-name="Path 1609" transform="translate(-1.232 -.368)"/>
+        </g>
+    </g>
+</svg>

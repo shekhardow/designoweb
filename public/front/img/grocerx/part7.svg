@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Rectangle_140" d="M0 0H80V80H0z" data-name="Rectangle 140" transform="translate(256 2432)" style="fill:#737373"/>
+        </clipPath>
+    </defs>
+    <g id="prefix__Mask_Group_56" data-name="Mask Group 56" transform="translate(-256 -2432)">
+        <g id="prefix__mcdonalds" transform="translate(256 2432)">
+            <g id="prefix__Group_3604" data-name="Group 3604">
+                <path id="prefix__Path_1610" d="M57.5 5C50.43 5 44.125 14.42 40 29.145 35.88 14.42 29.57 5 22.5 5 10.075 5 0 36.34 0 75h10c0-35.9 5.6-65 12.5-65S35 36.865 35 70h10c0-33.135 5.6-60 12.5-60S70 39.1 70 75h10C80 36.34 69.925 5 57.5 5z" data-name="Path 1610"/>
+            </g>
+        </g>
+    </g>
+</svg>
