@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Rectangle_138" d="M0 0H80V80H0z" data-name="Rectangle 138" transform="translate(256 2432)" style="fill:#737373"/>
+        </clipPath>
+        <style>
+            .prefix__cls-3{fill:#5fb709}
+        </style>
+    </defs>
+    <g id="prefix__Mask_Group_34" data-name="Mask Group 34" transform="translate(-256 -2432)">
+        <g id="prefix__chat_1_" data-name="chat (1)" transform="translate(256 2432)">
+            <path id="prefix__Path_1504" d="M57.188 0H22.813a8.6 8.6 0 0 0-8.594 8.594v62.812A8.6 8.6 0 0 0 22.813 80h34.375a8.6 8.6 0 0 0 8.594-8.594V8.594A8.6 8.6 0 0 0 57.188 0zM22.813 4.688h34.375a3.911 3.911 0 0 1 3.906 3.906v55.781H18.906V8.594a3.911 3.911 0 0 1 3.907-3.906zm34.375 70.625H22.813a3.911 3.911 0 0 1-3.906-3.906v-2.344h42.187v2.344a3.911 3.911 0 0 1-3.906 3.906z" data-name="Path 1504"/>
+            <path id="prefix__Path_1505" d="M36.875 14.063h6.25a2.344 2.344 0 0 0 0-4.687h-6.25a2.344 2.344 0 0 0 0 4.688z" data-name="Path 1505"/>
+            <circle id="prefix__Ellipse_51" cx="2.344" cy="2.344" r="2.344" data-name="Ellipse 51" transform="translate(25.938 9.375)"/>
+            <path id="prefix__Path_1506" d="M30.625 35.156a7.031 7.031 0 1 0-7.031-7.031 7.039 7.039 0 0 0 7.031 7.031zm0-9.375a2.344 2.344 0 1 1-2.344 2.344 2.346 2.346 0 0 1 2.344-2.344z" class="prefix__cls-3" data-name="Path 1506"/>
+            <path id="prefix__Path_1507" d="M40.781 23.438a2.344 2.344 0 0 0 2.344 2.344h10.938a2.344 2.344 0 0 0 0-4.687H43.125a2.344 2.344 0 0 0-2.344 2.343z" class="prefix__cls-3" data-name="Path 1507"/>
+            <path id="prefix__Path_1508" d="M43.125 35.156h7.813a2.344 2.344 0 0 0 0-4.687h-7.813a2.344 2.344 0 0 0 0 4.688z" class="prefix__cls-3" data-name="Path 1508"/>
+            <path id="prefix__Path_1509" d="M30.625 57.031A7.031 7.031 0 1 0 23.594 50a7.039 7.039 0 0 0 7.031 7.031zm0-9.375A2.344 2.344 0 1 1 28.281 50a2.346 2.346 0 0 1 2.344-2.344z" class="prefix__cls-3" data-name="Path 1509"/>
+            <path id="prefix__Path_1510" d="M54.063 42.969H43.125a2.344 2.344 0 0 0 0 4.688h10.938a2.344 2.344 0 0 0 0-4.687z" class="prefix__cls-3" data-name="Path 1510"/>
+            <path id="prefix__Path_1511" d="M50.938 52.344h-7.813a2.344 2.344 0 0 0 0 4.688h7.813a2.344 2.344 0 0 0 0-4.687z" class="prefix__cls-3" data-name="Path 1511"/>
+        </g>
+    </g>
+</svg>

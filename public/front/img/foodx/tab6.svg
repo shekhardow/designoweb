@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Rectangle_138" d="M0 0H80V80H0z" class="prefix__cls-1" data-name="Rectangle 138" transform="translate(256 2432)"/>
+        </clipPath>
+        <style>
+            .prefix__cls-1{fill:#5fb709}
+        </style>
+    </defs>
+    <g id="prefix__Mask_Group_43" data-name="Mask Group 43" transform="translate(-256 -2432)">
+        <g id="prefix__rejected" transform="translate(256 2432)">
+            <path id="prefix__Path_1558" d="M71.782 20.77L51.7.687A2.343 2.343 0 0 0 50.042 0H16.151a8.63 8.63 0 0 0-8.62 8.62v62.76a8.63 8.63 0 0 0 8.62 8.62h47.7a8.63 8.63 0 0 0 8.62-8.62V22.427a2.344 2.344 0 0 0-.687-1.657zM52.385 8l12.082 12.083h-8.149a3.937 3.937 0 0 1-3.932-3.932zm11.464 67.31h-47.7a3.937 3.937 0 0 1-3.932-3.932V8.62a3.937 3.937 0 0 1 3.932-3.932H47.7v11.463a8.63 8.63 0 0 0 8.62 8.62h11.461V71.38a3.937 3.937 0 0 1-3.932 3.932z" data-name="Path 1558"/>
+            <path id="prefix__Path_1559" d="M40 30.125a19.917 19.917 0 1 0 19.917 19.917A19.939 19.939 0 0 0 40 30.125zm0 35.146a15.229 15.229 0 1 1 15.229-15.229A15.246 15.246 0 0 1 40 65.271z" class="prefix__cls-1" data-name="Path 1559"/>
+            <path id="prefix__Path_1560" d="M46.983 43.059a2.344 2.344 0 0 0-3.315 0L40 46.727l-3.668-3.668a2.344 2.344 0 1 0-3.315 3.315l3.668 3.668-3.668 3.668a2.344 2.344 0 1 0 3.314 3.315L40 53.356l3.668 3.668a2.344 2.344 0 0 0 3.314-3.315l-3.668-3.668 3.668-3.668a2.343 2.343 0 0 0 .001-3.314z" class="prefix__cls-1" data-name="Path 1560"/>
+        </g>
+    </g>
+</svg>

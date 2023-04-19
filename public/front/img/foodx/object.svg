@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="80" viewBox="0 0 76 80">
+    <g id="prefix__object" transform="translate(-4 -2)">
+        <ellipse id="prefix__Ellipse_11" cx="36.642" cy="35.892" data-name="Ellipse 11" rx="36.642" ry="35.892" transform="translate(5.358 8.792)" style="fill:#5fb709"/>
+        <ellipse id="prefix__Ellipse_12" cx="25.775" cy="25.808" data-name="Ellipse 12" rx="25.775" ry="25.808" transform="translate(16.225 18.736)" style="fill:#f3f9ec"/>
+        <path id="prefix__Path_277" d="M42 80.2c-20.953 0-38-16.7-38-37.237A37.44 37.44 0 0 1 31.963 7.036l.715 2.564A34.761 34.761 0 0 0 6.714 42.959c0 19.065 15.829 34.577 35.286 34.577s35.286-15.512 35.286-34.577A34.761 34.761 0 0 0 51.319 9.6l.715-2.567A37.441 37.441 0 0 1 80 42.959C80 63.492 62.953 80.2 42 80.2z" data-name="Path 277" transform="translate(0 1.804)"/>
+        <path id="prefix__Path_278" d="M31 2h2.717v27.167H31z" data-name="Path 278" transform="translate(9.642)"/>
+    </g>
+</svg>

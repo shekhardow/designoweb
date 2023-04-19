@@ -1,0 +1,3420 @@
+@media (max-width: 1920px) {}
+
+@media (max-width: 1560px) {}
+
+@media (max-width: 1367px) {
+    .homeBannerNew2 .videoOverlay{
+        width: 60%;
+    }
+}
+
+@media (max-width: 1300px) {
+    /* Home Page Start */
+    .homeBannerImg {
+        max-height: 520px;
+        height: 520px;
+    }
+    .homeBanner {
+        padding: 70px 0px 120px;
+    }
+    .container {
+        max-width: 1110px;
+    }
+    .fontSize48 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+    .fontSize24 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .fontSize22 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .fontSize26 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .oneTeamSection {
+        padding: 80px 0px;
+    }
+    .oneTeamRight {
+        padding-left: 40px;
+    }
+    .oneTeamRight h3 {
+        margin-bottom: 33px;
+    }
+    .teamLeftSec2 .teamBuilds span {
+        font-size: 64px;
+        line-height: 73px;
+    }
+    .oneTeamLeft .productsDelivered span {
+        font-size: 90px;
+        line-height: 100px;
+    }
+    /* .serviceFor.serviceFor3 .serviceForLists .serviceForBox:first-child {
+        width: 47%;
+    } */
+    .serviceFor .serviceForLists .serviceForBox:last-child {
+        /* width: 50%; */
+    }
+    .projetsSlidersBox .slidesCounter {
+        bottom: -35px;
+    }
+    .ourProjectSlider {
+        padding: 70px 0;
+    }
+    /* Home Page End */
+    /* Blog And Detail Page Start */
+    .blogDetailsBanner {
+        width: 40%;
+    }
+    /* Blog And Detail Page End */
+    /* Contact Page Start */
+    .bannerHeading.bannerHeading2 {
+        padding-right: 20px;
+    }
+    /* Contact Page End */
+    .caseSec {
+        background-size: 49%;
+    }
+}
+
+@media (max-width: 1199px) {
+    /* Sidenav Start */
+    .topBoxs {
+        margin-top: 85px;
+    }
+    .navbar-expand-md .navbar-toggler {
+        display: block;
+    }
+    .headerRightInner {
+        display: none;
+    }
+    .navbar-expand-md .navbar-collapse {
+        display: none;
+        position: fixed;
+        background: var(--colorWhite);
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: -100%;
+        height: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .navbar-expand-md .navbar-collapse.show {
+        top: 62px;
+    }
+    .navbar-expand-md .navbar-nav {
+        width: 100%;
+        background: #fff;
+        padding: 40px 0px;
+    }
+    .mainMenu .navbar-nav .nav-item {
+        line-height: normal;
+    }
+    .navbar-expand-md .navbar-nav .nav-link.menuLink {
+        padding-bottom: 0px;
+    }
+    .mainMenu .navbar-nav .nav-item.activeMenu .subMenus {
+        /* background: #fff; */
+        z-index: 99;
+        top: 62px;
+    }
+    .mainMenu .navbar-nav .nav-item {
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-nav .nav-item {
+        margin-right: 0px;
+    }
+    .subMenus {
+        height: calc(100vh - 62px);
+    }
+    .subMenuListsSec .subMenuHeadings {
+        margin-left: 10px;
+        padding-right: 20px;
+        text-align: left;
+    }
+    .submenuBoxs {
+        padding-right: 20px;
+    }
+    .nav-link:hover,
+    .nav-link:focus {
+        border-bottom: none;
+    }
+    .navbar-expand-md .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-light .navbar-nav .nav-item {
+        margin-bottom: 5px;
+    }
+    .headerBox {
+        display: block !important;
+        float: left !important;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding: 0;
+    }
+    .nav-item {
+        margin-bottom: 30px;
+    }
+    .navbar-expand-md .navbar-nav .dropdown-menu {
+        position: relative;
+        background: transparent;
+        border: none;
+        padding-bottom: 0;
+    }
+    .navbar-expand-md .navbar-nav .dropdown-menu.show {
+        transition: all 0.3s ease;
+    }
+    .dropdown-item {
+        color: var(--colorWhite);
+    }
+    .submenuBoxs .subMenuLists {
+        text-align: left;
+    }
+    .submenuInnerBox .menuRight {
+        padding: 41px 0px 41px 25px;
+    }
+    .navbar-expand-md .navbar-collapse.show {
+        border-top: 1px solid var(--colorBlack);
+    }
+    .navbar-nav .nav-link.menuLink::before {
+        top: inherit;
+        bottom: -2px;
+    }
+    .subMenus .closeSubMenu {
+        display: block;
+    }
+    /* Sidenav End */
+    /* Home Page Start */
+    .container {
+        max-width: 100%;
+        padding: 0 50px;
+    }
+    .headerButton {
+        display: flex;
+        align-items: center;
+    }
+    .navbar.navbar-expand-md {
+        padding: 10px 0;
+    }
+    .sectionTop {
+        margin-top: 62px;
+    }
+    .header .headerLogo,
+    .header.fixedHeader .headerLogo {
+        width: 66px;
+        display: inline-block;
+    }
+    .header .headerLogo .navbar-brand,
+    .header.fixedHeader .headerLogo .navbar-brand {
+        width: 76px;
+    }
+    .header .headerLogo .navbar-brand img,
+    .header.fixedHeader .headerLogo .navbar-brand img {
+        height: 100%;
+        width: 100%;
+    }
+    .navbar-expand-md .navbar-toggler,
+    .navbar-expand-md .navbar-toggler:focus {
+        padding: 0px;
+        border: none;
+        box-shadow: none;
+    }
+    .headerButton span {
+        margin-left: 20px;
+    }
+    .headerButton span.arrowIcn {
+        margin-left: 0px;
+    }
+    .homeBannerImg {
+        max-height: 430px;
+        height: 430px;
+    }
+    .fontSize62 {
+        font-size: 56px;
+        line-height: 63px;
+    }
+    .fontSize52 {
+        font-size: 45px;
+        line-height: 63px;
+    }
+    .homeBannerBOx .bannerHeading .smallHeadings {
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .fontSize28 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .homeBannerLeft h2 {
+        margin-bottom: 30px;
+    }
+    .homeBannerLeft .bannerSubHeading {
+        margin-bottom: 38px;
+    }
+    .homeBanner {
+        padding: 55px 0px 80px;
+    }
+    .oneTeamSection {
+        padding: 50px 0px;
+    }
+    .teamLeftSec2 .teamBuilds span {
+        font-size: 56px;
+        line-height: 64px;
+    }
+    .teamLeftSec2 .teamBuilds span {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .oneTeamLeft .productsDelivered span {
+        font-size: 75px;
+        line-height: 85px;
+    }
+    .fontSize22 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .fontSize26 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .teamLeftSec2 .teamBuilds span {
+        margin-bottom: 5px;
+    }
+    .teamLeftSec2 .teamBuilds:first-child {
+        margin-bottom: 60px;
+    }
+    .teamLeftSec2 .teamBuilds:last-child {
+        margin-top: 60px;
+    }
+    .oneTeamRight {
+        padding-left: 15px;
+    }
+    .ourSolutionInner .mainSecHeading {
+        padding-right: 100px;
+    }
+    .ourSolutionBox.ourSolutionBox2 .solutionBoxBanner {
+        width: 55%;
+    }
+    .ourSolutionBox.ourSolutionBox2 .solutionBoxContnet {
+        width: 45%;
+    }
+    .ourSolutionBox.ourSolutionBox2 .solutionBoxBanner h4,
+    .ourSolutionBox.ourSolutionBox2 .solutionBoxBanner p {
+        padding-right: 0;
+    }
+    .ourSolutionBox .solutionBoxBanner h4,
+    .ourSolutionBox .solutionBoxBanner p {
+        color: var(--colorWhite);
+        padding-right: 0;
+    }
+    .fontSize20 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .stepsList.stepsList2 .stepsListItem {
+        margin-bottom: 18px;
+    }
+    .fontSize18 {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .growthHackingInner p {
+        padding-bottom: 20px;
+    }
+    .fontSize24 {
+        font-size: 20px;
+    }
+    .fontSize48 {
+        font-size: 42px;
+        line-height: 46px;
+    }
+    .mottoContent p {
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+    .ourTeamInner .ourTeamContent {
+        padding: 0px 100px;
+    }
+    .recognitionInner .awardsSection {
+        padding: 0px 15px 0px 15px;
+    }
+    .joinTeamSec.joinTeamSec2 {
+        /* padding-bottom: 210px; */
+    }
+    .ourTeamBox {
+        margin-top: -130px;
+    }
+    .btnStyle {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .joinTeamIntroCont {
+        padding-right: 18px;
+    }
+    .joinTeamDetCont {
+        padding: 0 18px 10px;
+    }
+    .recognitionBox {
+        padding: 80px 0px 70px;
+    }
+    .weDeliverBox.weDeliverBox2 {
+        padding-top: 70px;
+    }
+    .fontSize30 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .listCounts .listCounter::before {
+        font-size: 55px;
+    }
+    .mainSecHeading.mainSecHeading3 {
+        margin-bottom: 18px;
+    }
+    .projectContentBox .projectSubHeading span {
+        padding-right: 30px;
+    }
+    .slideCount .active {
+        font-size: 58px;
+    }
+    /* .projetsSlidersBox {
+        padding-bottom: 40px;
+    } */
+    .mainSecHeading {
+        padding-bottom: 40px;
+    }
+    .queryInnerBox .queryLeft {
+        min-width: 450px;
+        width: 450px;
+    }
+    .queryInnerBox .queryRight {
+        padding-left: 35px;
+    }
+    .formDesign .form-control {
+        font-size: 16px;
+        line-height: 17px;
+        padding: 16px 14px;
+    }
+    .customCheckbox input[type="checkbox"]:checked+label,
+    .customCheckbox input[type="checkbox"]:not(:checked)+label {
+        font-size: 16px;
+    }
+    .querySection {
+        padding: 60px 0 70px;
+    }
+    .querySection {
+        padding: 70px 0 70px;
+    }
+    .queryInfoBanner {
+        margin-top: 40px;
+    }
+    .footSecBox .locatedOffices {
+        padding-right: 0;
+    }
+    .footerBox .footLeft {
+        padding-right: 20px;
+    }
+    .workRepositorySec {
+        padding: 60px 0 50px;
+    }
+    .ourProjectSlider {
+        padding: 60px 0;
+    }
+    .footerTop {
+        padding: 60px 0 40px;
+    }
+    .footerSpace {
+        padding: 35px 0 40px;
+    }
+    /* Home Page End */
+    /* Press Release And Detail Page Start */
+    .pressContentBox .pressBoxHeading {
+        line-height: 35px;
+    }
+    /* Press Release And Detail Page End */
+    /* Blog And Detail Page Start */
+    .serviceBannerRight.blogBannerRight {
+        padding-right: 0px;
+        width: 430px;
+    }
+    .blogBannerLeft h2 {
+        margin-bottom: 40px;
+    }
+    .subHeading2 {
+        padding-right: 22%;
+    }
+    /* Blog And Detail Page End */
+    /* Technology Page Start */
+    .benefitsInner .benefitsRight {
+        padding-left: 50px;
+    }
+    .serviceFor .serviceForLists .serviceForBox:first-child {
+        padding-right: 40px;
+    }
+    .serviceFor .serviceForLists .serviceForBox {
+        flex: 1;
+    }
+    .queryInnerBox .queryLeft,
+    .queryInnerBox .queryRight {
+        flex: 1;
+        width: auto;
+        min-width: auto;
+    }
+    /* Technology Page End */
+    /* Testimonials Start */
+    .quoteCont:nth-child(odd) {
+        /* border-left: none; */
+    }
+    /* Testimonials End */
+    /* Case Study Page Start */
+    .caseImgCont img {
+        max-height: 400px;
+    }
+    /* Case Study Page End */
+    /* Career Page Start */
+    .serviceBannerBox {
+        padding-bottom: 0;
+    }
+    .serviceBannerRight {
+        /* padding-top: 60px; */
+        padding-top: 0px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .careerBannerBox {
+        padding-bottom: 40px;
+    }
+    /* Career Page End */
+    /* Portfolio Page */
+    .portfolioBannerBox {
+        padding-bottom: 80px;
+    }
+    .technologySubmenu .submenuInnerBox .menuRight {
+        padding: 0px;
+    }
+    .caseSec {
+        height: 100%;
+    }
+    .caseStudyBanner.caseStudyBanner2 {
+        margin-top: 62px;
+    }
+    .caseProcSecCont .caseProcDescCont {
+        padding-left: 50px;
+    }
+    .processStepsInner .innerImg {
+        height: 50px;
+        width: 50px;
+    }
+    .processStepsInner .innerContent {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .agileProcStep:nth-child(even) {
+        margin-top: 25px;
+    }
+    .mainBannerLeft .caseStudyBannetTop .bannerHeading {
+        padding-bottom: 20px;
+    }
+    .aboutBanner .serviceBannerBox {
+        padding: 70px 0;
+    }
+    .highlightHeading span:before {
+        bottom: 10px;
+        height: 9px;
+    }
+    .contactMainForm.contactFormsSec {
+        padding-left: 40px;
+    }
+    .weCertified {
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+    .quoteAuthorInfo {
+        margin-left: 10px;
+    }
+    .quoteCont .quoteContIn {
+        padding: 0 10px;
+    }
+    .aboutSlideContent .aboutQuote {
+        margin-bottom: 25px;
+    }
+    .watchYTVidBtn {
+        margin-top: 20px;
+    }
+    .aboutSlideImage span {
+        width: 100%;
+    }
+    .latestNewsBox .row .col-sm-6:nth-child(even) {
+        padding-left: 30px;
+    }
+    .latestNewsBox .row .col-sm-6:nth-child(odd) {
+        padding-right: 30px;
+    }
+    .latestNewsBox .row .col-sm-6 {
+        margin-bottom: 50px;
+    }
+    .projectSlideBox .ourProjectsSlides {
+        /* height: 160px; */
+    }
+    .statsSectionNew .statsCountNew {
+        margin-right: 40px;
+    }
+    .guideYouBtm {
+        padding: 44px 50px;
+    }
+    .quoteCont.quoteContInNew .quoteContIn {
+        flex-direction: column;
+        /* justify-content: flex-start; */
+    }
+    .quoteIconsBox {
+        /* display: none; */
+    }
+    .testimonialBoxsNew .testimonialSecLeft {
+        width: 210px;
+        min-width: 210px;
+        padding-right: 0px;
+    }
+    .businessHeadsLeft {
+        padding-right: 0;
+    }
+    .customMenuNew .subMenus {
+        width: 100%;
+        top: 62px;
+        position: fixed;
+        height: 374px;
+        min-height: 374px;
+    }
+    .customMenuNew .subMenus .submenuInnerBox .subMenuList ul li {
+        text-align: center;
+    }
+    .testimonialSecTop .testimonialByImage {
+        width: 200px;
+    }
+    
+    
+    /*-------------*/
+    .newBannerChild .homeBannerBOx{
+        width: 320px
+    }
+    .newBannerChild .homeBannerBOx .homeBannerLeft h2{
+        margin-bottom: 20px;
+    }
+    .newBannerChild .homeBannerBOx .homeBannerLeft .bannerSubHeading{
+        margin-bottom: 25px
+    }
+}
+
+@media (max-width: 991px) {
+    /* Home Page Start */
+    .oneTeamLeft {
+        width: inherit;
+    }
+    .queryInnerBox .queryLeft {
+        min-width: 360px;
+        width: 360px;
+    }
+    .homeBannerImg {
+        max-height: 310px;
+        height: 310px;
+    }
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    .fontSize62 {
+        font-size: 52px;
+        line-height: 56px;
+    }
+    .fontSize52 {
+        font-size: 37px;
+        line-height: 50px;
+    }
+    .homeBannerBOx .bannerHeading .smallHeadings {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .fontSize28 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .fontSize24 {
+        font-size: 18px;
+    }
+    .homeBannerLeft h2 {
+        margin-bottom: 20px;
+    }
+    .homeBannerLeft .bannerSubHeading {
+        margin-bottom: 30px;
+    }
+    .homeBanner {
+        /* padding: 50px 0px 60px; */
+    }
+    .teamLeftSec2 .teamBuilds span {
+        font-size: 43px;
+        line-height: 50px;
+    }
+    .oneTeamLeft .productsDelivered span {
+        font-size: 62px;
+        line-height: 72px;
+    }
+    .oneTeamLeft .teamBuilds p {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .oneTeamLeft .teamBuilds p {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .oneTeamRight h3 {
+        margin-bottom: 20px;
+    }
+    .ourSolutions {
+        padding: 60px 0;
+    }
+    .fontSize48 {
+        font-size: 38px;
+        line-height: 44px;
+    }
+    .fontSize32 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .appDevelopment .solutionBoxBanner h4 {
+        margin-bottom: 18px;
+    }
+    .ourSolutionBox .solutionBoxBanner,
+    .ourSolutionBox .solutionBoxContnet {
+        /* padding: 20px; */
+    }
+    .appDevelopment .solutionBoxBanner {
+        /* padding-top: 60px; */
+    }
+    .fontSize20 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .stepsList .stepsListItem {
+        margin-bottom: 13px;
+        padding-left: 24px;
+        padding-right: 10px;
+    }
+    .fontSize36 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .growthHackingInner p {
+        padding-bottom: 0;
+    }
+    .growthHacking .growthHackingInner .grwothInnerBox {
+        padding: 30px 30px 0px;
+    }
+    .mottoContent p {
+        line-height: 27px;
+        margin-bottom: 15px;
+    }
+    .mottoContent .mottoHeading {
+        margin-bottom: 20px;
+    }
+    .ourMottoSection {
+        padding: 60px 0px;
+    }
+    .joinTeamDetCont .fontSize18 {
+        font-size: 14px;
+    }
+    .ourTeamInner .ourTeamContent {
+        padding: 0px 20px;
+    }
+    .p80sec {
+        padding: 60px 0;
+    }
+    .joinTeamSec.joinTeamSec2 {
+        /* padding-bottom: 150px; */
+    }
+    .ourTeamBox {
+        margin-top: -100px;
+    }
+    .recognitionBox {
+        padding: 60px 0px 60px;
+    }
+    .weDeliverTop {
+        width: 100%;
+    }
+    .weDeliverBox {
+        padding: 0px 0px 20px;
+    }
+    .weDeliverBox.weDeliverBox2 {
+        padding-top: 60px;
+    }
+    .aboutSlideImage span img {
+        width: auto;
+        height: auto;
+    }
+    .aboutSlideImage span {
+        width: auto;
+    }
+    .appProcess {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .appProcessLight .appProcessInner .appProcessBanner {
+        max-width: unset;
+        float: none;
+        flex-direction: column;
+    }
+    .appProcessLight .serviceForLists .serviceForBox {
+        padding-bottom: 30px;
+    }
+    .serviceBannerBox {
+        padding-top: 40px;
+    }
+    .caseStudyBanner {
+        background-image: none !important;
+    }
+    /* Our Process Start */
+    .procStepRow:nth-child(odd) .procStepWrp::before,
+    .procStepRow:nth-child(even) .procStepWrp::after {
+        width: 50px;
+    }
+    /* Our Process End */
+    .fontSize30 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .listCounts .listCounter::before {
+        font-size: 48px;
+        line-height: 40px;
+    }
+    .fontSize18 {
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .projectContentBox .projectSubHeading span {
+        padding-right: 10px;
+    }
+    .serviceFor.serviceFor3 .serviceForLists .serviceForBox:first-child {
+        /* padding-right: 15px; */
+        /* width: 50%; */
+    }
+    .serviceForLists .serviceForBox h4,
+    .serviceForLists .serviceForBox h3{
+        font-size: 17px;
+        line-height: 21px;
+    }
+    .serviceForLists .serviceForBox p {
+        font-size: 14px;
+    }
+    .serviceFor .serviceForLists {
+        padding: 20px 0 0px;
+    }
+    .serviceFor.serviceFor3 .serviceForLists .serviceForBox {
+        padding-bottom: 20px;
+    }
+    .slideCount {
+        font-size: 18px;
+    }
+    .slideCount .active {
+        font-size: 50px;
+    }
+    .fontSize14 {
+        font-size: 13px;
+    }
+    .footerTop .footerBox {
+        flex-wrap: wrap;
+    }
+    .footerBox .footLeft {
+        /*display: none;*/
+        margin-bottom: 25px;
+    }
+    .footerTop .footerBox .footRight {
+        width: 100%;
+        /* margin-top: 40px; */
+    }
+    .footBottomSec {
+        width: 33%;
+        padding-right: 20px;
+    }
+    .footerBox .footRight.footRight2 .footSections {
+        /* display: flex;
+    flex-wrap: wrap; */
+    }
+    .footerMid .footerSpace {
+        padding: 35px 0 0px;
+    }
+    .footBtmInner {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .copyrightBox {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footBtmRight {
+        width: 100%;
+        justify-content: center;
+    }
+    .footerTop {
+        padding: 50px 0 40px;
+    }
+    .oneTeamRight {
+        padding-left: 0px;
+        margin-top: 40px;
+    }
+    .ourSolutionInner .mainSecHeading {
+        padding-right: 0px;
+    }
+    .footerBox .footLeft {
+        width: 100%;
+    }
+    /* Home Page End */
+    /* Press Release And Detail Page Start */
+    .pressBanner2 {
+        padding-top: 130px;
+    }
+    .howWorksImg {
+        padding-left: 40px;
+    }
+    /* Press Release And Detail Page End */
+    /* Blog And Detail Page Start */
+    .quoteAuthorCont {
+        margin-top: 15px;
+    }
+    .quoteAuthorCont2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .quoteAuthorCont2 .pressDate.leftMargin {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .serviceBannerRight.blogBannerRight {
+        width: 100%;
+    }
+    .subHeading2 {
+        padding-right: 10%;
+    }
+    .latestNewsBox .row .col-sm-6:nth-child(odd) {
+        padding-right: 12px;
+    }
+    .latestNewsBox .row .col-sm-6:nth-child(even) {
+        padding-left: 12px;
+    }
+    .newsBoxs .newsImage {
+        height: 140px;
+        width: 140px;
+        min-width: 140px;
+        margin-right: 15px;
+    }
+    .latestNewsBox .row .col-sm-6 {
+        margin-bottom: 40px;
+    }
+    .howWorksBox2 .howWorksInner .col-sm-6 {
+        width: 100%;
+    }
+    .howWorksBox2 .howWorksInner .howWorksRight {
+        margin-top: 40px;
+    }
+    .howWorksBlogs .blogImg {
+        min-width: 210px;
+        width: 210px;
+    }
+    /* Blog And Detail Page End */
+    /* Our Process Start */
+    .procStepRow:nth-child(odd) .procStepWrp::before,
+    .procStepRow:nth-child(even) .procStepWrp::after {
+        width: 50px;
+    }
+    /* Our Process End */
+    /* About Page Start */
+    .aboutWeDeliverBox {
+        padding: 40px 0 0;
+    }
+    /* About Page End */
+    /* Career Page Start */
+    .weCertified {
+        margin-top: 40px;
+    }
+    /* Career Page End */
+    /* Sidenav Start */
+    .submenuDropbox {
+        flex-direction: column
+    }
+    .servicesSubmenu .menuLeft,
+    .servicesSubmenu .menuRight,
+    .offshoreSubmenu .menuLeft,
+    .offshoreSubmenu .menuRight,
+    .technologySubmenu .menuLeft,
+    .technologySubmenu .menuRight {
+        width: 100%;
+        min-height: auto;
+    }
+    .mainMenu .navbar-nav .nav-item.activeMenu .subMenus {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .companySubmenu .submenuBoxs {
+        width: 50%;
+    }
+    /* Sidenav End */
+    .appProcess .serviceFor.serviceFor2 {
+        padding-right: 0px;
+    }
+    .ourProcBanner {
+        padding-top: 132px;
+    }
+    .caseStudyBnr .col-sm-7,
+    .caseStudyBnr .col-sm-5 {
+        width: 100%;
+    }
+    .mainBannerLeft .bannerHeading {
+        padding-bottom: 40px;
+    }
+    .caseStudyBnr .serviceBannerBox {
+        margin-bottom: 50px;
+    }
+    .caseProcSecCont .caseProcDescCont {
+        padding-left: 0px;
+    }
+    .indusServCont {
+        padding-left: 0px;
+    }
+    .processStepsInner .innerImg {
+        height: 40px;
+        width: 40px;
+    }
+    .processStepsInner .innerContent {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .processStepsInner {
+        margin-top: 25px;
+    }
+    .agileProcStep:nth-child(even) {
+        margin-top: 18px;
+    }
+    .agileProcStepsCont.agileProcStepsCont2 {
+        margin: 50px 0px 0px;
+    }
+    .caseProcSecCont,
+    .caseDescSecCont,
+    .moreCasesSec {
+        padding: 50px 0;
+    }
+    .techStkRow {
+        margin-top: 50px;
+    }
+    .imgGrdCont .row:first-child .col-md-6,
+    .imgGrdCont .row:last-child .col-md-6 {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .imgGrdCont .row:first-child .col-md-6:last-child .imgGrdCol .row {
+        width: 100%;
+    }
+    .aboutImgGrd {
+        padding: 50px 0;
+    }
+    .imgGrdCont>.row:last-child {
+        flex-direction: column-reverse;
+    }
+    .aboutImgGrd .imgGrdCont {
+        margin-top: 30px;
+    }
+    .highlightHeading span:before {
+        bottom: 8px;
+        height: 8px;
+    }
+    .contactMainForm.contactFormsSec {
+        padding-left: 10px;
+    }
+    .techBannerBox {
+        margin-bottom: 60px;
+    }
+    .mainBannerBoxs .serviceBannerBox,
+    .weDeliverCertified.weCertified.boxs {
+        margin-bottom: 50px;
+    }
+    .ourCertificateBox:nth-child(2) {
+        margin: 0 auto;
+    }
+    .testimonialsListsBox .col-md-6:nth-child(3) {
+        width: 100%;
+        border-left: 0px;
+        border-top: 1px solid var(--colorBlack);
+        padding-top: 30px;
+        margin-bottom: 0px;
+    }
+    .aboutSlideImage span {
+        padding-left: 40px;
+    }
+    .flexBoxReverse .aboutSlideImage span {
+        padding-right: 40px;
+    }
+    /* Faqs Page Start */
+    .sideSection ul li a {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .contentSectionDetail .sideSection {
+        min-width: 220px;
+        width: 220px;
+        margin-right: 35px;
+    }
+    /* Faqs Page End */
+    .awardsSection {
+        width: 100%;
+    }
+    .recognitionInner.flexBox {
+        flex-direction: column;
+    }
+    .recognitionInner .awardsSection.awardsSectionMid {
+        order: -1;
+        /* padding-top: 0px; */
+        margin-bottom: 20px;
+    }
+    .recognitionInner .awardsSection {
+        padding: 0px;
+    }
+    .awardsSection .awardsCard:last-child {
+        margin-bottom: 20px;
+    }
+    .recognitionInner .awardsSection {
+        margin: 0px;
+    }
+    .statsSectionNew .statsCountNew {
+        margin-right: 20px;
+        padding: 30px 20px;
+    }
+    .statsSectionNew .statsSecNewTop {
+        margin-bottom: 50px;
+    }
+    .guideYouBtm {
+        padding: 35px 35px;
+    }
+    .guideYouRight {
+        padding-left: 20px;
+    }
+    .homeBanner.homeBannerNew {
+        padding: 60px 0 60px;
+    }
+    .hireDedicatedDevsNew .dedicatedDevsList ul li {
+        font-size: 18px;
+    }
+    .guideYouRight {
+        padding-left: 0;
+    }
+    .guideYouRight ul li {
+        width: 60%;
+    }
+    .guideYouRight ul li:nth-child(even) {
+        width: 40%;
+    }
+    .recognitionInnerNew .col-md-12.awardsCardMidSec{
+        order: -1;
+    }
+    
+    /*----------------------*/
+    /*--------------*/
+    .homeBanner.homeBannerNew {
+        padding: 0;
+    }
+    .serviceBannerBox{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .contactBanner {
+        padding: 50px 0 40px;
+    }
+    .contactBanner .mainBannerBox .col-sm-6 {
+        width: 100%;
+    }
+    .contactBanner .mainBannerBox .contactBannerRight {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .testimonialsBannerBox {
+        padding: 50px 0;
+    }
+    .clientQuotesList {
+        margin-top: 50px;
+    }
+    
+    /*----------------------*/
+    .newBannerChild .homeBannerBOx{
+        position: relative;
+    }
+    .newBannerChild .homeBannerBOx {
+        width: 500px;
+    }
+    .homeBannerNew2 .videoOverlay {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Home Page Start */
+    .queryInnerBox {
+        flex-wrap: wrap;
+    }
+    .queryInnerBox .queryRight {
+        padding-left: 0px;
+        /* margin-top: 40px; */
+    }
+    .queryInnerBox .queryLeft {
+        min-width: 100%;
+        width: 100%;
+    }
+    .querySection {
+        padding: 50px 0 50px;
+    }
+    .homeBannerBOx .col-sm-6 {
+        width: 100%;
+        /* margin-block-start: 30px; */
+    }
+    .homeBannerImg {
+        /* display: none; */
+        position: relative;
+        padding-top: 40px;
+        right: 0px;
+        height: 100%;
+        max-height: 100%;
+    }
+    .homeBannerImg span {
+        width: 75%;
+        height: auto;
+        position: relative;
+        float: right;
+        margin-right: -30px;
+    }
+    .fontSize28 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .homeBanner {
+        padding: 50px 0px 50px;
+    }
+    .fontSize48 {
+        font-size: 34px;
+        line-height: 39px;
+    }
+    .fontSize24 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .oneTeamRight p {
+        margin-bottom: 30px;
+        padding-right: 0px;
+    }
+    .ourSolutions,
+    .ourMottoSection,
+    .p80sec {
+        padding: 50px 0;
+    }
+    .mainSecHeading {
+        padding-bottom: 30px;
+    }
+    .btnStyle {
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .ourSoluitonsTop {
+        flex-wrap: wrap;
+    }
+    .ourSoluitonsTop .ourAppSolutions,
+    .ourSoluitonsTop .ourWebSolutions {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .appDevelopment .solutionBoxBanner {
+        /* padding-top: 35px; */
+    }
+    .ourSolutionsBottom .col-md-4 .solutionBoxBanner {
+        min-height: auto;
+    }
+    .stepsList .stepsListItem::before {
+        top: 12px;
+    }
+    .ourSolutionsBottom .col-md-4 .solutionBoxBanner h4 {
+        margin-bottom: 5px;
+    }
+    .ourSolutionsBottom .col-md-4 .solutionBoxBanner h4 br {
+        display: none;
+    }
+    .ourSolutionsBottom .col-md-4 {
+        margin-bottom: 20px;
+    }
+    .mottoGuide .mottoSubHeading {
+        margin-bottom: 12px;
+    }
+    .mottoGuide .mottoSubContent {
+        margin-bottom: 16px;
+    }
+    .ourMottoBox .col-sm-6 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .ourMottoBox .col-sm-6:last-child {
+        margin-bottom: 0px;
+    }
+    .mottoContent p {
+        line-height: 27px;
+        margin-bottom: 10px;
+    }
+    .oneTeamLeft {
+        width: min-content;
+        float: unset;
+        margin: 0 auto;
+    }
+    .oneTeamLeft .teamBuilds p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .ourSoluitonsTop .ourAppSolutions,
+    .ourSoluitonsTop .ourWebSolutions {
+        margin-bottom: 20px;
+    }
+    .fontSize36 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    .joinTeamSecIn {
+        flex-direction: column;
+    }
+    .joinTeamIntroCont {
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+    .joinTeamDetCont {
+        padding: 20px 0px 20px;
+        border-left: none;
+        border-top: 1px solid var(--colorWhite);
+    }
+    .ourTeamInner .ourTeamContent {
+        padding: 0px 15px;
+    }
+    .ourTeamInner .ourTeamContent {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .ourTeamBox {
+        margin-top: -70px;
+    }
+    .joinTeamSec.joinTeamSec2 {
+        /* padding-bottom: 90px; */
+        /* padding-bottom: 60px; */
+    }
+    .fontSize62 {
+        font-size: 50px;
+        line-height: 54px;
+    }
+    .topSubHeading.topSubHeading2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .navbar-expand-md .navbar-collapse.show,
+    .mainMenu .navbar-nav .nav-item.activeMenu .subMenus {
+        top: 60px;
+        height: 100%;
+    }
+    .mainMenu .navbar-nav .nav-item.activeMenu .subMenus {
+        /* height: calc(100vh - 60px); */
+        height: calc(100vh - 54px);
+    }
+    .navbar-expand-md .navbar-collapse.showBox {
+        top: -100%;
+    }
+    /* .aboutUsSec2 .row{
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .aboutUsSec2 .row .col-md-6{
+    padding-left: 15px;
+    padding-right: 15px;
+  } */
+    /* Home Page End */
+    /* Press Release And Detail Page Start */
+    .mainBannerLeft .topSubHeading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .mainBannerLeft .bannerHeading {
+        padding-bottom: 25px;
+    }
+    .bannerSmallContent {
+        padding-right: 0px;
+    }
+    .pressBanner.pressBannerMain {
+        padding: 60px 0px 60px;
+    }
+    .mainBannerBox .col-sm-6 {
+        width: 100%;
+    }
+    .mainBannerBox .pressBannerRight,
+    .mainBannerImg.mainBannerImg2 {
+        padding-left: 0px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .mainBannerImg.mainBannerImg2 img {
+        float: unset;
+    }
+    .pressReleaseInner .col-sm-6 {
+        width: 100%;
+    }
+    .ourProcDesc {
+        margin-top: 30px;
+    }
+    /* Press Release And Detail Page End */
+    /* Individual Case Study Start */
+    .aboutUsSection {
+        padding: 40px 0;
+    }
+    .aboutSliderBox .slidesCounter {
+        position: unset;
+        text-align: right;
+    }
+    .aboutSlidesInner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutSlideContent,
+    .aboutSlideImage {
+        width: auto;
+    }
+    .aboutSlideImage {
+        margin-top: 30px;
+    }
+    .weDeliverBox.weDeliverBox2 {
+        padding-top: 40px;
+    }
+    .faqSection {
+        padding: 40px 0;
+    }
+    .faqList {
+        padding: 25px 0;
+    }
+    .companyBlogs {
+        padding-bottom: 40px;
+    }
+    /* .blogListBox {
+    margin-top: 40px;
+  } */
+    .querySection {
+        padding: 40px 0;
+    }
+    .queryInnerBox {
+        display: block;
+    }
+    .queryInnerBox .queryRight {
+        padding: 40px 0 0;
+    }
+    .recognitionBox {
+        padding: 40px 0;
+    }
+    .recognitionInner {
+        flex-direction: column;
+    }
+    .recognitionInner .awardsSection:first-child {
+        padding: 0;
+        order: 2;
+        border: none;
+    }
+    .recognitionInner .awardsSection:nth-child(2) {
+        /* padding: 0 0 30px; */
+        order: 1;
+        border: none;
+    }
+    .recognitionInner .awardsSection:last-child {
+        order: 3;
+    }
+    .awardsSection .awardsCard,
+    .awardsSection .awardsCard:first-child {
+        /* padding: 30px 0; */
+        border: 0;
+        /* border-top: 2px solid var(--colorBlack); */
+        border: none;
+    }
+    .caseProcSecCont,
+    .caseDescSecCont,
+    .indusSecCont,
+    .p80sec {
+        padding: 40px 0;
+    }
+    .indusServCont {
+        padding: 40px 0 0;
+    }
+    .indusServCont.aboutIndusSecCont {
+        padding: 0 0 40px;
+    }
+    .indusImg img {
+        width: 100%;
+    }
+    .caseProcDescCont {
+        margin-top: 30px;
+    }
+    .caseStudyTechStkList .techStkItem {
+        flex-basis: 50%;
+    }
+    /* Individual Case Study End */
+    /* Our Process Start */
+    .ourProcBanner {
+        /*padding-top: 100px;*/
+    }
+    .procStepRow:nth-child(odd) {
+        justify-content: unset;
+    }
+    .procStepWrp {
+        width: 100%;
+    }
+    .procStepRow:nth-child(even) .procStepWrp {
+        flex-direction: row-reverse;
+    }
+    .procStepRow:nth-child(even) .procStepWrp {
+        border: 0;
+        border-left: 2px dashed #000;
+    }
+    .procStepRow:nth-child(even) .procStepWrp::after {
+        margin: 0;
+        margin-right: 20px;
+    }
+    .techStkItem {
+        flex: none;
+        flex-basis: 25%;
+    }
+    .joinTeamSecIn {
+        display: block;
+    }
+    .joinTeamIntroCont {
+        padding: 0 0 20px;
+    }
+    .joinTeamDetCont {
+        padding: 20px 0;
+        border: 0;
+        border-top: 1px solid var(--colorWhite);
+    }
+    /* Our Process End */
+    /* Testimonials Start */
+    .quoteCont .quoteContIn {
+        /* padding: 0; */
+        padding-top: 30px;
+        border-left: none;
+        /* border-top: 1px solid #000; */
+        border-top: none;
+        margin-bottom: 30px;
+    }
+    .quoteCont:first-child {
+        padding-top: 0;
+        border-top: none;
+    }
+    /* Testimonials End */
+    /* Technology Page Start */
+    .weDeliverListing .col-sm-4 {
+        margin-bottom: 30px;
+    }
+    .serviceBannerRight {
+        padding-top: 40px;
+        padding-left: 0;
+    }
+    .benefitsSection {
+        padding: 40px 0;
+    }
+    .benefitsInner {
+        display: block;
+    }
+    .benefitsInner .benefitsLeft,
+    .benefitsInner .benefitsRight {
+        width: 100%;
+    }
+    .benefitsInner .benefitsRight {
+        padding: 0;
+        padding-top: 30px;
+    }
+    .recognitionInner .awardsSection:first-child {
+        padding-top: 0;
+    }
+    .recognitionInner .awardsSection:last-child {
+        padding-bottom: 0;
+    }
+    /* Technology Page End */
+    /* Case Study Page Start */
+    .caseStudyBanner {
+        padding-bottom: 40px;
+    }
+    .caseStudyBanner .ourProcBannerBox {
+        padding: 40px 0;
+    }
+    .caseSec,
+    .caseSec:nth-child(even) {
+        margin-bottom: 40px;
+        background: none !important;
+    }
+    .caseSec:nth-child(even) {
+        padding-bottom: 40px;
+        background-color: var(--colorGrey6) !important;
+    }
+    .caseCont {
+        display: block;
+    }
+    .caseImgCont,
+    .caseSec:nth-child(even) .caseImgCont {
+        justify-content: center;
+    }
+    .caseTxtCont {
+        margin-top: 30px;
+        text-align: center;
+    }
+    /* Case Study Page End */
+    /* Career Page Start */
+    .lifeAtSec,
+    .opprTxtCont {
+        padding: 40px 0;
+    }
+    .opprImgCont {
+        justify-content: center;
+        text-align: center;
+    }
+    .hrmContacts {
+        margin-left: 25px;
+    }
+    /* Career Page End */
+    .serviceFor .serviceForLists {
+        display: block;
+    }
+    .serviceForBox {
+        padding-right: 0;
+    }
+    .serviceFor .serviceForLists .serviceForBox:first-child,
+    .serviceFor .serviceForLists .serviceForBox:last-child {
+        width: auto;
+    }
+    .caseStudyTechStkList .techStkItem {
+        flex-basis: 100%;
+    }
+    /* Our Process Start */
+    .procStepRow:nth-child(odd) .procStepWrp::before,
+    .procStepRow:nth-child(even) .procStepWrp::after {
+        width: 30px;
+        margin-right: 10px;
+    }
+    .procStep {
+        margin-bottom: 30px;
+    }
+    .procStepRow:nth-last-child(2) .procStep {
+        margin-bottom: 0;
+    }
+    .propStepEndCircle {
+        margin: 0;
+        transform: translateX(-50%);
+    }
+    .techStkItem {
+        /* flex-basis: 50%; */
+        flex-basis: 25%;
+        text-align: center;
+    }
+    /* Our Process End */
+    /* Case Study Page Start */
+    .indusServListsCont {
+        display: block;
+    }
+    .agileProcStepsCont {
+        display: block;
+    }
+    /* Case Study Page End */
+    .joinTeamDetLnk {
+        margin-top: 18px;
+    }
+    .recognitionInner {
+        flex-direction: column;
+    }
+    .recognitionInner .awardsSection,
+    .recognitionInner .awardsSection:last-child {
+        border-right: none;
+        /* padding: 30px 0px 0px; */
+    }
+    .recognitionInner .awardsSection.awardsSectionMid {
+        order: -1;
+        /* padding-top: 0px; */
+    }
+    .awardsMidImage img {
+        width: 130px;
+    }
+    .awardsCard .awardsImage span {
+        min-height: auto;
+    }
+    .awardsSection .awardsCard,
+    .recognitionInnerNew .awardsCard{
+        /* padding: 30px 0; */
+        padding: 20px;
+    }
+    .awardsMidContent .awardsMidHeading {
+        margin-top: 10px;
+    }
+    .weDeliverListing .col-sm-4 {
+        width: 100%;
+    }
+    .listCounts {
+        margin-bottom: 18px;
+    }
+    .deliverListBox .deliverListContent h3 {
+        margin-bottom: 10px;
+    }
+    .listCounts .listCounter2:before {
+        width: 14px;
+        left: -8px;
+    }
+    .listCounts .listCounter2:after {
+        right: -2px;
+    }
+    .projectSlides .col-sm-6 {
+        width: 100%;
+    }
+    .projectContentBox .projectSubHeading span {
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+    .projectSlideBanner {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .projectSlideBanner span {
+        display: inline-block;
+        width: 340px;
+        margin: 0 auto;
+    }
+    /* .projetsSlidersBox {
+        padding-bottom: 20px;
+    } */
+    .mainSecHeading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .secHeadingRight {
+        margin-top: 20px;
+    }
+    .quoteCont.col-md-6 {
+        /* padding-top: 30px;
+    padding-bottom: 30px;
+    border-left: none;
+    border-top: 2px solid var(--colorBlack); */
+        border-top: none;
+    }
+    .quoteCont {
+        border: none;
+    }
+    .quoteCont .quoteContIn {
+        padding: 30px 0 0px;
+        margin-bottom: 0px;
+    }
+    .quoteCont.col-md-6:last-child {
+        padding-bottom: 0px;
+    }
+    .blogsSection .col-sm-4 {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .blogsSection .col-sm-4:last-child {
+        margin-bottom: 0px;
+    }
+    .blogListBox .blogImage {
+        /* width: 400px; */
+    }
+    .blogDetails .blogDescription {
+        padding: 10px 0;
+    }
+    .fontSize16 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .queryInfoBanner {
+        margin-top: 30px;
+    }
+    .queryInfoBanner img {
+        width: 280px;
+    }
+    .footerTop .footerBox .footRight .col-sm-3 {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .footerTop .footerBox .footRight .col-sm-3:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+    }
+    .footBottomSec,
+    .footBottomSec:last-child {
+        width: 50%;
+    }
+    .ourSolutions,
+    .ourMottoSection,
+    .p80sec,
+    .recognitionBox,
+    .workRepositorySec,
+    .aboutUsSec2,
+    .ourProjectSlider,
+    .querySection,
+    .pressReleaseBoxs,
+    .howWorksBox,
+    .companyBlogs,
+    .latestNews,
+    .moreCasesSec,
+    .bizHeadsSec,
+    .weDeliverContentBox {
+        padding: 50px 0;
+    }
+    .aboutUsSec2 {
+        padding-bottom: 0px;
+    }
+    /* .deliverListBox {
+    margin-bottom: 25px;
+  } */
+    /* Home Page End */
+    /* Press Release And Detail Page Start */
+    .pressContentBox .pressBoxHeading {
+        line-height: 32px;
+    }
+    .pressReleaseInner .col-sm-6:last-child {
+        margin-bottom: 0px;
+    }
+    .customEditor p,
+    .customEditor .customUl li {
+        font-size: 18px;
+    }
+    .customEditor p {
+        margin-bottom: 17px;
+    }
+    .customEditor h3 {
+        font-size: 35px;
+        line-height: 42px;
+        margin: 25px 0px;
+    }
+    .pressContentDetail {
+        padding: 40px 0px 65px;
+    }
+    .howWorksInner .col-sm-6 {
+        width: 100%;
+    }
+    .howWorksImg {
+        padding-left: 0px;
+        padding-top: 40px;
+        text-align: center;
+    }
+    .howWorksImg img {
+        float: unset;
+        margin: 0 auto;
+    }
+    .recognitionBox.recognitionBox3 {
+        padding-top: 20px;
+    }
+    /* Press Release And Detail Page End */
+    /* Blog And Detail Page Start */
+    .mainBanner.blogDetailBanner {
+        display: flex;
+        flex-direction: column;
+    }
+    .blogDetailsBanner {
+        order: 1;
+        width: 100%;
+        position: relative;
+    }
+    .blogDetailsBanner span {
+        /* width: 60%; */
+        float: right;
+    }
+    .blogDetailBanner .mainBannerBox .col-sm-7 {
+        width: 100%;
+    }
+    .blogDetailBanner {
+        padding: 70px 0px 30px;
+    }
+    .blogDetailsBanner {
+        padding-top: 30px;
+    }
+    .blogBannerLeft h2 {
+        margin-bottom: 10px;
+    }
+    .blogBanner {
+        padding: 50px 0px 50px;
+    }
+    .subHeading2 {
+        padding-right: 0px;
+    }
+    .latestNewsBox .row .col-sm-6:nth-last-child(-n + 2) {
+        margin-bottom: 40px;
+    }
+    .latestNewsBox .row .col-sm-6:last-child {
+        margin-bottom: 0px;
+    }
+    /* Blog And Detail Page End */
+    /* About Page Start */
+    .aboutBanner {
+        background-position: left;
+    }
+    .aboutOneTeamSec .oneTeamLeft .teamBuilds {
+        padding: 20px 10px;
+    }
+    .aboutOneTeamSec .oneTeamLeft .teamBuilds.creativeNerds span,
+    .aboutOneTeamSec .oneTeamLeft .teamBuilds.productsDelivered span,
+    .aboutOneTeamSec .oneTeamLeft .teamBuilds.raisedInvestment span {
+        font-size: 40px;
+    }
+    .bizHeadsCont {
+        display: block;
+    }
+    .bizHeadsCol:last-child {
+        margin-top: 40px;
+    }
+    .reqTeamTxtCont {
+        text-align: center;
+    }
+    .reqTeamImgCont {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    /* About Page End */
+    .portfolioRow:nth-child(even)>.row {
+        flex-direction: column-reverse;
+    }
+    .techBannerBox {
+        margin-bottom: 0;
+        padding-bottom: 40px;
+    }
+    /* Contact Page */
+    .contactFormSec .contactformBg {
+        width: 100%;
+        height: 30%;
+    }
+    .contactMainForm.contactFormsSec {
+        padding-left: 0;
+    }
+    .queryInfoBox.contactFormsSec {
+        padding: 0px 0 40px;
+    }
+    .contactMainForm {
+        padding-bottom: 30px;
+    }
+    .submenuBoxs .subMenuLists:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .submenuBoxs {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .submenuBoxs:last-child {
+        margin-bottom: 0px;
+    }
+    .appProcessInner .col-sm-7,
+    .appProcessInner .col-sm-5 {
+        width: 100%;
+    }
+    .appProcessInner .appProcessBanner {
+        text-align: center;
+    }
+    .appProcess .serviceFor.serviceFor2,
+    .serviceFor .serviceForLists .serviceForBox:first-child {
+        padding-right: 0px;
+    }
+    .appProcess .serviceFor2 .serviceForLists .serviceForBox {
+        padding-bottom: 45px;
+    }
+    .productsListsBox .productsBox {
+        margin-bottom: 0px;
+    }
+    .productsListsBox .col-sm-6 {
+        margin-bottom: 50px;
+    }
+    .aboutUsSection2 .quotesList {
+        border-bottom: none;
+    }
+    .aboutUsSection2 .aboutUsSlidebox {
+        border-bottom: none;
+        padding-bottom: 0px;
+    }
+    .aboutUsSection.aboutUsSection3 .quotesList {
+        padding-bottom: 0px;
+    }
+    .aboutUsSection.aboutUsSection3 .quotesList:last-child {
+        padding-top: 0px;
+    }
+    .companySubmenu .submenuBoxs {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .companySubmenu .subMenuListsSec .subMenuHeadings {
+        padding-right: 0px;
+    }
+    .companySubmenu .subMenuListsSec .subMenuHeadings h5,
+    .companySubmenu .subMenuListsSec .subMenuHeadings .subMenuHeadings{
+        font-size: 22px;
+        line-height: 18px;
+    }
+    .companySubmenu .subMenuListsSec .subMenuHeadings p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .companySubmenu .menuLeft {
+        padding-bottom: 40px;
+    }
+    .ourProcBanner {
+        padding-top: 121px;
+    }
+    .agileProcStep {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 320px;
+        margin: 10px auto 20px;
+    }
+    .agileProcStep:first-child {
+        margin-left: auto;
+    }
+    .agileProcStepsCont {
+        text-align: center;
+    }
+    .agileProcStep:last-child {
+        margin-right: auto;
+        margin-bottom: 0px;
+    }
+    .agileProcStep:nth-child(even) {
+        margin-top: 10px;
+    }
+    .techStkRow {
+        margin-top: 40px;
+    }
+    .caseStudyTechStkList .techStkItem {
+        flex-basis: 50%;
+        text-align: left;
+        padding-right: 10px;
+    }
+    .techStkTitleWrp h3 {
+        font-size: 25px;
+    }
+    .techStkTitleWrp::after {
+        margin-left: 20px;
+    }
+    .caseStudyBnr .bannerSubHeading {
+        padding-right: 0px;
+    }
+    .studyBannerImage {
+        display: none;
+    }
+    .caseMobBanner {
+        display: block;
+    }
+    .caseStudyBanner .ourProcBannerBox.ourProcBannerBox2 .col-sm-6 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .caseStudyBanner .ourProcBannerBox.ourProcBannerBox2 .col-sm-6:last-child {
+        margin-bottom: 0px;
+    }
+    .caseStudyBanner .ourProcBannerBox.ourProcBannerBox2 {
+        padding-bottom: 0px;
+    }
+    .caseStudyBanner .ourProcBannerBox.ourProcBannerBox2 .ourProcBannerInfo .col-sm-6 {
+        margin-bottom: 20px;
+    }
+    .caseStudyBanner .ourProcBannerBox.ourProcBannerBox2 .ourProcBannerInfo .col-sm-6:last-child {
+        margin-bottom: 0px;
+    }
+    .caseStudyBanner {
+        padding-bottom: 0px;
+    }
+    .caseStudyBanner .ourProcBannerBox.ourProcBannerBox2 .ourProcBannerInfo .col-sm-6 {
+        width: 50%;
+    }
+    .indusSecCont .col-sm-6 {
+        width: 100%;
+    }
+    .agileProcStep .agileStepCircle img {
+        transform: rotate(90deg);
+    }
+    .agileProcStepsCont.agileProcStepsCont2 {
+        margin: 100px 0 80px;
+    }
+    .agileProcStep {
+        margin: 75px auto;
+    }
+    .agileProcStep:last-child {
+        margin-bottom: 0px;
+    }
+    .processStepsInner {
+        margin-top: 0px;
+        justify-content: center;
+    }
+    .processStepsInner .innerImg {
+        height: 65px;
+        width: 65px;
+    }
+    .processStepsInner .innerContent {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .agileProcStep:nth-child(odd) .processStepsInner {
+        margin-left: -6px;
+    }
+    .agileProcStep:nth-child(even) .processStepsInner {
+        margin-left: 6px;
+    }
+    .industrySecConent {
+        margin-top: 20px;
+    }
+    .aboutImgGrd .imgGrdCont {
+        margin-top: 20px;
+    }
+    .imgGrdCont .row:first-child .col-md-6:last-child .imgGrdCol .row {
+        width: auto;
+    }
+    .txtCont,
+    .imgGrdImgTxtV .txtCont {
+        margin-top: 20px;
+    }
+    .aboutWeDeliverBox {
+        padding: 40px 0 40px;
+    }
+    .contactFormSec .contactformBg {
+        display: none;
+    }
+    .queryLists ul li,
+    .querySubHeading.querySubHeading2 {
+        /* color: var(--colorOffBlack); */
+    }
+    .queryInfoContacts ul li,
+    .queryInfoContacts .querySubHeading.querySubHeading2 {
+        color: var(--colorOffBlack);
+    }
+    .queryInfoContacts .querySubHeading.querySubHeading2 {
+        padding-right: 0px;
+    }
+    .contactFormInner .querySubHeading.querySubHeading2 {
+        margin-bottom: 20px;
+    }
+    .contactFormsSec {
+        padding-top: 0;
+    }
+    .modal-content {
+        padding: 40px 30px 30px;
+    }
+    .modal-content .closeModal {
+        position: absolute;
+        right: 12px;
+        top: 5px;
+    }
+    .modal-content .closeModal button {
+        font-size: 25px;
+        line-height: 25px;
+        display: inline-block;
+        float: left;
+        font-weight: bold;
+    }
+    .testimonialVideo iframe {
+        height: 50vh;
+        width: 100%;
+    }
+    .testimonialsListsBox .col-md-6:nth-child(3) {
+        border-top: none;
+        padding-top: 0px;
+    }
+    .bannerSubHeading {
+        /* font-size: 25px; */
+        /* line-height: 30px; */
+    }
+    .latestNewsBox .col-sm-6 {
+        width: 100%;
+    }
+    .howWorksContent2 {
+        padding-right: 0px;
+    }
+    .weCertified {
+        width: auto;
+        display: block;
+        float: left;
+    }
+    .contentSectionDetail .sideSection {
+        display: none;
+    }
+    .contentSection {
+        padding-top: 45px;
+    }
+    .contentSectionTop {
+        margin-bottom: 45px;
+    }
+    .contentSectionDetail .secContents .secContHeading {
+        margin-bottom: 13px;
+    }
+    .contentSectionInner .contentSectionDetail .secContents {
+        margin-bottom: 30px;
+    }
+    .contentSectionTop .headingContent {
+        margin-bottom: 16px;
+    }
+    .projectSlideBox .ourProjectsSlides {
+        padding: 20px;
+    }
+    .projectSlideBox .ourProjectsSlides {
+        margin: 0 5px;
+    }
+    .ourSoluitonsTopNew .col-md-8,
+    .ourSoluitonsTopNew .col-md-4 {
+        margin-bottom: 0px;
+    }
+    .ourSoluitonsTop .ourAppSolutions,
+    .ourSoluitonsTop .ourWebSolutions {
+        margin-bottom: 0px;
+    }
+    .ourSoluitonsTopNew .col-md-8,
+    .ourSoluitonsTopNew .col-md-4 {
+        margin-bottom: 20px;
+    }
+    .statsSectionNew {
+        padding: 0px;
+    }
+    .statsSectionNew .statsCountNew h3 {
+        margin-bottom: 10px;
+    }
+    .guideYouRight {
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+    .hireDevsRight {
+        margin-top: 50px;
+    }
+    .hireDevsRight span {
+        text-align: center;
+    }
+    .projetsSlidersNew .projetsSlidersNewSec {
+        width: 100%;
+    }
+    .projetsSlidersNew.projetsSliders .projectSlideContent {
+        padding-left: 0px;
+    }
+    .viewWebsiteBox.viewWebsiteMobBtn {
+        display: block;
+    }
+    .viewWebsiteBox.viewWebsiteWebBtn {
+        display: none;
+    }
+    .projetsSliders.projetsSlidersNew.projetsSlidersApp .projectSlideContent {
+        padding: 0px;
+    }
+    .projetsSlidersNew .projectSlides {
+        padding: 0px 40px;
+    }
+    .projetsSlidersNew .serviceFor.serviceFor3 {
+        margin-top: 30px;
+        display: none;
+    }
+    .viewWebsiteBox.viewWebsiteMobBtn {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .viewWebsiteBox.viewWebsiteMobBtn a {
+        float: unset;
+    }
+    .projetsSlidersNew .projectSlideBanner span {
+        width: 100%;
+    }
+    .projetsSlidersNew .projectSlider {
+        padding: 30px 0;
+    }
+    .projetsSlidersNew.projetsSlidersApp .row {
+        flex-direction: column-reverse;
+    }
+    /* .viewAllCaseStudy {
+        padding-top: 50px;
+    } */
+    /* .projetsSlidersNew.projetsSliders {
+        padding-bottom: 50px;
+    } */
+    .bannerSubHeading.bannerSubHeadingNew {
+        font-size: inherit;
+    }
+    .hireDedicatedDevsNew .dedicatedDevsList ul li {
+        font-size: 16px;
+    }
+    .hireDevsLeft .mt-3 {
+        text-align: center;
+    }
+    .hireDevsLeft .mt-3 a {
+        float: unset;
+    }
+    .hireDevsLeft {
+        padding-right: 0px;
+    }
+    .ourClientsSliderNew .mainSecHeading h2 {
+        line-height: 40px;
+    }
+    .querySubHeading {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .quoteCont {
+        margin-bottom: 30px;
+    }
+    .joinDwLeftCol p {
+        padding-right: 0px;
+    }
+    
+    .couponListBox{
+        padding: 20px 20px;
+    }
+    .couponBottomRight .couponNameLink{
+        padding: 13px 20px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .couponsPageBoxs {
+        padding: 40px 0px;
+    }
+    .couponSection .couponSectionTop {
+        padding-bottom: 25px;
+    }
+    .couponFormBg{
+        position: relative;
+        height: 380px;
+        width: 100%;
+    }
+    .couponFormRight .col-sm-6{
+        width: 100%;
+    }
+    .couponFormInner .col-sm-6{
+        width: 50%;
+    }
+    .productsMenuBox .row{
+        margin: 0;
+    }
+    .subMenuListsSec .subMenuHeadings.newMenuItemDescription  p{
+        text-align: center;
+    }
+    .productsMenuBox .row .col-sm-12:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .mainMenu .navbar-nav .nav-item .neWMenuItemList {
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .caseStudyMore{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+}
+
+@media (max-width: 560px) {
+    /* Home Page Start */
+    .fontSize62 {
+        /* font-size: 44px;
+    line-height: 48px; */
+        font-size: 41px;
+        line-height: 46px;
+    }
+    .fontSize52 {
+        font-size: 34px;
+        line-height: 45px;
+    }
+    .homeBannerBOx .bannerHeading .smallHeadings {
+        font-size: 31px;
+        line-height: 35px;
+    }
+    .homeBannerLeft .bannerSubHeading {
+        margin-bottom: 20px;
+    }
+    .oneTeamLeft .productsDelivered span {
+        font-size: 56px;
+        line-height: 68px;
+    }
+    .teamLeftSec2 .teamBuilds span {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .oneTeamLeft .teamBuilds p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .oneTeamRight h3 {
+        margin-bottom: 15px;
+    }
+    .oneTeamRight p {
+        margin-bottom: 25px;
+    }
+    .fontSize48 {
+        font-size: 31px;
+        line-height: 37px;
+    }
+    .fontSize18 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .ourSolutionBox.ourSolutionBox2 .solutionBoxBanner,
+    .ourSolutionBox.ourSolutionBox2 .solutionBoxContnet {
+        width: 100%;
+    }
+    .ourSolutionBox.ourSolutionBox2 {
+        flex-direction: column;
+    }
+    .appDevelopment .solutionBoxBanner {
+        /* padding-top: 20px; */
+    }
+    .growthHacking {
+        flex-direction: column;
+    }
+    .growthHacking .growthHackingInner .grwothInnerBox {
+        padding: 20px 20px;
+    }
+    .fontSize32 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .fontSize36 {
+        font-size: 27px;
+        line-height: 33px;
+    }
+    .growthHackingInner h4 {
+        margin-bottom: 10px;
+    }
+    .growthHackingInner p {
+        line-height: 24px;
+        font-size: 15px;
+    }
+    .ourSolutionsBottom .col-md-4 .solutionBoxBanner {
+        /* padding: 20px; */
+    }
+    .mottoGuide .stepsList .stepsListItem {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .stepsList .stepsListItem {
+        margin-bottom: 10px;
+    }
+    .mottoContent .mottoHeading {
+        margin-bottom: 10px;
+    }
+    .mottoContent p {
+        padding-right: 0px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .ourTeamInner .ourTeamContent {
+        font-size: 23px;
+        line-height: 28px;
+    }
+    .awardsMidImage img {
+        width: 105px;
+    }
+    .awardsSection .awardsCard,
+    .recognitionInnerNew .awardsCard{
+        padding: 20px 20px;
+    }
+    .deliverListBox .deliverListContent p {
+        padding-right: 0px;
+    }
+    .weDeliverListing .col-sm-4:last-child {
+        margin-bottom: 0px;
+    }
+    .btnStyle {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .serviceFor.serviceFor3 .serviceForLists .serviceForBox:first-child,
+    .serviceFor .serviceForLists .serviceForBox:last-child {
+        width: 100%;
+        /* padding-right: 0px; */
+        /* padding-left: 0px; */
+    }
+    .projectSlideBanner {
+        margin-top: 25px;
+    }
+    .projectSlideBanner span {
+        width: 270px;
+    }
+    .slideCount .active {
+        font-size: 42px;
+    }
+    .projectSlideBox .ourProjectsSlides {
+        margin: 0 5px;
+    }
+    .companyBlogs.companyBlogs2 {
+        padding-bottom: 40px;
+    }
+    .querySubHeading {
+        padding-right: 0px;
+    }
+    .formDesign .form-control {
+        font-size: 14px;
+        line-height: 15px;
+        padding: 14px 14px;
+    }
+    .formDesign .form-group {
+        margin-bottom: 18px;
+    }
+    .footBtmRight {
+        flex-direction: column;
+    }
+    .footBottomMenu {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .footerMid .footSections .footSecBox {
+        margin-bottom: 40px;
+    }
+    .footerSpace {
+        padding: 25px 0 20px;
+    }
+    .socialLinks ul li a {
+        font-size: 18px;
+    }
+    .footBottomMenu ul li {
+        margin-right: 20px;
+    }
+    .copyrightBox {
+        margin-bottom: 15px;
+    }
+    .projetsSliders .projectSlideContent {
+        padding-top: 0px;
+    }
+    /* Home Page End */
+    .ourSolutions,
+    .ourMottoSection,
+    .p80sec,
+    .recognitionBox,
+    .workRepositorySec,
+    .aboutUsSec2,
+    .ourProjectSlider,
+    .querySection,
+    .homeBanner,
+    .weDeliverBox.weDeliverBox2,
+    .companyBlogs,
+    .oneTeamSection,
+    .pressReleaseBoxs,
+    .howWorksBox,
+    .latestNews,
+    .joinDwSec,
+    .aboutImgGrd,
+    .moreCasesSec,
+    .bizHeadsSec,
+    .contactBanner,
+    .blogBanner,
+    .testimonialsBannerBox,
+    .weDeliverContentBox {
+        padding: 40px 0;
+    }
+    .homeBannerImg span {
+        width: 90%;
+    }
+    /* Home Page End */
+    /* Press Release And Detail Page Start */
+    .mainBannerLeft .topSubHeading {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+    .mainBannerLeft .bannerHeading {
+        padding-bottom: 18px;
+    }
+    .pressBanner.pressBannerMain {
+        padding: 50px 0px 40px;
+    }
+    .mainBannerLeft .bannerSmallContent {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .pressContentBox {
+        padding: 20px 20px;
+    }
+    .pressContentBox .pressBoxHeading {
+        line-height: 30px;
+        font-size: 23px;
+    }
+    .pressDateTime span {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .pressContentBox .pressBoxSubheading {
+        margin-bottom: 15px;
+        padding-right: 0px;
+    }
+    .readMoreBox .btnStyle {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .socialLists {
+        margin-top: 25px;
+    }
+    .socialLists span a {
+        font-size: 22px;
+    }
+    .customEditor p,
+    .customEditor .customUl li {
+        font-size: 17px;
+    }
+    .customEditor .customUl li {
+        padding-left: 22px;
+    }
+    .customEditor h3 {
+        font-size: 30px;
+        line-height: 38px;
+        margin: 20px 0px;
+    }
+    .pressContentDetail {
+        padding: 40px 0px 40px;
+    }
+    /* Press Release And Detail Page End */
+    /* Blog And Detail Page Start */
+    .blogDetailsBanner span {
+        /* width: 92%; */
+        float: right;
+    }
+    .socialLists.socialLists2 {
+        margin-top: 17px;
+    }
+    .latestNewsBox .row .col-sm-6:nth-last-child(-n + 2) {
+        margin-bottom: 20px;
+    }
+    .latestNewsBox .row .col-sm-6:last-child {
+        margin-bottom: 0px;
+    }
+    .latestNewsBox .row .col-sm-6 {
+        margin-bottom: 20px;
+    }
+    .howWorksBlogs {
+        display: block;
+    }
+    .howWorksBlogs .blogImg,
+    .howWorksBlogs .blogImg img {
+        width: 100%;
+    }
+    .howWorksBlogs .blogDetails {
+        margin-top: 40px;
+    }
+    /* Blog And Detail Page End */
+    /* About Page Start */
+    .aboutBanner {
+        padding-bottom: 0;
+    }
+    .aboutOneTeamSec .oneTeamLeft .teamBuilds.creativeNerds span,
+    .aboutOneTeamSec .oneTeamLeft .teamBuilds.productsDelivered span,
+    .aboutOneTeamSec .oneTeamLeft .teamBuilds.raisedInvestment span {
+        font-size: 30px;
+    }
+    .aboutImgGrd .imgGrdCont {
+        margin-top: 40px;
+    }
+    /* About Page End */
+    /* Sidenav Start */
+    .submenuBoxs {
+        width: 100%;
+    }
+    .submenuInnerBox .menuRight {
+        padding: 30px 0px 30px 25px;
+    }
+    .submenuInnerBox .subMenuHeading2 {
+        font-size: 21px;
+        line-height: 25px;
+    }
+    .submenuInnerBox .subMenuList2 ul li a {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .submenuInnerBox .submenuSubhead {
+        font-size: 15px;
+    }
+    .submenuInnerBox .subMenuList ul li a {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .submenuBoxs {
+        padding-right: 0px;
+    }
+    .subMenuBtn {
+        margin-top: 30px;
+    }
+    /* Sidenav End */
+    .subMenuTopBanner {
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+        z-index: 9;
+        width: 74vw;
+    }
+    .quoteCont,
+    .blogsSection .col-sm-4 {
+        margin-bottom: 40px;
+    }
+    .bannerSubHeading {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .ourProcBannerInfo:first-child {
+        margin-top: 30px;
+    }
+    .ourProcBannerInfo .col-6 {
+        width: 100%;
+    }
+    .ourProcBannerInfo .col-6 .boxs {
+        padding: 25px 0px;
+        border-bottom: 2px solid var(--colorBlack);
+    }
+    .ourProcBannerInfo .col-6:first-child .boxs {
+        padding-top: 0px;
+    }
+    .ourProcBannerInfo .col-6:last-child .boxs {
+        padding-bottom: 0px;
+        border-bottom: none;
+    }
+    .procStepDesc {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .procStepTitle {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    .procStepSubtitle {
+        font-size: 15px;
+    }
+    .procStepsHead {
+        padding: 18px 0;
+    }
+    .procStepRowNoContent {
+        height: 35px;
+    }
+    .agileProcStepsCont,
+    .agileProcImg {
+        margin-top: 40px;
+    }
+    .techStkTitleWrp h3 {
+        font-size: 25px;
+    }
+    .techStkTitleWrp::after {
+        margin-left: 17px;
+        height: 4px;
+    }
+    .caseStudyBanner.caseStudyBanner2 {
+        margin-top: 60px;
+    }
+    .fontSize38 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .caseDescSecCont h2 {
+        margin-top: 30px;
+    }
+    .caseDescSecCont p {
+        margin-top: 20px;
+    }
+    .moreCasesCont .col-md-6 {
+        height: auto;
+        margin-top: 30px;
+    }
+    .mainSecHeading.mainSecHeading3.mainSecHeading6 {
+        margin-bottom: 0px;
+    }
+    .projChalSec .weDeliverTop {
+        padding-bottom: 30px;
+    }
+    .agileProcStep {
+        width: 290px;
+    }
+    .processStepsInner .innerImg {
+        height: 50px;
+        width: 50px;
+    }
+    .processStepsInner .innerContent {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .agileProcStepsCont {
+        margin: 100px 0;
+    }
+    .agileProcStepsCont.agileProcStepsCont2 {
+        margin: 90px 0 60px;
+    }
+    .caseDescSecCont h2:first-child {
+        margin-top: 0px;
+    }
+    .caseStudyBanner2 .mainBannerLeft .casestudySubHead {
+        padding-right: 0px;
+    }
+    .mainBannerLeft .caseStudyBannetTop .bannerHeading {
+        padding-bottom: 15px;
+    }
+    .submenuInnerBox .subMenuHeading {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    /* .submenuInnerBox .subMenuList ul li a {
+        padding-left: 18px;
+    } */
+    .aboutBanner .serviceBannerBox {
+        padding: 60px 0px 40px;
+    }
+    .highlightHeading span:before {
+        bottom: 8px;
+        height: 7px;
+    }
+    .hrmCont {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hrmcontent {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+    .hrmInfo {
+        width: 100%;
+    }
+    .hrmInfo,
+    .hrmContacts {
+        margin-left: 0px;
+        margin-bottom: 18px;
+    }
+    .hrmContacts {
+        margin-bottom: 0px;
+    }
+    .clientQuotesList {
+        margin-top: 30px;
+    }
+    .modal-content {
+        padding: 35px 20px 20px;
+    }
+    .aboutUsSection2 .quotesList {
+        padding: 40px 0;
+    }
+    .watchYTVidBtn {
+        font-size: 13px;
+    }
+    .watchYTVidBtn img {
+        width: 27px;
+    }
+    .watchYTVidBtn {
+        margin-top: 12px;
+    }
+    .statsSecNewTop {
+        flex-direction: column;
+    }
+    .statsSectionNew .statsCountNew {
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+    .statsSectionNew .statsCountNew:last-child {
+        margin-bottom: 0px;
+    }
+    .statsSectionNew .statsSecNewBtm p {
+        margin-bottom: 40px;
+    }
+    .joinTeamBtn {
+        margin-top: 30px;
+    }
+    .joinTeamSec.joinTeamSec2 {
+        /* padding-bottom: 40px; */
+    }
+    .guideYouBtm h4 {
+        margin-bottom: 15px;
+    }
+    .guideYouBtm {
+        padding: 25px 20px;
+    }
+    .testimonialSecTop .testimonialByImage {
+        width: 159px;
+        padding-right: 10px;
+    }
+    .opprTxtContNew {
+        align-items: center;
+        text-align: center;
+    }
+    .opprTxtContNew .hrmImg {
+        width: 100%;
+    }
+    .growthHackingInner.grwothHackInner .connectGrowth {
+        padding-left: 20px;
+        padding-bottom: 40px;
+    }
+    
+    /*-----------*/
+    .newBannerChild .homeBannerBOx {
+        width: 100%;
+    }
+    
+    /*----------------*/
+    
+    .couponListBottom{
+        flex-wrap: wrap;
+        margin-top: 12px;
+    }
+    .couponBottomLeft{
+        width: 100%;
+    }
+    .couponBottomRight{
+        margin-top: 15px;
+    }
+    .couponBottomRight .copyCoupon{
+        text-align: left;
+    }
+    .couponListBox{
+        margin-bottom: 15px;
+    }
+    .couponListTop .infoIcon{
+        height: 14px;
+        width: 14px;
+        min-width: 14px;
+    }
+    .couponBottomRight .couponNameLink {
+        padding: 11px 16px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .couponTypeSection{
+        padding: 20px 0px 30px;
+    }
+    .couponBottomLeft h3 {
+        margin: 4px 0px 10px;
+    }
+    .couponBottomLeft span{
+        line-height: 21px;
+        font-size: 15px;
+        display: inline-block;
+    }
+    .couponFormBg{
+        height: 300px;
+    }
+    .couponFormInner .col-sm-6 {
+        width: 100%;
+    }
+    .formDesign .couponFormInner .form-group {
+        margin-bottom: 12px;
+    }
+    
+    .mediaToolsBox{
+        flex-wrap: wrap;
+    }
+    .mediaToolsBox span{
+        width: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .serviceFor4 .serviceForLists .serviceForBox h4::before,
+    .serviceFor4 .serviceForLists .serviceForBox .serviceForBoxChild::before{
+        top: 7px;
+    }
+    .serviceFor4 .serviceForLists .serviceForBox h4, .serviceFor4 .serviceForLists .serviceForBox .serviceForBoxChild{
+        font-size: 16px;
+    }
+    .deliverListBox .deliverListContent h3.fontSize30 {
+        font-size: 20px;
+    }
+    .benefitsListsNew .mileStoneIcon{
+        margin-top: -2px;
+    }
+    
+    .videoOverlay{
+        display: none;
+    }
+}
+
+@media (max-width: 414px) {
+    /* Home Page Start */
+    .homeBannerImg span {
+        margin-right: -20px;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .oneTeamLeft .productsDelivered span {
+        font-size: 46px;
+        line-height: 46px;
+    }
+    .teamLeftSec2 .teamBuilds span {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .oneTeamLeft .teamBuilds p {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .teamLeftSec2 .teamBuilds:first-child {
+        margin-bottom: 40px;
+    }
+    .teamLeftSec2 .teamBuilds:last-child {
+        margin-top: 40px;
+    }
+    .fontSize48 {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .fontSize18 {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .mainSecHeading {
+        padding-bottom: 22px;
+    }
+    .appDevelopment .solutionBoxBanner h4 {
+        margin-bottom: 15px;
+    }
+    .fontSize20 {
+        /* font-size: 15px; */
+        line-height: 21px;
+        font-size: 16px;
+    }
+    .fontSize36 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .stepsList .stepsListItem {
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    .stepsList .stepsListItem::before {
+        width: 10px;
+    }
+    .stepsList.stepsList2 .stepsListItem {
+        margin-bottom: 13px;
+    }
+    .growthHackingInner p {
+        line-height: 22px;
+        font-size: 14px;
+    }
+    .mottoGuide .mottoSubHeading {
+        margin-bottom: 8px;
+    }
+    .mottoContent p {
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .joinTeamBtn {
+        margin-top: 25px;
+    }
+    .ourTeamInner .ourTeamContent {
+        font-size: 17px;
+        line-height: 23px;
+    }
+    .awardsMidImage img {
+        /* width: 90px; */
+    }
+    .awardsCard .awardsImage span img {
+        /* width: 70%; */
+    }
+    .recognitionInner .awardsSection,
+    .recognitionInner .awardsSection:last-child {
+        /* padding: 20px 0px 0px; */
+    }
+    .listCounts .listCounter::before {
+        font-size: 42px;
+        line-height: 34px;
+    }
+    .listCounts .listCounter2:after,
+    .listCounts .listCounter2:before {
+        height: 4px;
+    }
+    .listCounts {
+        margin-bottom: 12px;
+    }
+    .blogListBox .blogImage {
+        height: auto;
+    }
+    .fontSize22 {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .blogDetails .blogHeading a {
+        padding: 10px 0;
+    }
+    .fontSize14 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .blogDetails .blogTiming {
+        padding: 7px 0px 5px;
+    }
+    .queryformHeading {
+        margin-bottom: 20px;
+    }
+    .formDesign .form-control {
+        padding: 12px 12px;
+    }
+    .formBtn {
+        margin-top: 10px;
+    }
+    .customCheckbox input[type="checkbox"]:checked+label,
+    .customCheckbox input[type="checkbox"]:not(:checked)+label {
+        font-size: 14px;
+    }
+    .queryInnerBox .queryLeft {
+        padding: 20px 20px 40px;
+    }
+    .queryLists ul li {
+        line-height: 20px;
+    }
+    .formDesign .form-group {
+        margin-bottom: 14px;
+    }
+    .footBottomSec,
+    .footBottomSec:last-child {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .fontSize16 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .footMenuHeading {
+        margin-bottom: 7px;
+    }
+    .footMenuList ul li a {
+        font-size: 13px;
+    }
+    .footerMid .footSections .footSecBox {
+        margin-bottom: 30px;
+    }
+    .ourSolutions,
+    .ourMottoSection,
+    .p80sec,
+    .recognitionBox,
+    .workRepositorySec,
+    .aboutUsSec2,
+    .ourProjectSlider,
+    .querySection,
+    .homeBanner,
+    .weDeliverBox.weDeliverBox2,
+    .companyBlogs,
+    .oneTeamSection,
+    .pressReleaseBoxs,
+    .howWorksBox,
+    .latestNews,
+    .oneTeamSection,
+    .moreCasesSec,
+    .aboutImgGrd,
+    .bizHeadsSec,
+    .joinDwSec,
+    .contactBanner,
+    .blogBanner,
+    .testimonialsBannerBox,
+    .weDeliverContentBox {
+        padding: 35px 0;
+    }
+    .topSubHeading.topSubHeading2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .footerTop .footerBox .footRight .col-sm-3 {
+        width: 100%;
+    }
+    .footerTop .footerBox .footRight .col-sm-3:nth-last-child(-n + 2) {
+        margin-bottom: 30px;
+    }
+    .footerTop .footerBox .footRight .col-sm-3:last-child {
+        margin-bottom: 0px;
+    }
+    .fontSize62 {
+        /* font-size: 38px;
+    line-height: 47px; */
+        font-size: 33px;
+        line-height: 38px;
+    }
+    .mainBannerLeft .topSubHeading {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    /* Home Page End */
+    /* Press Release And Detail Page Start */
+    .pressBanner2 {
+        padding: 110px 0px 40px;
+    }
+    /* Press Release And Detail Page End */
+    /* Blog And Detail Page Start */
+    .blogDetailBanner {
+        padding: 50px 0px 15px;
+    }
+    .newsBoxs .newsImage {
+        height: 120px;
+        width: 120px;
+        min-width: 120px;
+    }
+    .latestNewsBox .row .col-sm-6 {
+        margin-bottom: 20px;
+    }
+    /* Blog And Detail Page End */
+    .clientProductInfo .productKeys ul li {
+        margin-right: 18px;
+        font-size: 13px;
+    }
+    .companySubmenu .subMenuListsSec .subMenuHeadings h5,
+    .companySubmenu .subMenuListsSec .subMenuHeadings .subMenuHeadings{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .companySubmenu .subMenuListsSec .subMenuHeadings p {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .companySubmenu .submenuBoxs .aboutMenuImage {
+        width: 75px;
+        min-width: 75px;
+        height: 75px;
+    }
+    .companySubmenu .submenuBoxs {
+        margin-bottom: 25px;
+    }
+    .subMenuTopBanner {
+        width: 330px;
+        right: -25px;
+    }
+    .ourSolutionBox .solutionBoxBanner h4,
+    .growthHackingInner h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .mottoContent .mottoTags {
+        margin-bottom: 5px;
+    }
+    .quoteCont,
+    .blogsSection .col-sm-4 {
+        margin-bottom: 30px;
+    }
+    .footMenuList ul li:not(:last-child) {
+        margin-bottom: 8px;
+    }
+    .footerTop {
+        padding: 30px 0 30px;
+    }
+    .footerMid .footerSpace {
+        padding: 30px 0 0px;
+    }
+    .companyBlogs.companyBlogs2 {
+        padding-bottom: 30px;
+    }
+    .caseSec,
+    .caseSec:nth-child(even) {
+        margin-bottom: 6px;
+    }
+    .bannerSubHeading {
+        /* font-size: 20px;
+        line-height: 26px; */
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .ourProcBannerInfo:first-child {
+        margin-top: 30px;
+    }
+    .ourProcDesc {
+        margin-top: 20px;
+    }
+    .p60sec {
+        padding: 40px 0;
+    }
+    .ourProcBanner {
+        padding-top: 110px;
+    }
+    .ourProcBannerInfo:first-child {
+        margin-top: 30px;
+    }
+    .agileProcStep {
+        width: 270px;
+    }
+    .agileProcImg {
+        margin-top: 30px;
+    }
+    .techStkItem {
+        flex-basis: 33%;
+    }
+    .techStkItem img {
+        object-fit: contain;
+        width: 100%;
+    }
+    .techStkTitleWrp h3 {
+        font-size: 21px;
+    }
+    .techStkItemLabel {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .caseStudyTechStkList .techStkItem {
+        margin-top: 13px;
+    }
+    .caseStudyTechStkList .techStkItem {
+        flex-basis: 100%;
+    }
+    .caseStudyTechStkList p:last-child {
+        margin-top: 4px;
+    }
+    .caseStudyTechStkList {
+        margin-top: 7px;
+    }
+    .anotherCaseTxt {
+        padding: 35px 20px;
+    }
+    .fontSize32 {
+        font-size: 23px;
+        line-height: 28px;
+    }
+    .caseStudyBanner .ourProcBannerBox.ourProcBannerBox2 .col-sm-6 {
+        margin-bottom: 20px;
+    }
+    .indusInfoCont .indusInfoContent p {
+        margin-bottom: 10px;
+        line-height: 26px;
+    }
+    .indusServCont {
+        padding: 30px 0 0;
+    }
+    .caseProcDescCont {
+        margin-top: 18px;
+    }
+    .agileProcStepsCont {
+        margin-top: 28px;
+    }
+    .caseDescSecCont h2 {
+        margin-top: 0px;
+    }
+    .caseDescSecCont p+h2 {
+        margin-top: 35px;
+    }
+    .fontSize38 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .mainSecHeading .mainSubHeading {
+        margin-bottom: 19px;
+    }
+    .techStkRow {
+        margin-top: 30px;
+    }
+    .techStkRow:first-child {
+        margin-top: 15px;
+    }
+    .processStepsInner .innerContent {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .indusServList2 li {
+        width: 100%;
+        padding-right: 0;
+    }
+    .caseStudyBanner .ourProcBannerBox.ourProcBannerBox2 .ourProcBannerInfo .col-sm-6 {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .caseStudyBanner .ourProcBannerBox.ourProcBannerBox2 .ourProcBannerInfo .col-sm-6:first-child .studyBannerList {
+        padding-top: 0px;
+    }
+    .caseStudyBanner .ourProcBannerBox.ourProcBannerBox2 .ourProcBannerInfo .col-sm-6:last-child .studyBannerList {
+        padding-bottom: 0px;
+        border-bottom: none;
+    }
+    .caseStudyBanner .ourProcBannerBox.ourProcBannerBox2 .ourProcBannerInfo .col-sm-6 .studyBannerList {
+        padding: 14px 0;
+        border-bottom: 2px solid var(--colorBlack);
+    }
+    .caseStudyBanner .ourProcBannerInfo {
+        padding: 15px 0;
+    }
+    .caseStudyBanner .ourProcBannerInfo p {
+        margin-bottom: 5px;
+    }
+    .caseStudyBanner2 .mainBannerLeft .casestudySubHead {
+        font-size: 21px;
+        line-height: 26px;
+    }
+    .aboutBanner .serviceBannerBox {
+        padding: 50px 0px 30px;
+    }
+    .aboutImgGrd .imgGrdCont {
+        margin-top: 15px;
+    }
+    .txtCont,
+    .imgGrdImgTxtV .txtCont {
+        margin-top: 15px;
+    }
+    .imgGrdCont .row:first-child .col-md-6,
+    .imgGrdCont .row:last-child .col-md-6 {
+        margin-top: 10px;
+    }
+    .joinDwLeftCol p {
+        margin-top: 16px;
+    }
+    .joinDwApplyBtnCont {
+        margin-top: 25px;
+    }
+    .joinDwRightCol .row {
+        margin-top: 18px;
+    }
+    .highlightHeading span:before {
+        bottom: 7px;
+        height: 7px;
+    }
+    .contactFormInner .btnSpace {
+        padding-bottom: 0px;
+    }
+    .techBannerBox {
+        padding-bottom: 40px;
+    }
+    .awardBoxsTop {
+        margin-bottom: 20px;
+    }
+    .ourCertificate {
+        padding: 15px 15px 20px;
+    }
+    .weCertified {
+        margin-top: 30px;
+    }
+    .mainBannerBoxs .serviceBannerBox,
+    .weDeliverCertified.weCertified.boxs {
+        margin-bottom: 40px;
+    }
+    .testimonialVideo iframe {
+        height: auto;
+    }
+    .modal-content {
+        padding: 35px 15px 15px;
+    }
+    .modal-content .closeModal {
+        right: 8px;
+        top: 2px;
+    }
+    .aboutUsSection2 .quotesList {
+        padding: 30px 0;
+    }
+    .contentSectionTop {
+        margin-bottom: 30px;
+    }
+    .contentSectionDetail .secContents .secContText p {
+        margin-bottom: 10px;
+        line-height: 23px;
+    }
+    
+    /*--------------*/
+    .offshoreForm{
+        padding: 30px 15px 50px;
+    }
+    .rc-anchor-normal .rc-anchor-pt{
+        margin: 2px 25px 0 0 !important;
+    }
+    .wpcf7-form-control > div{
+        transform: scale(0.9);
+        margin-left: -14px;
+    }
+    /*.wpcf7-form-control > div{*/
+    /*    width: 270px !important;*/
+    /*}*/
+    /*.wpcf7 .wpcf7-recaptcha iframe,*/
+    /*.rc-anchor-normal{*/
+    /*    width: 100% !important;*/
+    /*}*/
+    /*.rc-anchor-normal .rc-anchor-checkbox-label{*/
+    /*    width: 100px !important;*/
+    /*}*/
+    /*.rc-anchor-normal .rc-anchor-content{*/
+    /*    width: 170px !important;*/
+    /*}*/
+    /*.rc-anchor-logo-portrait{*/
+    /*    margin: 10px 0 0 -9px !important;*/
+    /*}*/
+}
