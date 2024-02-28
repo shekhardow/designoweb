@@ -40,19 +40,7 @@ class AdminModel extends Model{
     }
 
     public function insertBlog($request,$blog_image){
-        $slug = strtolower($request['blog_name']);
-        $slug = str_replace(" ", "-", $slug);
-        $slug = str_replace(",", "", $slug);
-        $slug = str_replace("'", "", $slug);
-        $slug = str_replace("(", "", $slug);
-        $slug = str_replace(")", "", $slug);
-        $slug = str_replace("[", "", $slug);
-        $slug = str_replace("]", "", $slug);
-        $slug = str_replace("{", "", $slug);
-        $slug = str_replace("}", "", $slug);
-        $slug = str_replace(":", "", $slug);
-        $slug = str_replace("--", "-", $slug);
-        $slug = str_replace("---", "-", $slug);
+        $slug = generateSlug($request['blog_name']);
         $data=[
             'blog_title'        => $request['blog_name'],
             'blog_description'  => $request['blog_description'],
@@ -66,19 +54,7 @@ class AdminModel extends Model{
     }
 
     public function updateBlogDetails($request,$blog_image,$blog_id){
-        $slug = strtolower($request['blog_name']);
-        $slug = str_replace(" ", "-", $slug);
-        $slug = str_replace(",", "", $slug);
-        $slug = str_replace("'", "", $slug);
-        $slug = str_replace("(", "", $slug);
-        $slug = str_replace(")", "", $slug);
-        $slug = str_replace("[", "", $slug);
-        $slug = str_replace("]", "", $slug);
-        $slug = str_replace("{", "", $slug);
-        $slug = str_replace("}", "", $slug);
-        $slug = str_replace(":", "", $slug);
-        $slug = str_replace("--", "-", $slug);
-        $slug = str_replace("---", "-", $slug);
+        $slug = generateSlug($request['blog_name']);
         $data=[
             'blog_title'        => $request['blog_name'],
             'blog_description'  => $request['blog_description'],
@@ -99,19 +75,7 @@ class AdminModel extends Model{
     }
 
     public function insertPressRelease($request,$press_release_image){
-        $slug = strtolower($request['press_release_title']);
-        $slug = str_replace(" ", "-", $slug);
-        $slug = str_replace(",", "", $slug);
-        $slug = str_replace("'", "", $slug);
-        $slug = str_replace("(", "", $slug);
-        $slug = str_replace(")", "", $slug);
-        $slug = str_replace("[", "", $slug);
-        $slug = str_replace("]", "", $slug);
-        $slug = str_replace("{", "", $slug);
-        $slug = str_replace("}", "", $slug);
-        $slug = str_replace(":", "", $slug);
-        $slug = str_replace("--", "-", $slug);
-        $slug = str_replace("---", "-", $slug);
+        $slug = generateSlug($request['press_release_title']);
         $data=[
             'press_release_title'        => $request['press_release_title'],
             'press_release_description'  => $request['press_release_description'],
@@ -125,19 +89,7 @@ class AdminModel extends Model{
     }
 
     public function updatePressReleaseDetails($request,$press_release_image,$press_release_id){
-        $slug = strtolower($request['press_release_title']);
-        $slug = str_replace(" ", "-", $slug);
-        $slug = str_replace(",", "", $slug);
-        $slug = str_replace("'", "", $slug);
-        $slug = str_replace("(", "", $slug);
-        $slug = str_replace(")", "", $slug);
-        $slug = str_replace("[", "", $slug);
-        $slug = str_replace("]", "", $slug);
-        $slug = str_replace("{", "", $slug);
-        $slug = str_replace("}", "", $slug);
-        $slug = str_replace(":", "", $slug);
-        $slug = str_replace("--", "-", $slug);
-        $slug = str_replace("---", "-", $slug);
+        $slug = generateSlug($request['press_release_title']);
         $data=[
             'press_release_title'        => $request['press_release_title'],
             'press_release_description'  => $request['press_release_description'],
@@ -163,19 +115,7 @@ class AdminModel extends Model{
     }
 
     public function insertCaseStudies($request,$case_banner,$case_front_image,$client_wanted_banner,$case_detail_screen_banner,$case_detail_card_image,$client_image){
-        $slug = strtolower($request['project_name']);
-        $slug = str_replace(" ", "-", $slug);
-        $slug = str_replace(",", "", $slug);
-        $slug = str_replace("'", "", $slug);
-        $slug = str_replace("(", "", $slug);
-        $slug = str_replace(")", "", $slug);
-        $slug = str_replace("[", "", $slug);
-        $slug = str_replace("]", "", $slug);
-        $slug = str_replace("{", "", $slug);
-        $slug = str_replace("}", "", $slug);
-        $slug = str_replace(":", "", $slug);
-        $slug = str_replace("--", "-", $slug);
-        $slug = str_replace("---", "-", $slug);
+        $slug = generateSlug($request['project_name']);
         $data=[
             'project_name'               => $request['project_name'],
             'slug'                       => $slug,
@@ -215,19 +155,8 @@ class AdminModel extends Model{
     }
 
     public function updateCaseStudies($request,$case_banner,$case_front_image,$client_wanted_banner,$case_detail_screen_banner,$case_detail_card_image,$client_image,$case_study_id){
-        $slug = strtolower($request['project_name']);
-        $slug = str_replace(" ", "-", $slug);
-        $slug = str_replace(",", "", $slug);
-        $slug = str_replace("'", "", $slug);
-        $slug = str_replace("(", "", $slug);
-        $slug = str_replace(")", "", $slug);
-        $slug = str_replace("[", "", $slug);
-        $slug = str_replace("]", "", $slug);
-        $slug = str_replace("{", "", $slug);
-        $slug = str_replace("}", "", $slug);
-        $slug = str_replace(":", "", $slug);
-        $slug = str_replace("--", "-", $slug);
-        $slug = str_replace("---", "-", $slug);
+        $slug = generateSlug($request['project_name']);
+        // dd($request['given_services']); die;
         $data=[
             'project_name'               => $request['project_name'],
             'slug'                       => $slug,

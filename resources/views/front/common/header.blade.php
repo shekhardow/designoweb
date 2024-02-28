@@ -5,100 +5,152 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-Frame-Options" content="DENY">
+    
     <?php if(!empty($title)){ ?>
-        <title><?php echo !empty($meta_title) ? @$meta_title : @$title." | Designoweb Technologies"; ?></title>
+    <title><?php echo !empty($meta_title) ? @$meta_title : @$title." | Designoweb Technologies"; ?></title>
     <?php }else{ ?>
-        <title><?php echo "404 Not Found | Designoweb Technologies"; ?></title>
+    <title><?php echo "404 Not Found | Designoweb Technologies"; ?></title>
     <?php } ?>
     <?php if(!empty($meta_description)){ ?>
-        <meta name="description" content="<?php echo @$meta_description; ?>" />
+    <meta name="description" content="<?php echo @$meta_description; ?>" />
     <?php } ?>
     <?php if(!empty($meta_keywords)){ ?>
-        <meta name="keywords" content="<?php echo @$meta_keywords; ?>" />
+    <meta name="keywords" content="<?php echo @$meta_keywords; ?>" />
     <?php } ?>
     
-    <link rel="canonical" href="<?php echo url('/').$_SERVER['REQUEST_URI'] ?>" />
     
+     @stack('scalie_css')
+    
+    <!--<link rel="canonical" href="<?php // echo url('/').$_SERVER['REQUEST_URI'] ?>" />-->
+    
+    
+    <!-- Open Graph / Facebook -->
+    <!--<meta property="og:type" content="website">-->
+    <!--<meta property="og:url" content="https://designoweb.com/">-->
+    <!--<meta property="og:title" content="App Development Company in India & USA | Designoweb Technologies">-->
+    <!--<meta property="og:description" content="Designoweb Technologies is a leading mobile app development company with a global presence in India & USA. We specialize in delivering digital solutions to startups & enterprises worldwide.">-->
+    <!--<meta property="og:image" content="https://secure.designoweb.com/public/front/images/logonew.png">-->
+    
+    
+    <link rel="canonical" href="{{ url()->current() }}">
+    <link rel="favicon" type="image/ico" href="https://designoweb.com/favicon.ico"/>
     
     <?php if(@$title == "FoodX"){ ?>
         <!--<link rel="stylesheet" href="<?php // echo url('public/front/css/common/bootstrap.min.css'); ?>" />-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+        <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
         <link rel="stylesheet" href="<?php echo url('public/front/css/foodx/style.css?v:37.3'); ?>" />
         <link rel="stylesheet" href="<?php echo url('public/front/css/foodx/media.css?v:37.1'); ?>" />
-        
-        <link href="<?php echo url('public/front/img/fav.svg'); ?>" rel="icon" type="icon/image" />
+        <!--<link href="<?php // echo url('public/front/images/fav.ico'); ?>" rel="icon" type="icon/image" />-->
         <!--<link href="<?php // echo url('public/front/css/bootstrap.min.css'); ?>" rel="stylesheet" />-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">-->
+        <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"/>
+        <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
         <link href="<?php echo url('public/front/css/slick.css'); ?>" rel="stylesheet" />
         <link href="<?php echo url('public/front/css/slick-theme.css?v:1.1'); ?>" rel="stylesheet" />
         <link href="<?php echo url('public/front/css/intlTelInput.min.css?v:1.1'); ?>" rel="stylesheet" />
-        <link href="<?php echo url('public/front/css/style.css?v:32.6'); ?>" rel="stylesheet" />
-        <link href="<?php echo url('public/front/css/media.css?v:32.6'); ?>" rel="stylesheet" />
+        <link href="<?php echo url('public/front/css/style.css?v:35.1'); ?>" rel="stylesheet" rel="preload" as="style" />
+        <link href="<?php echo url('public/front/css/style.css?v:35.1'); ?>" rel="stylesheet" rel="stylesheet" />
+        <link defer href="<?php echo url('public/front/css/media.css?v:35.1'); ?>" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"/>
         <link rel="stylesheet" href="<?php echo url('public/front/css/global.css?v:36.8'); ?>" />
         
     <?php }elseif(@$title == "GrocerX"){ ?>
     	<!--<link rel="stylesheet" href="<?php // echo url('public/front/css/common/bootstrap.min.css'); ?>" />-->
-    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    	<link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
     	<link rel="stylesheet" href="<?php echo url('public/front/css/grocerx/style.css?v:36.7'); ?>" />
     	<link rel="stylesheet" href="<?php echo url('public/front/css/grocerx/media.css?v:37.2'); ?>" />
-        
-        <link href="<?php echo url('public/front/img/fav.svg'); ?>" rel="icon" type="icon/image" />
+        <!--<link href="<?php // echo url('public/front/images/fav.ico'); ?>" rel="icon" type="icon/image" />-->
         <!--<link href="<?php // echo url('public/front/css/bootstrap.min.css'); ?>" rel="stylesheet" />-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">-->
+        <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"/>
+        <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
         <link href="<?php echo url('public/front/css/slick.css'); ?>" rel="stylesheet" />
         <link href="<?php echo url('public/front/css/slick-theme.css?v:1.1'); ?>" rel="stylesheet" />
         <link href="<?php echo url('public/front/css/intlTelInput.min.css?v:1.1'); ?>" rel="stylesheet" />
-        <link href="<?php echo url('public/front/css/style.css?v:32.6'); ?>" rel="stylesheet" />
-        <link href="<?php echo url('public/front/css/media.css?v:32.6'); ?>" rel="stylesheet" />
+        <link href="<?php echo url('public/front/css/style.css?v:35.1'); ?>" rel="stylesheet" rel="preload" as="style" />
+        <link href="<?php echo url('public/front/css/style.css?v:35.1'); ?>" rel="stylesheet" rel="stylesheet" />
+        <link defer href="<?php echo url('public/front/css/media.css?v:35.1'); ?>" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"/>
         <link rel="stylesheet" href="<?php echo url('public/front/css/global.css?v:36.9'); ?>" />
         
     <?php }elseif(@$title == "MedX"){ ?>
         <!--<link rel="stylesheet" href="<?php // echo url('public/front/css/common/bootstrap.min.css'); ?>" />-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+        <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
         <link rel="stylesheet" href="<?php echo url('public/front/css/medx/style.css?v:36.3'); ?>" />
         <link rel="stylesheet" href="<?php echo url('public/front/css/medx/media.css?v:36.5'); ?>" />
-        
-        <link href="<?php echo url('public/front/img/fav.svg'); ?>" rel="icon" type="icon/image" />
+        <!--<link href="<?php // echo url('public/front/images/fav.ico'); ?>" rel="icon" type="icon/image" />-->
         <!--<link href="<?php // echo url('public/front/css/bootstrap.min.css'); ?>" rel="stylesheet" />-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">-->
+        <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"/>
+        <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
         <link href="<?php echo url('public/front/css/slick.css'); ?>" rel="stylesheet" />
         <link href="<?php echo url('public/front/css/slick-theme.css?v:1.1'); ?>" rel="stylesheet" />
         <link href="<?php echo url('public/front/css/intlTelInput.min.css?v:1.1'); ?>" rel="stylesheet" />
-        <link href="<?php echo url('public/front/css/style.css?v:32.6'); ?>" rel="stylesheet" />
-        <link href="<?php echo url('public/front/css/media.css?v:32.6'); ?>" rel="stylesheet" />
+        <link href="<?php echo url('public/front/css/style.css?v:35.1'); ?>" rel="stylesheet" rel="preload" as="style" />
+        <link href="<?php echo url('public/front/css/style.css?v:35.1'); ?>" rel="stylesheet" rel="stylesheet" />
+        <link defer href="<?php echo url('public/front/css/media.css?v:35.1'); ?>" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"/>
         <link rel="stylesheet" href="<?php echo url('public/front/css/global.css?v:36.8'); ?>" />
         
     <?php }else{ ?>
-        <link href="<?php echo url('public/front/img/fav.svg'); ?>" rel="icon" type="icon/image" />
+    
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://designoweb.com/">
+        <meta property="og:title" content="App Development Company in India & USA | Designoweb Technologies">
+        <meta property="og:description" content="Designoweb Technologies is a leading mobile app development company with a global presence in India & USA. We specialize in delivering digital solutions to startups & enterprises worldwide.">
+        <meta property="og:image" content="https://designoweb.com/public/front/images/ogImage.png">
+    
+        <!--<link href="<?php // echo url('public/front/images/fav.ico'); ?>" rel="icon" type="icon/image" />-->
         <!--<link href="<?php // echo url('public/front/css/bootstrap.min.css'); ?>" rel="stylesheet" />-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">-->
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css">-->
+        <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"/>
+        <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
         <link href="<?php echo url('public/front/css/slick.css'); ?>" rel="stylesheet" />
         <link href="<?php echo url('public/front/css/slick-theme.css?v:1.1'); ?>" rel="stylesheet" />
         <link href="<?php echo url('public/front/css/intlTelInput.min.css?v:1.1'); ?>" rel="stylesheet" />
-        <link href="<?php echo url('public/front/css/style.css?v:34.6'); ?>" rel="stylesheet" />
-        <link href="<?php echo url('public/front/css/media.css?v:33.5'); ?>" rel="stylesheet" />
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <link href="<?php echo url('public/front/css/style.css?v:35.2'); ?>" rel="stylesheet" rel="preload" as="style" />
+        <!--<link href="<?php // echo url('public/front/css/style.css?v:35.1'); ?>" rel="stylesheet" rel="stylesheet" />-->
+        <link defer href="<?php echo url('public/front/css/media.css?v:35.1'); ?>" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"/>
     
     <?php } ?>
     
     <!-- Google tag (gtag.js) Start -->
-    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-5KZ1PBQQGB"></script>
-    <script async defer>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-5KZ1PBQQGB');
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-5KZ1PBQQGB"></script>-->
+    <script async>
+        // window.dataLayer = window.dataLayer || [];
+        // function gtag(){dataLayer.push(arguments);}
+        // gtag('js', new Date());
+        // gtag('config', 'G-5KZ1PBQQGB');
     </script>
     <!-- Google tag (gtag.js) End -->
+    
+    
+    <script>
+        function loadGTM() {
+            var gtmScript = document.createElement('script');
+            gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-5KZ1PBQQGB';
+            gtmScript.async = true;
+            document.body.appendChild(gtmScript);
+        }
+        setTimeout(loadGTM, 7000);
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5KZ1PBQQGB');
+        // gtag('config', 'GTM-TWNHWBX');
+    </script>
+    
+    
+    
     
     <!--Organisation Schema For SEO Start-->
     <script type="application/ld+json" async>
@@ -246,172 +298,97 @@
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
                                         <a class="nav-link menuLink" href="javascript:void(0)">Services</a>
-                                        <div class="subMenusOuter boxs">
+                                        <div class="subMenusOuter subMenusOuterNew boxs">
                                             <div class="subMenusBox"></div>
-                                            <div class="subMenus boxs">
+                                            <div class="subMenus boxs" >
                                                 <span class="closeSubMenu"><a href="javascript:void(0)" class="closeSubMenuLink">X</a></span>
                                                 <div class="submenuInner servicesSubmenu boxs">
                                                     <div class="submenuInnerBox boxs">
                                                         <div class="container">
-                                                            <div class="submenuDropbox boxs">
-                                                                <div class="menuLeft boxs">
+                                                            <div class="submenuDropbox boxs flexBox">
+                                                                <div class="menuLeft boxs flexBox">
+
                                                                     <div class="submenuBoxs boxs">
                                                                         <div class="subMenuLists boxs">
                                                                             <span class="subMenuHeading boxs">
-                                                                                <a class="subMenuLinks" href="<?php echo route('front/services_ui_ux_design'); ?>">UI/UX Design</a>
+                                                                                <a class="subMenuLinks" href="<?php echo route('designSolutions'); ?>">Design Solutions</a>
                                                                             </span>
                                                                             <div class="subMenuList boxs">
                                                                                 <ul>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_product_design'); ?>">Product Design</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_web_design'); ?>">Web Design</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_mobile_app_design'); ?>">Mobile App Design</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_brand_design'); ?>">Brand Design</a></span>
-                                                                                    </li>
+                                                                                    <li><span><a href="<?php echo route('front/services_product_design'); ?>">SAAS Product Design</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_web_design'); ?>">Web Design</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_mobile_app_design'); ?>">Mobile App Design</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_brand_design'); ?>">Brand Design</a></span></li>
                                                                                 </ul>
                                                                             </div>
                                                                         </div>
                                                                     </div>
+
                                                                     <div class="submenuBoxs boxs">
                                                                         <div class="subMenuLists boxs">
                                                                             <span class="subMenuHeading boxs">
-                                                                                <a class="subMenuLinks" href="<?php echo route('front/services_web_app_development'); ?>">Web App Development</a>
+                                                                                <a class="subMenuLinks" href="<?php echo route('webSolutions'); ?>">Web Solutions</a>
                                                                             </span>
                                                                             <div class="subMenuList boxs">
                                                                                 <ul>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_saas_website'); ?>">SAAS Website</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_cms_website'); ?>">CMS Website</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_ecommerce_website'); ?>">Ecommerce Website</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_custom_website'); ?>">Custom Website</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_custom_crm'); ?>">Custom CRM</a></span>
-                                                                                    </li>
+                                                                                    <li><span><a href="<?php echo route('front/services_saas_website'); ?>">SAAS Website</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_cms_website'); ?>">CMS Website</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_ecommerce_website'); ?>">Ecommerce Website</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_custom_website'); ?>">Custom Website</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_custom_crm'); ?>">Custom CRM</a></span></li>
                                                                                 </ul>
                                                                             </div>
                                                                         </div>
                                                                     </div>
+
                                                                     <div class="submenuBoxs boxs">
                                                                         <div class="subMenuLists boxs">
                                                                             <span class="subMenuHeading boxs">
-                                                                                <a class="subMenuLinks" href="<?php echo route('front/services_mobile_app_development'); ?>">Mobile App Development</a>
+                                                                                <a class="subMenuLinks" href="<?php echo route('mobileSolutions'); ?>">Mobile Solutions</a>
                                                                             </span>
                                                                             <div class="subMenuList boxs">
                                                                                 <ul>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_native_apps'); ?>">Native Apps</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_hybrid_apps'); ?>">Hybrid Apps</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_tv_apps'); ?>">TV Apps</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_wearable_apps'); ?>">Wearable Apps</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_iot_apps'); ?>">IOT Apps</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_ar_vr_apps'); ?>">AR VR Apps</a></span>
-                                                                                    </li>
+                                                                                    <li><span><a href="<?php echo route('front/services_native_apps'); ?>">Native Apps</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_hybrid_apps'); ?>">Hybrid Apps</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_tv_apps'); ?>">TV Apps</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_wearable_apps'); ?>">Wearable Apps</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_iot_apps'); ?>">IOT Apps</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_ar_vr_apps'); ?>">AR VR Apps</a></span></li>
                                                                                 </ul>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="submenuBoxs boxs">
-                                                                        <div class="subMenuLists boxs">
-                                                                            <span class="subMenuHeading boxs"><a class="subMenuLinks" href="<?php echo route('front/services_quality_assurance'); ?>">Quality Assurance</a></span>
-                                                                            <div class="subMenuList boxs">
-                                                                                <ul>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_manual_testing'); ?>">Manual Testing</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_automation_testing'); ?>">Automation Testing</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_user_experience_testing'); ?>">User Experience Testing</a></span>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    
-                                                                    <div class="submenuBoxs boxs">
-                                                                        <div class="subMenuLists boxs">
-                                                                            <span class="subMenuHeading boxs"><a class="subMenuLinks" href="<?php echo route('front/services_performance_marketing'); ?>">Performance Marketing</a></span>
-                                                                            <div class="subMenuList boxs">
-                                                                                <ul>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_google_ads'); ?>">Google Ads</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_meta_ads'); ?>">Meta Ads</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_seo'); ?>">SEO</a></span>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    
+
                                                                     <div class="submenuBoxs boxs">
                                                                         <div class="subMenuLists boxs">
                                                                             <span class="subMenuHeading boxs">
-                                                                                <a class="subMenuLinks" href="<?php echo route('front/services_growth_hacking'); ?>">Growth Hacking</a>
+                                                                                <a class="subMenuLinks" href="<?php echo route('front/metaverse'); ?>">Metaverse</a>
                                                                             </span>
-                                                                            <!-- <span class="submenuSubhead boxs">With Designoweb, center around the quick development of an organization.</span> -->
                                                                             <div class="subMenuList boxs">
                                                                                 <ul>
-                                                                                    <li></li>
+                                                                                    <li><span><a href="<?php echo route('front/threedProductDesign'); ?>">3d Product Design</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/virtualSpaceCreation'); ?>">Virtual Space Creation</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/unitySolutions'); ?>">Unity Solutions</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/animations'); ?>">Animations</a></span></li>
                                                                                 </ul>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    
-                                                                </div>
-                                                                <div class="menuRight boxs">
-                                                                    <div class="menuRightInner submenuBoxs boxs">
+
+                                                                    <div class="submenuBoxs boxs">
                                                                         <div class="subMenuLists boxs">
-                                                                            <span class="subMenuHeading subMenuHeading2 boxs">Startup Booster</span>
-                                                                            <!-- <span class="submenuSubhead submenuSubhead2 boxs">At Designoweb Technologies, work and fun go hand in hand.</span> -->
-                                                                            <div class="subMenuList subMenuList2 boxs">
+                                                                            <span class="subMenuHeading boxs">Startup Booster</span>
+                                                                            <div class="subMenuList boxs">
                                                                                 <ul>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_idea_consulting'); ?>">Idea Consulting</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_prototyping'); ?>">Prototyping</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_mvp_development'); ?>">MVP Development</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/services_product_development'); ?>">Product Development</a></span>
-                                                                                    </li>
+                                                                                    <li><span><a href="<?php echo route('front/services_idea_consulting'); ?>">Idea Consulting</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_prototyping'); ?>">Prototyping</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_mvp_development'); ?>">MVP Development</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/services_product_development'); ?>">Product Development</a></span></li>
                                                                                 </ul>
                                                                             </div>
-                                                                            <span class="subMenuBtn boxs">
-                                                                                <a class="btnStyle smallBtn smallBtn3" href="<?php echo route('front/contact'); ?>">Let’s Build Your Idea<span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a>
-                                                                            </span>
                                                                         </div>
                                                                     </div>
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -421,237 +398,100 @@
                                         </div>
                                     </li>
 
-                                    <li class="nav-item ">
-                                        <a class="nav-link menuLink" href="javascript:void(0)">Our Products</a>
-                                        <div class="subMenusOuter boxs">
-                                            <div class="subMenusBox"></div>
-                                            <div class="subMenus boxs">
-                                                <span class="closeSubMenu"><a href="javascript:void(0)" class="closeSubMenuLink">X</a></span>
-                                                <div class="submenuInner technologySubmenu boxs">
-                                                    <div class="submenuInnerBox boxs">
-                                                        <div class="container">
-                                                            <div class="submenuDropbox boxs">
-                                                                <div class="menuLeft menuLeftNew productsMenuBox boxs">
-                                                                    <div class="row w-100">
-                                                                         <div class="col-sm-12 col-md-4">
-                                                                            <div class="newMenuListItem boxs subMenuHeadings subMenuListsSec subMenuListsSecNew">
-                                                                                <div class="boxs">
-                                                                                    <span class="newMenuItemName neWMenuItemList boxs fontSize38 boxs boldFont subMenuHeading"><a class="subMenuLinks" href="<?php echo route('front/foodx'); ?>">FoodX</a></span>
-                                                                                    <div class="newMenuItemDescription neWMenuItemList boxs subMenuHeadings"><p>A Perfect Fit for Restaurantprenuers providing ultimate food delivery solutions.</p></div>
-                                                                                </div>
-                                                                                <span class="newMenuItemBanner neWMenuItemList boxs">
-                                                                                    <img src="<?php echo asset('/public/front/images/foodxBanners.webp'); ?>" alt="Product Banner" class="img-fluid"/>
-                                                                                </span>
-                                                                            </div>
-                                                                         </div>
-                                                                         <div class="col-sm-12 col-md-4">
-                                                                            <div class="newMenuListItem boxs subMenuHeadings subMenuListsSec subMenuListsSecNew">
-                                                                                <div class="boxs">
-                                                                                    <span class="newMenuItemName neWMenuItemList boxs fontSize38 boxs boldFont subMenuHeading"><a class="subMenuLinks" href="<?php echo route('front/grocerx'); ?>">GrocerX</a></span>
-                                                                                    <div class="newMenuItemDescription neWMenuItemList boxs subMenuHeadings"><p>Fresh groceries at your doorstep, with just a few taps.</p></div>
-                                                                                </div>
-                                                                                <span class="newMenuItemBanner neWMenuItemList boxs">
-                                                                                    <img src="<?php echo asset('/public/front/images/grocerxBanners.webp'); ?>" alt="Product Banner" class="img-fluid"/>
-                                                                                </span>
-                                                                            </div>
-                                                                         </div>
-                                                                         <div class="col-sm-12 col-md-4">
-                                                                            <div class="newMenuListItem boxs subMenuHeadings subMenuListsSec subMenuListsSecNew">
-                                                                                <div class="boxs">
-                                                                                    <span class="newMenuItemName neWMenuItemList boxs fontSize38 boxs boldFont subMenuHeading"><a class="subMenuLinks" href="<?php echo route('front/medx'); ?>">MedX</a></span>
-                                                                                    <div class="newMenuItemDescription neWMenuItemList boxs subMenuHeadings"><p>The World’s Best AI Based Pharmacy Delivery Solution for your Business.</p></div>
-                                                                                </div>
-                                                                                <span class="newMenuItemBanner neWMenuItemList boxs">
-                                                                                    <img src="<?php echo asset('/public/front/images/medxBanners.webp'); ?>" alt="Product Banner" class="img-fluid"/>
-                                                                                </span>
-                                                                            </div>
-                                                                         </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!--<div class="submenuDropbox boxs">-->
-                                                        <!--    <div class="menuLeft boxs">-->
-                                                        <!--        <div class="submenuBoxs boxs">-->
-                                                        <!--            <div class="subMenuLists boxs">-->
-                                                        <!--                <div class="subMenuList boxs">-->
-                                                        <!--                    <ul>-->
-                                                        <!--                        <li>-->
-                                                        <!--                            <span><a href="<?php // echo route('front/foodx'); ?>">FoodX - Food Delivery Service App</a></span>-->
-                                                        <!--                        </li>-->
-                                                        <!--                        <li>-->
-                                                        <!--                            <span><a href="<?php // echo route('front/grocerx'); ?>">GrocerX - Grocery Delivery Service App</a></span>-->
-                                                        <!--                        </li>-->
-                                                        <!--                        <li>-->
-                                                        <!--                            <span><a href="<?php // echo route('front/medx'); ?>">MedX - Medicine Delivery Service App</a></span>-->
-                                                        <!--                        </li>-->
-                                                        <!--                    </ul>-->
-                                                        <!--                </div>-->
-                                                        <!--            </div>-->
-                                                        <!--        </div>-->
-                                                        <!--    </div>-->
-                                                        <!--</div>-->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link menuLink" href="javascript:void(0)">Offshore Developers</a>
+                                    <li class="nav-item staffAugmentationMenuLists">
+                                        <a class="nav-link menuLink" href="javascript:void(0)">Staff Augmentation</a>
                                         <span class="hireOption">Hire</span>
-                                        <div class="subMenusOuter boxs">
+                                        <div class="subMenusOuter subMenusOuterNew boxs">
                                             <div class="subMenusBox"></div>
-                                            <div class="subMenus boxs">
+                                            <div class="subMenus boxs" >
+                                            <!-- <div class="subMenus boxs"> -->
                                                 <span class="closeSubMenu"><a href="javascript:void(0)" class="closeSubMenuLink">X</a></span>
-                                                <div class="submenuInner offshoreSubmenu boxs">
+                                                <div class="submenuInner offshoreSubmenu offshoreSubmenuNew boxs">
                                                     <div class="submenuInnerBox boxs">
                                                         <div class="container">
                                                             <div class="submenuDropbox boxs">
-                                                                <div class="menuLeft boxs">
-                                                                    <div class="submenuBoxs boxs">
+                                                                <div class="menuLeft boxs flexBox w-100 offshoreDevelopmentMenu">
+
+                                                                    <div class="submenuBoxs boxs itStaffingSubMenu">
                                                                         <div class="subMenuLists boxs">
                                                                             <span class="subMenuHeading boxs">
-                                                                                <a class="subMenuLinks" href="<?php echo route('front/offshore_hire_web_developers'); ?>">Hire Web Developers</a>
+                                                                                <!-- <a class="subMenuLinks" href="javascript:void(0)">Nearshore Development</a> -->
+                                                                                <a class="subMenuLinks" href="<?php echo route('front/it-staffing'); ?>">IT Staffing</a>
                                                                             </span>
                                                                             <div class="subMenuList boxs">
-                                                                                <ul>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_java_developers'); ?>">Java</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_python_developers'); ?>">Python</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_php_developers'); ?>">PHP</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_dotnet_developers'); ?>">.NET</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_ruby_on_rails_developers'); ?>">Ruby on Rails</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_laravel_developers'); ?>">Laravel</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_magento_developers'); ?>">Magento</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_shopify_developers'); ?>">Shopify</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_wordpress_developers'); ?>">Wordpress</a></span>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="submenuBoxs boxs">
-                                                                        <div class="subMenuLists boxs">
-                                                                            <span class="subMenuHeading boxs">
-                                                                                <a class="subMenuLinks" href="<?php echo route('front/offshore_hire_app_developers'); ?>">Hire App Developers</a>
-                                                                            </span>
-                                                                            <div class="subMenuList boxs">
-                                                                                <ul>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_android_developers'); ?>">Android</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_ios_developers'); ?>">iOS</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_react_native_developers'); ?>">React Native</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_flutter_developers'); ?>">Flutter</a></span>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="subMenuLists boxs">
-                                                                            <span class="subMenuHeading boxs">
-                                                                                <a class="subMenuLinks" href="<?php echo route('front/offshore_hire_js_developers'); ?>">Hire JS Developers</a>
-                                                                            </span>
-                                                                            <div class="subMenuList boxs">
-                                                                                <ul>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_react_js_developers'); ?>">React JS</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_angular_js_developers'); ?>">Angular JS</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_node_js_developers'); ?>">Node JS</a></span>
-                                                                                    </li>
+                                                                                <ul class="staffAugmentationSubMenuLists menuRedirectUrls">
+                                                                                    <li><span><a href="<?php echo route('front/it-staffing'); ?>#offshoreDevelopmentSec" data-id="offshoreDevelopmentSec">Offshore Development</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/it-staffing'); ?>#nearshoreDevelopmentSec" data-id="nearshoreDevelopmentSec">Nearshore Development</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/it-staffing'); ?>#contractualStaffingSec" data-id="contractualStaffingSec">Contractual Staffing</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/it-staffing'); ?>#permanentStaffingSec" data-id="permanentStaffingSec">Permanent Staffing</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/it-staffing'); ?>#rpoStaffingSec" data-id="rpoStaffingSec">Recruitment Process Outsourcing</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/it-staffing'); ?>#leadershipHiringSec" data-id="leadershipHiringSec">Leadership Hiring</a></span></li>
+                                                                                    <!-- <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">Mobile App Developers</a></span></li>
+                                                                                    <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">Frontend Developers</a></span></li>
+                                                                                    <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">Backend Developers</a></span></li>
+                                                                                    <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">Full Stack Developers</a></span></li>
+                                                                                    <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">JS Developers</a></span></li>
+                                                                                    <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">Automation Engineers</a></span></li>
+                                                                                    <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">Software Architects</a></span></li>
+                                                                                    <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">AI Developers</a></span></li>
+                                                                                    <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">Machine Learning Engineers</a></span></li>
+                                                                                    <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">Blockchain Developers</a></span></li>
+                                                                                    <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">DevOps Engineers</a></span></li>
+                                                                                    <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">Data Engineers</a></span></li>
+                                                                                    <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">Data Scientists</a></span></li>
+                                                                                    <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">Tableau Developers</a></span></li>
+                                                                                    <li><span><a href="<?php // echo route('front/it-staffing'); ?>" data-id="leadershipHiringSec">BI Developers</a></span></li> -->
                                                                                 </ul>
                                                                             </div>
                                                                         </div>
                                                                     </div>
 
-                                                                    <div class="submenuBoxs boxs">
+                                                                    <div class="submenuBoxs boxs itStaffingSubMenu">
                                                                         <div class="subMenuLists boxs">
-                                                                            <span class="subMenuHeading boxs">
-                                                                                <a class="subMenuLinks" href="<?php echo route('front/offshore_hire_fullstack_developers'); ?>">Hire Full Stack Developers</a>
-                                                                            </span>
+                                                                            <span class="subMenuHeading boxs">Technologies</span>
                                                                             <div class="subMenuList boxs">
-                                                                                <ul>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_mean_stack_developers'); ?>">Mean Stack</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_hire_mern_stack_developers'); ?>">Mern Stack</a></span>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="subMenuLists boxs">
-                                                                            <span class="subMenuHeading boxs"><span class="">Others</span></span>
-                                                                            <div class="subMenuList boxs">
-                                                                                <ul>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_ui_ux_designer'); ?>">UI/UX Designer</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_business_analyst'); ?>">Business Analyst</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_project_manager'); ?>">Project Manager</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_blockchain_developer'); ?>">Blockchain Developer</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_salesforce_developer'); ?>">Salesforce Developer</a></span>
-                                                                                    </li>
+                                                                                <ul class="">
+                                                                                    <li><span><a href="<?php echo route('front/offshore_hire_web_developers'); ?>">Hire Web Developers</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/offshore_hire_app_developers'); ?>">Hire App Developers</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/offshore_hire_js_developers'); ?>">Hire JS Developers</a></span></li>
+                                                                                    <li><span><a href="<?php echo route('front/offshore_hire_fullstack_developers'); ?>">Hire Full Stack Developers</a></span></li>
                                                                                 </ul>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="menuRight boxs">
-                                                                    <div class="menuRightInner submenuBoxs boxs">
+                                                                    
+                                                                    <div class="submenuBoxs boxs teamExtensionSubMenu">
                                                                         <div class="subMenuLists boxs">
-                                                                            <span class="subMenuHeading subMenuHeading2 boxs">Team Extension</span>
-                                                                            <span class="submenuSubhead submenuSubhead2 boxs">We help global industries, innovators, enterprises, and entrepreneurs enhance their development strength with dedicated teams and staff augmentation services.</span>
-                                                                            <div class="subMenuList subMenuList2 boxs">
-                                                                                <ul>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_development_center'); ?>">Offshore Development Center</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_dedicated_teams'); ?>">Dedicated Teams</a></span>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <span><a href="<?php echo route('front/offshore_staff_augmentation'); ?>">IT Staff Augmentation</a></span>
-                                                                                    </li>
-                                                                                </ul>
+                                                                            <div class="subMenuListsChild boxs">
+                                                                                <span class="subMenuHeading subMenuHeading2 boxs">Team Extension</span>
+                                                                                <div class="subMenuList subMenuList2 boxs">
+                                                                                    <ul>
+                                                                                        <li><span><a href="<?php echo route('front/offshore_development_center'); ?>">Offshore Development Center</a></span></li>
+                                                                                        <li><span><a href="<?php echo route('front/offshore_dedicated_teams'); ?>">Dedicated Teams</a></span></li>
+                                                                                        <li><span><a href="<?php echo route('front/offshore_staff_augmentation'); ?>">IT Staff Augmentation</a></span></li>
+                                                                                        <li><span><a href="<?php echo route('front/virtual-cto'); ?>">Virtual CTO</a></span></li>
+                                                                                        <li><span><a href="<?php echo route('front/developer-cost-optimization'); ?>">Developer Cost Optimization</a></span></li>
+                                                                                    </ul>
+                                                                                </div>
                                                                             </div>
                                                                             <span class="subMenuBtn boxs">
-                                                                                <a class="btnStyle smallBtn smallBtn3" href="<?php echo route('front/contact'); ?>">Build Your Team<span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a>
+                                                                                <a class="btnStyle smallBtn smallBtn3 hoverDisable hoverBtn blueBtn" href="<?php echo route('scalie/build-team'); ?>">Build Your Team<span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a>
                                                                             </span>
                                                                         </div>
                                                                     </div>
+
+                                                                    <div class="submenuBoxs boxs becomePartnerSubMenu">
+                                                                        <div class="subMenuLists boxs">
+                                                                            <div class="subMenuListsChild boxs">
+                                                                                <span class="subMenuHeading boxs">Become Partner</span>
+                                                                                <span class="submenuSubhead submenuSubhead2 submenuSubhead3 boxs">Unlock new possibilities and expand your horizons by partnering with us. Join our thriving community and enjoy the benefits of a successful collaboration.</span>
+                                                                            </div>
+                                                                            <span class="subMenuBtn boxs">
+                                                                                <a class="btnStyle smallBtn smallBtn3 redBtn hoverDisable hoverBtn" href="<?php echo route('scalie/become-partner'); ?>">Become Partner<span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -671,7 +511,7 @@
                                                     <div class="submenuInnerBox boxs">
                                                         <div class="container">
                                                             <div class="submenuDropbox boxs">
-                                                                <div class="menuLeft boxs">
+                                                                <div class="menuLeft boxs flexBox">
                                                                     <div class="submenuBoxs boxs">
                                                                         <div class="subMenuLists boxs">
                                                                             <span class="subMenuHeading boxs"><span class="">Mobile</span></span>
@@ -775,7 +615,7 @@
                                                                             <div class="menuRightBtm boxs">
                                                                                 <span class="subMenuHeading subMenuHeading4 boxs">Ultimate Property Dashboard</span>
                                                                                 <span class="submenuSubhead submenuSubhead2 boxs">Enter into the world of properties and it's industry from immense activity and opportunity to one of knowledge and obviously recognizable open doors...</span>
-                                                                                <span class="subMenuLinks boxs"><a class="lnkStyle" href="<?php echo route('front/case_studies'); ?>">View Case Study</a></span>
+                                                                                <span class="subMenuLinks boxs"><a class="lnkStyle" href="<?php echo route('front/portfolio'); ?>">View Case Study</a></span>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -790,39 +630,9 @@
 
                                     <li class="nav-item customMenuNew">
                                         <a class="nav-link menuLink" href="<?php echo route('front/portfolio'); ?>">Work</a>
-                                        <div class="subMenusOuter boxs d-none">
-                                            <div class="subMenusBox"></div>
-                                            <div class="subMenus boxs">
-                                                <span class="closeSubMenu"><a href="javascript:void(0)" class="closeSubMenuLink">X</a></span>
-                                                <div class="submenuInner technologySubmenu boxs">
-                                                    <div class="submenuInnerBox boxs">
-                                                        <!-- <div class="container"> -->
-                                                        <div class="submenuDropbox boxs">
-                                                            <div class="menuLeft boxs">
-                                                                <div class="submenuBoxs boxs">
-                                                                    <div class="subMenuLists boxs">
-                                                                        <div class="subMenuList boxs">
-                                                                            <ul>
-                                                                                <li>
-                                                                                    <span><a href="<?php echo route('front/case_studies'); ?>">Case Studies</a></span>
-                                                                                </li>
-                                                                                <!--<li>-->
-                                                                                <!--    <span><a href="<?php // echo route('front/portfolio'); ?>">Portfolio</a></span>-->
-                                                                                <!--</li>-->
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        <!-- </div> -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </li>
-                                    <li class="nav-item">
+                                    
+                                    <li class="nav-item newCompanyMenu">
                                         <a class="nav-link menuLink" href="javascript:void(0)">Company</a>
                                         <div class="subMenusOuter boxs">
                                             <div class="subMenusBox"></div>
@@ -831,11 +641,56 @@
                                                 <div class="submenuInner companySubmenu boxs">
                                                     <div class="submenuInnerBox boxs">
                                                         <div class="container">
-                                                            <div class="submenuDropbox boxs">
-                                                                <div class="menuLeft menuLeft2 boxs">
+                                                            <div class="submenuDropbox boxs companyMenuNewDesign">
+                                                                <!--New Menu-->
+                                                                <div class="menuLeft menuLeft2 companyMenuLeft boxs ">
+                                                                    <div class="companyMenuLeftChild boxs">
+                                                                        <span class="leftMenuHeading boxs fontSize22 blackFont">About Us</span>
+                                                                        <span class="leftMenuDescription boxs fontSize16">Designoweb will help you to design and develop greatness.</span>
+                                                                        <span class="lemuMenuRedirect boxs">
+                                                                            <a class="exploreMoreProductsLInk hoverBtn2" href="<?php echo route('front/about'); ?>">Explore More <span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="companyMenuLeftChild boxs">
+                                                                        <span class="leftMenuHeading boxs fontSize22 blackFont">Our Process</span>
+                                                                        <span class="leftMenuDescription boxs fontSize16">Weave your dreams together with the team of Designoweb</span>
+                                                                        <span class="lemuMenuRedirect boxs">
+                                                                            <a class="exploreMoreProductsLInk hoverBtn2" href="<?php echo route('front/our_process'); ?>">Explore More <span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="companyMenuLeftChild boxs">
+                                                                        <span class="leftMenuHeading boxs fontSize22 blackFont">Testimonials</span>
+                                                                        <span class="leftMenuDescription boxs fontSize16">Statements from our past customers to build your trust.</span>
+                                                                        <span class="lemuMenuRedirect boxs">
+                                                                            <a class="exploreMoreProductsLInk hoverBtn2" href="<?php echo route('front/testimonials'); ?>">Explore More <span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="companyMenuLeftChild boxs">
+                                                                        <span class="leftMenuHeading boxs fontSize22 blackFont">Blogs</span>
+                                                                        <span class="leftMenuDescription boxs fontSize16">Some blogs to freshen up your mind and knock ideas.</span>
+                                                                        <span class="lemuMenuRedirect boxs">
+                                                                            <a class="exploreMoreProductsLInk hoverBtn2" href="<?php echo route('front/blog'); ?>">Explore More <span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <!--New Menu-->
+                                                                <div class="companyMenuRight">
+                                                                    <div class="menuRightImage boxs">
+                                                                        <img src="<?php echo url('public/front/images/career/menu-career-banner.webp'); ?>" class="img-fluid" alt="Banner">
+                                                                    </div>
+                                                                    <div class="menuRightContent boxs">
+                                                                        <span class="leftMenuHeading boxs fontSize22 blackFont">Careers</span>
+                                                                        <span class="leftMenuDescription boxs fontSize16">A place to provide everyone an opportunity in the areas of their expertise.</span>
+                                                                        <span class="lemuMenuRedirect boxs">
+                                                                            <a class="exploreMoreProductsLInk hoverBtn2 readmoreOption" href="<?php echo route('front/career'); ?>">Read More<span class="arrowIcn"></span></a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <!--Old Menu-->
+                                                                <div class="menuLeft menuLeft2 boxs d-none">
                                                                     <div class="submenuBoxs boxs">
                                                                         <a href="<?php echo route('front/about'); ?>" class="boxs">
-                                                                            <div class="subMenuLists subMenuListsSec boxs">
+                                                                            <div class="subMenuLists subMenuListsSec boxs flexBox">
                                                                                 <span class="aboutMenuImage">
                                                                                     <img class="subMenuImg img-fluid" src="<?php echo url('public/front/img/compMenuImg1.png'); ?>" alt="Section Image" />
                                                                                 </span>
@@ -850,7 +705,7 @@
                                                                     </div>
                                                                     <div class="submenuBoxs boxs">
                                                                         <a href="<?php echo route('front/our_process'); ?>" class="boxs">
-                                                                            <div class="subMenuLists subMenuListsSec boxs">
+                                                                            <div class="subMenuLists subMenuListsSec boxs flexBox">
                                                                                 <span class="aboutMenuImage">
                                                                                     <img class="subMenuImg img-fluid" src="<?php echo url('public/front/img/compMenuImg2.png'); ?>" alt="Section Image" />
                                                                                 </span>
@@ -865,7 +720,7 @@
                                                                     </div>
                                                                     <div class="submenuBoxs boxs">
                                                                         <a href="<?php echo route('front/testimonials'); ?>" class="boxs">
-                                                                            <div class="subMenuLists subMenuListsSec boxs">
+                                                                            <div class="subMenuLists subMenuListsSec boxs flexBox">
                                                                                 <span class="aboutMenuImage">
                                                                                     <img class="subMenuImg img-fluid" src="<?php echo url('public/front/img/compMenuImg3.png'); ?>" alt="Section Image" />
                                                                                 </span>
@@ -880,7 +735,7 @@
                                                                     </div>
                                                                     <div class="submenuBoxs boxs">
                                                                         <a href="<?php echo route('front/career'); ?>" class="boxs">
-                                                                            <div class="subMenuLists subMenuListsSec boxs">
+                                                                            <div class="subMenuLists subMenuListsSec boxs flexBox">
                                                                                 <span class="aboutMenuImage">
                                                                                     <img class="subMenuImg img-fluid" src="<?php echo url('public/front/img/compMenuImg4.png'); ?>" alt="Section Image" />
                                                                                 </span>
@@ -895,7 +750,7 @@
                                                                     </div>
                                                                     <div class="submenuBoxs boxs">
                                                                         <a href="<?php echo route('front/blog'); ?>" class="boxs">
-                                                                            <div class="subMenuLists subMenuListsSec boxs">
+                                                                            <div class="subMenuLists subMenuListsSec boxs flexBox">
                                                                                 <span class="aboutMenuImage">
                                                                                     <img class="subMenuImg img-fluid" src="<?php echo url('public/front/img/compMenuImg5.png'); ?>" alt="Section Image" />
                                                                                 </span>
@@ -910,7 +765,7 @@
                                                                     </div>
                                                                     <div class="submenuBoxs boxs">
                                                                         <a href="<?php echo route('front/press_release'); ?>" class="boxs">
-                                                                            <div class="subMenuLists subMenuListsSec boxs">
+                                                                            <div class="subMenuLists subMenuListsSec boxs flexBox">
                                                                                 <span class="aboutMenuImage">
                                                                                     <img class="subMenuImg img-fluid" src="<?php echo url('public/front/img/compMenuImg6.png'); ?>" alt="Section Image" />
                                                                                 </span>
@@ -934,7 +789,7 @@
                                 </ul>
                             </div>
                             <div class="headerButton">
-                                <span><a href="<?php echo route('front/contact'); ?>" class="btnStyle smallBtn">Contact Us<span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a></span>
+                                <span><a href="<?php echo route('front/contact'); ?>" class="btnStyle smallBtn">Let's Connect<span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a></span>
                                 <span><button class="navbar-toggler"><i class="fas fa-bars"></i></button></span>
                             </div>
                         </div>

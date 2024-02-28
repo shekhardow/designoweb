@@ -3,17 +3,15 @@
 <div class="mainBody sectionTop boxs">
     <!-- Press Release Banner Start -->
     <div class="mainBanner blogDetailBanner boxs">
-        <div class="blogDetailsBanner">
-            <span class="boxs"><img src="<?php echo !empty($blog_detail->image_url) ? url('uploads/admin/blogs/'.$blog_detail->image_url) : ''; ?>" class="img-fluid" alt="Banner Image"></span>
-        </div>
+        
         <div class="container">
             <div class="mainBannerBox boxs">
                 <div class="row">
                     <div class="col-sm-7">
                         <div class="mainBannerLeft mainBannerLeft2 boxs">
-                            <span class="fontSize20 topSubHeading boxs">#BLOG DETAIL</span>
+                            <span class="fontSize18 topSubHeading boxs">#BLOG DETAIL</span>
                             <div class="bannerHeading boxs">
-                                <h1 class="fontSize52"><?php echo !empty($blog_detail->blog_title) ? $blog_detail->blog_title : ''; ?></h1>
+                                <h1 class="fontSize38"><?php echo !empty($blog_detail->blog_title) ? $blog_detail->blog_title : ''; ?></h1>
                             </div>
                             <div class="quoteAuthorCont2 quoteAuthorCont3 boxs">
                                 <div class="quoteAuthorCont ">
@@ -34,6 +32,11 @@
                                 <span><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></span>
                             </div> -->
                             <!-- <span class="readMoreBox boxs"><a class="btnStyle text-uppercase">Read More</a></span> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="blogDetailsBanner">
+                            <span class="boxs"><img src="<?php echo !empty($blog_detail->image_url) ? url('uploads/admin/blogs/'.$blog_detail->image_url) : ''; ?>" class="img-fluid" alt="Banner Image"></span>
                         </div>
                     </div>
                 </div>
@@ -81,7 +84,7 @@
             </div>
             <div class="blogsSection boxs">
                 <div class="row">
-                    <?php if(!empty($blogs)){ foreach($blogs as $value){ if($blog_detail->blog_id != $value->blog_id){ ?>
+                    <?php if(!empty($blogs)){ foreach($blogs as $value){ ?>
                         <div class="col-sm-4">
                             <div class="blogListBox blogListBoxNew boxs">
                                 <div class="blogContentTop boxs">
@@ -102,7 +105,7 @@
                                 </div>
                             </div>
                         </div>
-                    <?php }}} ?>
+                    <?php }} ?>
                 </div>
             </div>
         </div>

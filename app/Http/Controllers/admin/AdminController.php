@@ -295,19 +295,19 @@ class AdminController extends Controller{
             'project_name' => 'required',
             'tagline' => 'required',
             'project_type' => 'required',
-            'project_link' => 'required',
-            'industry' => 'required',
-            'business_type' => 'required',
-            'services' => 'required',
-            'build_your_idea' => 'required',
+            // 'project_link' => 'required',
+            // 'industry' => 'required',
+            // 'business_type' => 'required',
+            // 'services' => 'required',
+            // 'build_your_idea' => 'required',
             'description' => 'required',
             'client_requirement' => 'required',
-            'given_services' => 'required',
-            'design_layout' => 'required',
-            'palette' => 'required',
-            'about_project' => 'required',
-            'technology_used' => 'required',
-            'client_quote' => 'required',
+            // 'given_services' => 'required',
+            // 'design_layout' => 'required',
+            // 'palette' => 'required',
+            // 'about_project' => 'required',
+            // 'technology_used' => 'required',
+            // 'client_quote' => 'required',
             'client_name' => 'required',
         ], $messages = [
             'required' => 'The :attribute field is required.',
@@ -349,8 +349,7 @@ class AdminController extends Controller{
         if($request->hasfile('client_image')){
             $client_image = $this->singleUpload($request, 'client_image', 'admin/case_studies');
         }else{
-            return response()->json(['result' => -1, 'msg' => 'Please Upload Client Image.']);
-            return false;
+            $client_image = url('public/front/img/client-default-image.webp');
         }
         $projectchallenges = $request->post('challenge');
         $solutions= $request->post('solutions');
@@ -380,19 +379,19 @@ class AdminController extends Controller{
             'project_name' => 'required',
             'tagline' => 'required',
             'project_type' => 'required',
-            'project_link' => 'required',
-            'industry' => 'required',
-            'business_type' => 'required',
-            'services' => 'required',
-            'build_your_idea' => 'required',
+            // 'project_link' => 'required',
+            // 'industry' => 'required',
+            // 'business_type' => 'required',
+            // 'services' => 'required',
+            // 'build_your_idea' => 'required',
             'description' => 'required',
             'client_requirement' => 'required',
-            'given_services' => 'required',
-            'design_layout' => 'required',
-            'palette' => 'required',
-            'about_project' => 'required',
-            'technology_used' => 'required',
-            'client_quote' => 'required',
+            // 'given_services' => 'required',
+            // 'design_layout' => 'required',
+            // 'palette' => 'required',
+            // 'about_project' => 'required',
+            // 'technology_used' => 'required',
+            // 'client_quote' => 'required',
             'client_name' => 'required',
         ], $messages = [
             'required' => 'The :attribute field is required.',

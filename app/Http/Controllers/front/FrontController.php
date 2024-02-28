@@ -23,7 +23,7 @@ class FrontController extends Controller{
         $this->front_model = new FrontModel();
         $this->admin_model = new AdminModel();
         $this->toemail = "info@designoweb.com";
-        // $this->toemail = "shekhar.designoweb@gmail.com";
+         //$this->toemail = "ambuj.designoweb@gmail.com";
     }
 
     private function loadview($view, $data = NULL){
@@ -60,9 +60,11 @@ class FrontController extends Controller{
 
     public function index(){
         $data['title'] = 'Home';
+        $data['loader'] = '1';
         $data['meta_title'] = "App Development Company in India & USA | Designoweb Technologies";
         $data['meta_description'] = "Designoweb Technologies is a leading mobile app development company with a global presence in India & USA. We specialize in delivering digital solutions to startups & enterprises worldwide.";
-        $data['testimonials_without_video'] = $this->front_model->getAllTestimonials()->where('client_image','!=',NULL)->where('video_link','==',NULL);
+        $data['testimonials_without_video'] = $this->front_model->getAllTestimonials()->where('client_image', '!=', NULL)->where('video_link', '==', NULL);
+        // $data['highlighted_blogs'] = $this->front_model->getAllBlogs()->where('highlighted', 'Yes')->skip(0)->take(2);
         return $this->loadview('index', $data);
     }
 
@@ -96,10 +98,10 @@ class FrontController extends Controller{
         return $this->loadview('blogs/blog', $data);
     }
 
-    public function blog_details($slug=NULL){
+    public function blog_details($slug=null){
         $data['title'] = 'Blog Details';
         $data['blog_detail'] = $this->front_model->getBlogDetailBySlug($slug);
-        $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(4);
+        $data['blogs'] = $this->front_model->getAllBlogs()->where('blog_id', '!=', $data['blog_detail']->blog_id)->skip(0)->take(3);
         return $this->loadview('blogs/blog_details', $data);
     }
 
@@ -111,7 +113,7 @@ class FrontController extends Controller{
         return $this->loadview('press_release/press_release', $data);
     }
 
-    public function press_release_details($slug=NULL){
+    public function press_release_details($slug=null){
         $data['title'] = 'Press Release Details';
         $data['press_release_detail'] = $this->front_model->getPressReleaseDetailBySlug($slug);
         $data['press_release'] = $this->front_model->getAllPressRelease()->skip(0)->take(3);
@@ -216,7 +218,7 @@ class FrontController extends Controller{
             CURLOPT_POSTFIELDS =>json_encode($config),
             CURLOPT_HTTPHEADER => array(
                 'accept: application/json',
-                'api-key: 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',
+                'api-key: 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',
                 'content-type: application/json'
             ),
         ));
@@ -230,20 +232,31 @@ class FrontController extends Controller{
         $data['case_studies'] = $this->front_model->getAllCaseStudies();
         return $this->loadview('case_study/case_studies', $data);
     }
+    public function case_studies1(){
+        $data['title'] = 'Portfolio';
+        $data['case_studies'] = $this->front_model->getAllCaseStudies();
+        return $this->loadview('case_study/case_studies1', $data);
+    }
+    public function case_studies2(){
+        $data['title'] = 'Portfolio';
+        $data['case_studies'] = $this->front_model->getAllCaseStudies();
+        return $this->loadview('case_study/case_studies2', $data);
+    }
 
     public function case_study_details($slug=NULL){
         $data['case_study_detail'] = $this->front_model->getCaseStudyDetailBySlug($slug);
-        $data['case_challenges_detail'] = $this->admin_model->getAllCaseChallenges($data['case_study_detail']->case_study_id);
+        $data['case_challenges_detail'] = $this->admin_model->getAllCaseChallenges(@$data['case_study_detail']->case_study_id);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
-        $data['title'] = $data['case_study_detail']->project_name;
+        $data['title'] = @$data['case_study_detail']->project_name;
         return $this->loadview('case_study/case_study_details', $data);
     }
 
     public function portfolio(){
         $data['title'] = 'Portfolio';
         $data['portfolio'] = $this->front_model->getAllPortfolio();
+        $data['case_studies'] = $this->front_model->getAllCaseStudies();
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
-        return $this->loadview('portfolio', $data);
+        return $this->loadview('case_study/case_studies', $data);
     }
 
 
@@ -251,7 +264,7 @@ class FrontController extends Controller{
 
     // Ui Ux Design Start
     public function services_ui_ux_design(){
-        $data['title'] = 'UI UX Design';
+        $data['title'] = 'UI UX Design Services';
         $data['meta_title'] = "UI/UX Design Services | Designoweb Technologies";
         $data['meta_description'] = "Boost user engagement with our expert UI/UX design services. Our team will help you create a website that's not only visually stunning but also easy to navigate. Contact us now!";
         $data['meta_keywords'] = "ui ux design services";
@@ -261,14 +274,16 @@ class FrontController extends Controller{
     }
     
     public function services_product_design(){
-        $data['title'] = 'Product Design';
+        $data['title'] = 'Product Design Services';
+        $data['meta_title'] = "Product Design Services | Designoweb Technologies";
+        $data['meta_description'] = "Designoweb Technologies provides top-notch product design services. We empower entrepreneurs to design & launch better products by leveraging our decades of experience in design.";
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/ui_ux_design/product_design', $data);
     }
     
     public function services_web_design(){
-        $data['title'] = 'Web Design';
+        $data['title'] = 'Web Design Services';
         $data['meta_title'] = "Web Design Services | Designoweb Technologies";
         $data['meta_description'] = "We provide expert web design services that create visually stunning, user-friendly websites that are optimized for conversion. Get in touch today to elevate your online presence.";
         $data['meta_keywords'] = "web design services";
@@ -280,14 +295,18 @@ class FrontController extends Controller{
     }
     
     public function services_mobile_app_design(){
-        $data['title'] = 'Mobile App Design';
+        $data['title'] = 'Mobile App Design Services';
+        $data['meta_title'] = "Expert Mobile App Design Services | Designoweb Technologies";
+        $data['meta_description'] = "Get expert mobile app design services from Designoweb Technologies. We provide custom, branded apps with a responsive design and beautiful visuals.";
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/ui_ux_design/mobile_app_design', $data);
     }
     
     public function services_brand_design(){
-        $data['title'] = 'Brand Design';
+        $data['title'] = 'Brand Design Services';
+        $data['meta_title'] = "Custom Brand Design Services| Designoweb Technologies";
+        $data['meta_description'] = "Designoweb Technologies provides Custom Brand Design Services. We deliver innovative, professional & tailored solutions for brandingwith 100% satisfaction guaranteed.";
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/ui_ux_design/brand_design', $data);
@@ -296,28 +315,32 @@ class FrontController extends Controller{
 
     // Web App Development Start
     public function services_web_app_development(){
-        $data['title'] = 'Web App Development';
+        $data['title'] = 'Web App Development Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/web_app_development/web_app_development', $data);
     }
 
     public function services_saas_website(){
-        $data['title'] = 'SAAS Website';
+        $data['title'] = 'SAAS Website Services';
+        $data['meta_title'] = "Professional SAAS Website Development Services | Designoweb Technologies";
+        $data['meta_description'] = "Designoweb Technologies provides professional SAAS website development services. Our SAAS developers will help you build a scalable & secure website at an affordable price.";
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/web_app_development/saas_website', $data);
     }
     
     public function services_cms_website(){
-        $data['title'] = 'CMS Website';
+        $data['title'] = 'CMS Website Services';
+        $data['meta_title'] = "CMS Website Development Services| Designoweb Technologies";
+        $data['meta_description'] = "Designoweb Technologies offers professional CMS website development services. Our team of experienced CMS developers will help you build a dynamic &user-friendly website that is easy to manage.";
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/web_app_development/cms_website', $data);
     }
     
     public function services_ecommerce_website(){
-        $data['title'] = 'E-Commerce Website';
+        $data['title'] = 'E-Commerce Website Services';
         $data['meta_title'] = "Ecommerce Website Development Services | Designoweb Technologies";
         $data['meta_description'] = "Looking for expert ecommerce website development services? We create responsive & user-friendly websites that drive sales. Contact us today!";
         $data['meta_keywords'] = "ecommerce website development services";
@@ -327,14 +350,16 @@ class FrontController extends Controller{
     }
     
     public function services_custom_website(){
-        $data['title'] = 'Custom Website';
+        $data['title'] = 'Custom Website Services';
+        $data['meta_title'] = "Custom Website Development Services | Designoweb Technologies";
+        $data['meta_description'] = "Designoweb Technologies provides custom website development services. Our team of experienced web developers offers the best solution to your business at affordable rates, with high-quality work.";
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/web_app_development/custom_website', $data);
     }
     
     public function services_custom_crm(){
-        $data['title'] = 'Custom CRM';
+        $data['title'] = 'Custom CRM Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/web_app_development/custom_crm', $data);
@@ -343,7 +368,7 @@ class FrontController extends Controller{
 
     // Mobile App Development Start
     public function services_mobile_app_development(){
-        $data['title'] = 'Mobile App Development';
+        $data['title'] = 'Mobile App Development Services';
         $data['meta_title'] = "Custom Mobile App Development Services | Designoweb Technologies";
         $data['meta_description'] = "Elevate your business with our top-notch mobile app development services. Tailored solutions for iOS, Android, & hybrid apps. Contact us for a quote!";
         $data['meta_keywords'] = "mobile app development services";
@@ -353,42 +378,42 @@ class FrontController extends Controller{
     }
 
     public function services_native_apps(){
-        $data['title'] = 'Native Apps';
+        $data['title'] = 'Native Apps Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/mobile_app_development/native_apps', $data);
     }
 
     public function services_hybrid_apps(){
-        $data['title'] = 'Hybrid Apps';
+        $data['title'] = 'Hybrid Apps Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/mobile_app_development/hybrid_apps', $data);
     }
 
     public function services_tv_apps(){
-        $data['title'] = 'TV Apps';
+        $data['title'] = 'TV Apps Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/mobile_app_development/tv_apps', $data);
     }
 
     public function services_wearable_apps(){
-        $data['title'] = 'Wearable Apps';
+        $data['title'] = 'Wearable Apps Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/mobile_app_development/wearable_apps', $data);
     }
 
     public function services_iot_apps(){
-        $data['title'] = 'IOT Apps';
+        $data['title'] = 'IOT Apps Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/mobile_app_development/iot_apps', $data);
     }
 
     public function services_ar_vr_apps(){
-        $data['title'] = 'AR VR Apps';
+        $data['title'] = 'AR VR Apps Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/mobile_app_development/ar_vr_apps', $data);
@@ -397,28 +422,28 @@ class FrontController extends Controller{
 
     // Quality Assurance Start
     public function services_quality_assurance(){
-        $data['title'] = 'Quality Assurance';
+        $data['title'] = 'Quality Assurance Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/quality_assurance/quality_assurance', $data);
     }
     
     public function services_manual_testing(){
-        $data['title'] = 'Manual Testing';
+        $data['title'] = 'Manual Testing Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/quality_assurance/manual_testing', $data);
     }
     
     public function services_automation_testing(){
-        $data['title'] = 'Automation Testing';
+        $data['title'] = 'Automation Testing Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/quality_assurance/automation_testing', $data);
     }
     
     public function services_user_experience_testing(){
-        $data['title'] = 'User Experience Testing';
+        $data['title'] = 'User Experience Testing Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/quality_assurance/user_experience_testing', $data);
@@ -426,7 +451,7 @@ class FrontController extends Controller{
     // Quality Assurance End
 
     public function services_growth_hacking(){
-        $data['title'] = 'Growth Hacking';
+        $data['title'] = 'Growth Hacking Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/growth_hacking', $data);
@@ -434,28 +459,28 @@ class FrontController extends Controller{
     
     // SEO Start
     public function services_seo(){
-        $data['title'] = 'SEO';
+        $data['title'] = 'SEO Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/seo/seo', $data);
     }
     
     public function services_performance_marketing(){
-        $data['title'] = 'Performance Marketing';
+        $data['title'] = 'Performance Marketing Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/seo/performance_marketing', $data);
     }
     
     public function services_google_ads(){
-        $data['title'] = 'Google Ads';
+        $data['title'] = 'Google Ads Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/seo/google_ads', $data);
     }
     
     public function services_meta_ads(){
-        $data['title'] = 'Meta Ads';
+        $data['title'] = 'Meta Ads Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/seo/meta_ads', $data);
@@ -464,28 +489,28 @@ class FrontController extends Controller{
 
     // Startup Boosters Start
     public function services_idea_consulting(){
-        $data['title'] = 'Idea Consulting';
+        $data['title'] = 'Idea Consulting Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/startup_boosters/idea_consulting', $data);
     }
 
     public function services_prototyping(){
-        $data['title'] = 'Prototyping';
+        $data['title'] = 'Prototyping Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/startup_boosters/prototyping', $data);
     }
 
     public function services_mvp_development(){
-        $data['title'] = 'MVP Development';
+        $data['title'] = 'MVP Development Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/startup_boosters/mvp_development', $data);
     }
 
     public function services_product_development(){
-        $data['title'] = 'Product Development';
+        $data['title'] = 'Product Development Services';
         $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
         $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
         return $this->loadview('services/startup_boosters/product_development', $data);
@@ -978,10 +1003,19 @@ class FrontController extends Controller{
             return response()->json(['result' => 0, 'errors' => $validator->errors()]);
             return false;
         }
-        $result = $this->front_model->insertConsultationData($requestdata);
+        
+        $data = [
+            'name'          => $request['name'],
+            'phone'         => $request['phone'],
+            'email'         => $request['email'],
+            'requirements'  => $request['requirements'],
+            'type'          => 'consultation',
+        ];
+        
+        $result = $this->front_model->insertConsultationData($data);
         if($result){
-            if(@$this->send_consultation_mail($requestdata)){
-                @$this->send_thankyou_mail($requestdata);
+            if(@$this->send_consultation_mail($data)){
+                @$this->send_thankyou_mail($data);
             }
             return response()->json(['result' => 1, 'msg' => "Email Sent Successfully"]);
         }else{
@@ -989,8 +1023,95 @@ class FrontController extends Controller{
         }
     }
     
+    public function sendConsultationMailV2(Request $request){
+        $requestdata = $request->all();
+        $user_id = $request->session()->get('lge_user_id');
+        $validator = Validator::make($requestdata, $rules = [
+            'name1' => 'required',
+            'phone1' => 'required',
+            'email1' => 'required|email',
+            'requirements1'  => 'required',
+            'g-recaptcha-response' => ['required', new ReCaptcha]
+            
+        ], $messages = [
+            'required' => 'The :attribute field is required.',
+            'name1.required' => 'The name field is required.',
+            'email1.required' => 'The email field is required.',
+            'phone1.required' => 'The phone field is required.',
+            'requirements1.required' => 'The requirements field is required.',
+        ]);
+        if ($validator->fails()) {
+            return response()->json(['result' => 0, 'errors' => $validator->errors()]);
+            return false;
+        }
+        
+        $data = [
+            'name'          => $request['name1'],
+            'phone'         => $request['phone1'],
+            'email'         => $request['email1'],
+            'requirements'  => $request['requirements1'],
+            'type'          => 'consultation',
+        ];
+        
+        $result = $this->front_model->insertConsultationData($data);
+        if($result){
+            if(@$this->send_consultation_mail($data)){
+                @$this->send_thankyou_mail($data);
+            }
+            return response()->json(['result' => 1, 'msg' => "Email Sent Successfully"]);
+        }else{
+            return response()->json(['result' => -1, 'msg' => "Something went wrong!"]);
+        }
+    }
+    
+    public function sendConsultationMailV3(Request $request){
+        $requestdata = $request->all();
+        $user_id = $request->session()->get('lge_user_id');
+        $validator = Validator::make($requestdata, $rules = [
+            'name3' => 'required',
+            'company_name3' => 'required',
+            'phone3' => 'required',
+            'email3' => 'required|email',
+            'requirements3'  => 'required',
+            'g-recaptcha-response' => ['required', new ReCaptcha]
+            
+        ], $messages = [
+            'required' => 'The :attribute field is required.',
+            'name3.required' => 'The name field is required.',
+            'company_name3.required' => 'The company field is required.',
+            'phone3.required' => 'The phone field is required.',
+            'email3.required' => 'The email field is required.',
+            'requirements3.required' => 'The requirements field is required.',
+        ]);
+        if ($validator->fails()) {
+            return response()->json(['result' => 0, 'errors' => $validator->errors()]);
+            return false;
+        }
+        
+        $data = [
+            'name'          => $request['name3'],
+            'company_name'  => $request['company_name3'],
+            'phone'         => $request['phone3'],
+            'email'         => $request['email3'],
+            'requirements'  => $request['requirements3'],
+            'type'          => 'consultation',
+        ];
+        
+        $result = $this->front_model->insertConsultationData($data);
+        if($result){
+            if(@$this->send_consultation_mail($data)){
+                @$this->send_thankyou_mail($data);
+            }
+            return response()->json(['result' => 1, 'msg' => "Email Sent Successfully"]);
+        }else{
+            return response()->json(['result' => -1, 'msg' => "Something went wrong!"]);
+        }
+    }
+    
+    
+    
     public function send_consultation_mail($requestdata){
-        $from = $requestdata['email'];
+        //$from = $requestdata['email'];
         $fromName = $requestdata['name'];
         $data['name'] = $fromName;
         $data['phone'] = $requestdata['phone'];
@@ -998,7 +1119,7 @@ class FrontController extends Controller{
         
         $to = $this->toemail;
 
-        $subject = "Email to consult with Designoweb Technologies";
+        $subject = "Email to consult with Designoweb-Technologies";
 
         $htmlContent = view('front/mail/sendmail', $data)->render();
 
@@ -1191,5 +1312,434 @@ class FrontController extends Controller{
     //     $data['title'] = 'Mail';
     //     return view('front/mail/thankyoumail', $data);
     // }
+    
+     // scalie----------------
+    // public function scalieHome(){
+    //     $data['title'] = 'Scalie home';
+    //     return $this->loadview('scalie/scaliehome', $data);
+    // }
+    
+    public function scalieHome(){
+        $data['title'] = 'Build Your Team';
+        return $this->loadview('scalie/build_team', $data);
+    }
+    
+    // public function scalieBecomePartner(){
+    //     $data['title'] = 'Scalie Become Partner';
+    //     return $this->loadview('scalie/scalie-become-partner', $data);
+    // }
+    
+    public function scalieBecomePartner(){
+        $data['title'] = 'Become Partner';
+        return $this->loadview('scalie/become_partner', $data);
+    }
+    
+    public function hiringStep1(){
+        $data['title'] = 'Scalie Hiring';
+        $data['technology'] = $this->front_model->getTechnologies();
+        return $this->loadview('scalie/step1', $data);
+    }
+    public function hiringStep2(){
+        $data['title'] = 'Scalie Hiring';
+         $data['contactdata'] = select('skill_contact_details','*',[['contact_id','=',session()->get('contact_id')]])->first();
+        return $this->loadview('scalie/step2', $data);
+    }
+    
+    public function doStep1(Request $request){
+        $technology = $request->post('selectOption');
+        $email =$request->post('workEmail');
+        $otherSkills = $request->post('otherSkills');
+        if(!empty($otherSkills)){
+            $data['already_added'] = $this->front_model->getAddedTechnologies($otherSkills);
+        }
+       
+        if (!empty($otherSkills)) {
+            if ($data['already_added'] != 0) {
+                return response()->json(['result' => -1, 'msg' => 'Technology already exist in the list.']);
+                return FALSE;
+            }
+        }
+        $work_email = $request->post('workEmail');
+        if(empty($work_email)){
+            return response()->json(['result' => -1, 'msg' => 'Please Fill Work Email.']);
+            return FALSE;
+        }
+        if (empty($technology) && empty($otherSkills)) {
+            return response()->json(['result' => -1, 'msg' => 'Please choose atleast one technology!!!']);
+            return FALSE;
+        }
+        $contact_details =array(
+            'name' => $request->post('name'),
+            'contact_no' => $request->post('contact_no'),
+            'company_name' => $request->post('company_name'),
+            'work_email' => $request->post('workEmail'),
+            'employee_count' => $request->post('employee_count'),
+            'funded_state' => $request->post('funded_state'),
+            'status' => 'Active'
+        );
+        $session_id = $request->session()->get('contact_id');
+       
+        if(empty($session_id)){
+            $insert_id = insert('skill_contact_details',$contact_details);
+            $request->session()->put('contact_id',$insert_id);
+        }else{
+            $insert_id = $session_id;
+            update('skill_contact_details','contact_id',$insert_id,$contact_details);
+        }
+
+        if(empty($session_id)){
+            if(!empty($technology)){
+                $temp = [];
+                foreach($technology as $tec){
+                    $temp['contact_id'] = $insert_id;
+                    $temp['tech_id'] = $tec;
+                    $temp['status'] = 'Active';
+                    insert('skills_information',$temp);
+                }
+            }
+            if(!empty($otherSkills)){
+                $temp = [];
+                foreach($otherSkills as $other){
+                    $temp=[];
+                    $temp['tech_id']='-1';
+                    $temp['other_technology']=$other;
+                    $temp['contact_id']=$insert_id;
+                    insert('skills_information',$temp);
+                }
+            }
+        }else{
+            delete('skills_information','contact_id',$insert_id);
+            if(!empty($technology)){
+                $temp = [];
+                foreach($technology as $tec){
+                    $temp['contact_id'] = $insert_id;
+                    $temp['tech_id'] = $tec;
+                    $temp['status'] = 'Active';
+                    insert('skills_information',$temp);
+                }
+            }
+            if(!empty($otherSkills)){
+                $temp = [];
+                foreach($otherSkills as $other){
+                    $temp=[];
+                    $temp['tech_id']='-1';
+                    $temp['other_technology']=$other;
+                    $temp['contact_id']=$insert_id;
+                    insert('skills_information',$temp);
+                }
+            }
+        }
+       
+        return response()->json(['result'=>1,'msg'=>"Data added successfully",'url'=>route('scalie/hiringStep2')]);
+    
+    }
+    public function doStep2(Request $request){
+        $requestdata = $request->all();
+        $validator = Validator::make($requestdata, $rules = [
+            'name' => 'required',
+            'contactNumber'=>'required',
+            'companyName' => 'required',
+            
+        ], $messages = [
+            'required' => 'The :attribute field is required.',
+        ]);
+        if ($validator->fails()) {
+            return response()->json(['result' => 0, 'errors' => $validator->errors()]);
+            return false;
+        }
+         
+        $employee_count = $request->post('employeeCount');
+        if(empty($employee_count)){
+            return response()->json(['result' => -1, 'msg' => 'Please Choose Employee Count.']);
+            return FALSE;
+        }
+        $fundedState = $request->post('fundedState');
+        if(empty($fundedState)){
+            return response()->json(['result' => -1, 'msg' => 'Please Choose Funded State']);
+            return FALSE;
+        }
+        $contact_details =array(
+            'name' => $request->post('name'),
+            'contact_no' => $request->post('contactNumber'),
+            'company_name' => $request->post('companyName'),
+            'employee_count' => $request->post('employeeCount'),
+            'funded_state' => $request->post('fundedState'),
+            'status' => 'Active'
+        );
+        $session_id = $request->session()->get('contact_id');
+        if(empty($session_id)){
+            $insert_id = insert('skill_contact_details',$contact_details);
+            session()->put('contact_id',$insert_id);
+        }else{
+            $insert_id = $session_id;
+            update('skill_contact_details','contact_id',$insert_id,$contact_details);
+        }
+        $data['contact_details'] =select('skill_contact_details','*',[['contact_id','=',session()->get('contact_id')]])->first();;
+        $data['skillinfo'] = $this->front_model->getSkillinfoBycId($session_id);
+        $data['otherskillsinfo'] = $this->front_model->getOtherSkillinfoBycId($session_id);
+        
+        if (!empty($other_technologies)) {
+            foreach ($other_technologies as $session) {
+                foreach ($data['otherskillsinfo'] as $value) {
+                    $value->other_tech = $session;
+                }
+              
+            }
+        }
+
+        $this->send_scalie_mail($data);
+       
+        return response()->json(['result'=>1,'msg'=>"Your Details has been Submitted",'url'=>route('scalie/thankyou')]);
+    }
+    public function thankyou(Request $request){
+       
+        if(!session()->get('contact_id')){
+            return  redirect('/');
+        }
+         session()->forget('contact_id');
+        $data['title'] = 'Thank You';
+        return $this->loadview('scalie/thank-you', $data);
+    }
+
+    public function send_scalie_mail($data){
+        $to ='info@designoweb.com';
+        // $to ='ambuj.designoweb@gmail.com';
+        $fromName = 'Scalie Leads';
+        $subject = "Important Mail From Scalie";
+        $from ='info@designoweb.com';
+
+        $htmlContent = view('front/mail/leadmail', $data)->render();
+
+        $this->sendInBlue($to, 'Designoweb Technologies', $subject, $fromName, $from, $htmlContent);
+        return true;
+    }
+    
+    
+    public function contactus(){
+        $data['title'] = 'Contact Us';
+        return $this->loadview('scalie/contact-us', $data);
+    }
+    // -------------------Designowb New Urls----------------------
+    public function designSolutions(){
+        $data['title'] = 'Design Solutions';
+        $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+        $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+        return $this->loadview('services/ui_ux_design/design_solutions', $data);
+    }
+    public function mobileSolutions(){
+        $data['title'] = 'Mobile Solutions';
+        $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+        $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+        return $this->loadview('services/mobile_app_development/mobile_solutions', $data);
+    }
+    public function webSolutions(){
+        $data['title'] = 'Web Solutions';
+        $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+        $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+        return $this->loadview('services/web_app_development/web_solutions', $data);
+    }
+    
+    // ========
+
+    // Nearshore Developers Urls
+    // public function nearshoreDevelopment(){
+    //     $data['title'] = 'Contractual Staffing';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/nearshore_development/nearshore_development', $data);
+    // }
+    // public function itStaffing(){
+    //     $data['title'] = 'IT Staffing';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/nearshore_development/it_staffing', $data);
+    // }
+    // public function contractualStaffing(){
+    //     $data['title'] = 'Contractual Staffing';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/nearshore_development/contractual_staffing', $data);
+    // }
+    // public function leadershipHiring(){
+    //     $data['title'] = 'Leadership Hiring';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/nearshore_development/leadership_hiring', $data);
+    // }
+    // public function permanentStaffing(){
+    //     $data['title'] = 'Permanent Staffing';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/nearshore_development/permanent_staffing', $data);
+    // }
+    // public function recruitmentProcessOutsourcing(){
+    //     $data['title'] = 'Recruitment Process Outsourcing';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/nearshore_development/recruitment_process_outsourcing', $data);
+    // }
+
+    // Offshore Development Urls
+    // public function offshoreDevelopment(){
+    //     $data['title'] = 'Offshore Development';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/offshore_development', $data);
+    // }
+    // public function mobileAppDevelopers(){
+    //     $data['title'] = 'Mobile App Developers';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/mobile_app_developers', $data);
+    // }
+    // public function frontendDevelopers(){
+    //     $data['title'] = 'Frontend Developers';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/frontend_developers', $data);
+    // }
+    // public function backendDevelopers(){
+    //     $data['title'] = 'Backend Developers';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/backend_developers', $data);
+    // }
+    // public function fullstackDevelopers(){
+    //     $data['title'] = 'Backend Developers';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/fullstack_developers', $data);
+    // }
+    // public function javascriptDevelopers(){
+    //     $data['title'] = 'Javascript Developers';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/javascript_developers', $data);
+    // }
+    // public function automationEngineers(){
+    //     $data['title'] = 'Automation Engineers';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/automation_engineers', $data);
+    // }
+    // public function softwareArchitects(){
+    //     $data['title'] = 'Software Architects';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/software_architects', $data);
+    // }
+    // public function aiDevelopers(){
+    //     $data['title'] = 'AI Developers';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/ai_developers', $data);
+    // }
+    // public function machineLearningEngineers(){
+    //     $data['title'] = 'Machine Learning Engineers';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/machine_learning_engineers', $data);
+    // }
+    // public function blockchainDevelopers(){
+    //     $data['title'] = 'Blockchain Developers';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/blockchain_developers', $data);
+    // }
+    // public function devOpsEngineers(){
+    //     $data['title'] = 'DevOps Engineers';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/dev_ops_engineers', $data);
+    // }
+    // public function dataEngineers(){
+    //     $data['title'] = 'Data Engineers';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/data_engineers', $data);
+    // }
+    // public function dataScientists(){
+    //     $data['title'] = 'Data Scientists';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/data_scientists', $data);
+    // }
+    // public function tableauDevelopers(){
+    //     $data['title'] = 'Tableau Developers';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/tableau_developers', $data);
+    // }
+    // public function biDevelopers(){
+    //     $data['title'] = 'BI Developers';
+    //     $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+    //     $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+    //     return $this->loadview('offshore_developers/offshore_development/bi_developers', $data);
+    // }
+
+    // Metaverse Urls
+    public function metaverseService(){
+        $data['title'] = 'Metaverse';
+        $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+        $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+        return $this->loadview('services/metaverse/metaverse', $data);
+    }
+    public function threedProductDesign(){
+        $data['title'] = '3d Product Design';
+        $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+        $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+        return $this->loadview('services/metaverse/3d_product_design', $data);
+    }
+    public function virtualSpaceCreation(){
+        $data['title'] = 'Virtual Space Creation';
+        $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+        $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+        return $this->loadview('services/metaverse/virtual_space_creation', $data);
+    }
+    public function unitySolutions(){
+        $data['title'] = 'Unity Solutions';
+        $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+        $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+        return $this->loadview('services/metaverse/unity_solutions', $data);
+    }
+    public function animations(){
+        $data['title'] = 'Animations';
+        $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+        $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+        return $this->loadview('services/metaverse/animations', $data);
+    }
+    public function itStaffing(){
+        $data['title'] = 'IT Staffing';
+        $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+        $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+        return $this->loadview('it_staffing', $data);
+    }
+    public function teamExtension(){
+        $data['title'] = 'Team Extension';
+        $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+        $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+        return $this->loadview('team_extension', $data);
+    }
+    public function virtualCto(){
+        $data['title'] = 'Virtual CTO';
+        $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+        $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+        return $this->loadview('offshore_developers/virtual_cto', $data);
+    }
+    public function developerCostOptimization(){
+        $data['title'] = 'Developer Cost Optimization';
+        $data['blogs'] = $this->front_model->getAllBlogs()->skip(0)->take(3);
+        $data['case_studies'] = $this->front_model->getAllCaseStudies()->random(2);
+        return $this->loadview('offshore_developers/developer_cost_optimization', $data);
+    }
+    
+    public function index2(){
+        $data['title'] = 'Home';
+        $data['loader'] = '1';
+        $data['meta_title'] = "App Development Company in India & USA | Designoweb Technologies";
+        $data['meta_description'] = "Designoweb Technologies is a leading mobile app development company with a global presence in India & USA. We specialize in delivering digital solutions to startups & enterprises worldwide.";
+        $data['testimonials_without_video'] = $this->front_model->getAllTestimonials()->where('client_image','!=',NULL)->where('video_link','==',NULL);
+        return $this->loadview('index2', $data);
+    }
     
 }

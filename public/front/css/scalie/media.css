@@ -1,0 +1,1855 @@
+@media (max-width: 1920px) {}
+
+@media (max-width: 1560px) {
+
+}
+
+@media (max-width: 1367px) {
+    .scaliePage .bannerLeft {
+        padding-right: 0;
+    }
+
+    .scaliePage .techLists .techListBox {
+        width: 25%;
+    }
+
+    .scaliePage .buildTeamInner .buildTeamLeft {
+        width: 50%;
+    }
+
+    .scaliePage .buildTeamInner .buildTeamRight {
+        width: 50%;
+    }
+
+    .scaliePage .sectionPoints {
+        padding-right: 0;
+    }
+
+    .scaliePage .sectionPoints .col-sm-6 {
+        margin-bottom: 38px;
+    }
+
+    .scaliePage .becomePartners {
+        padding: 25px 0 0px;
+    }
+
+    .scaliePage .slidesBtm {
+        margin-top: 45px;
+    }
+
+    .scaliePage .formSections .bodyLeftContent {
+        padding-right: 50px;
+    }
+
+    .scaliePage .buildTeamInner .buildTeamLeft {
+        padding-right: 50px;
+    }
+
+    .scaliePage .contactBannerContent .contactBannerIcon {
+        right: 0px;
+    }
+
+    .scaliePage .contactBannerContent {
+        padding-left: 0px;
+    }
+
+    .scaliePage .frameLeft {
+        padding-right: 50px;
+    }
+
+    .scaliePage .statsSection {
+        padding: 0 140px;
+    }
+
+    .scaliePage .bannerLeft h4 {
+        padding-right: 30px;
+    }
+
+    .scaliePage .startupSlides {
+        padding: 30px 30px;
+    }
+
+    .scaliePage .shareServiceRight.sectionHeading h2 {
+        padding-right: 0px;
+    }
+
+    .scaliePage .connectUsInner {
+        padding: 0px 40px 75px;
+    }
+
+    .scaliePage .skillsListsSection .skillsListsItems {
+        width: 15.4%;
+    }
+
+    .scaliePage .partnersPage .partnersPageChild,
+    .scaliePage .partnersPage .partnersPageForm {
+        width: 50%;
+    }
+
+    .scaliePage .partnersPageContent {
+        padding: 80px 60px 50px 0;
+    }
+
+    .scaliePage .blogbannerSection .bannerLeft .subHeadingFont {
+        padding-right: 0;
+    }
+
+    .scaliePage .mainBanner.blogPageBanner {
+        padding: 50px 0px 50px;
+    }
+
+    .scaliePage .blogbannerSection .bannerRight span {
+        top: -30px;
+        right: -40px;
+    }
+
+    .scaliePage .technologyListsBox .techListBox {
+        width: 50%;
+    }
+
+    .scaliePage .techsContentRight {
+        top: 110px;
+    }
+
+    .scaliePage .techsContentLeft {
+        padding-right: 50px;
+    }
+
+}
+
+@media (max-width: 1199px) {
+
+    .scaliePage .headingFont,
+    .scaliePage .fontSize48 {
+        font-size: 42px;
+    }
+
+    .scaliePage .fontSize36 {
+        font-size: 32px;
+    }
+
+    .scaliePage .fontSize32 {
+        font-size: 30px;
+    }
+
+    .scaliePage .fontSize28 {
+        font-size: 25px;
+    }
+
+    .scaliePage .fontSize26 {
+        font-size: 23px;
+    }
+
+    .scaliePage .fontSize18 {
+        font-size: 16px;
+    }
+
+    .scaliePage .bannerLeft .banerBottom {
+        margin-top: 35px;
+    }
+
+    .scaliePage .statsSection .statsBox {
+        padding: 20px 20px;
+    }
+
+    .scaliePage .forClientsTable thead tr th {
+        font-size: 18px;
+    }
+
+    .scaliePage .forClientsTable tbody tr td {
+        font-size: 16px;
+    }
+
+    .scaliePage .buildTeamInner .buildTeamLeft {
+        width: 49%;
+    }
+
+    .scaliePage .buildTeamInner .buildTeamRight {
+        width: 51%;
+    }
+
+    .scaliePage .teamCards {
+        padding: 15px;
+    }
+
+    .scaliePage .becomePartnersRight {
+        padding-left: 0;
+    }
+
+    .scaliePage .sectionPoints .col-sm-6 {
+        margin-bottom: 15px;
+    }
+
+    .scaliePage .easyHiringBox .col-lg-6 {
+        margin-bottom: 30px;
+    }
+
+    .scaliePage .easyHiringBox .col-lg-6:nth-last-child(-n+2) {
+        margin-bottom: 0px;
+    }
+
+    .scaliePage .btnStyle {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .scaliePage .btnStyle2 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .scaliePage .multipleOption .selectOption label {
+        padding: 24px 18px;
+    }
+
+    .scaliePage .sectionTop {
+        margin-top: 70px;
+    }
+
+    .scaliePage .formSections {
+        padding: 50px 0px 135px;
+    }
+
+    .scaliePage .formSections .bodyLeftContent {
+        padding-right: 30px;
+    }
+
+    .scaliePage .formBox {
+        padding: 30px;
+    }
+
+    .scaliePage .formTopBox {
+        margin-bottom: 38px;
+    }
+
+    .scaliePage .formTopBox .subHeadBox {
+        margin-bottom: 28px;
+    }
+
+    .scaliePage .fontSize26 {
+        font-size: 22px;
+    }
+
+    .scaliePage .statsSection {
+        padding: 0 40px;
+    }
+
+    .scaliePage .connectUsInner {
+        padding: 0px 20px 75px;
+    }
+
+    .scaliePage .connectUsInner .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .scaliePage .connectUsInner .col-sm-12 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .scaliePage .formSections.signupSteps.stepsContainer,
+    .scaliePage .newFormHeaderSec {
+        padding: 40px 0px 135px;
+        padding: 30px 0px 50px;
+    }
+
+    .scaliePage .newFormHeaderSec {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .scaliePage .skillsListsSection .skillsListsItems {
+        width: 18.6%;
+    }
+
+    .scaliePage .formBox.formBoxNew {
+        padding: 40px 40px;
+    }
+
+    .scaliePage .blogbannerSection .bannerRight span {
+        width: 80%;
+        top: 0;
+        right: 0;
+    }
+
+    .scaliePage .techsContentLeft {
+        width: calc(100% - 450px);
+        padding-right: 50px;
+    }
+
+    .scaliePage .techsContentRight {
+        width: 450px;
+        min-width: 450px;
+    }
+
+    .scaliePage .mainBanner.techsPageBanner {
+        padding: 50px 0px 50px;
+    }
+
+    .scaliePage .techsBannerLeft p {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .scaliePage .techsDetailsSection {
+        padding: 50px 0px 50px;
+    }
+    
+    .scaliePage .container {
+        max-width: 100%;
+        padding: 0px 50px;
+    }
+    
+    
+    
+}
+
+@media (max-width: 991px) {
+
+    .scaliePage .headingFont,
+    .scaliePage .fontSize48 {
+        font-size: 38px;
+    }
+
+    .scaliePage .subHeadingFont {
+        font-size: 17px;
+    }
+
+    .scaliePage .smallHeading {
+        font-size: 16px;
+    }
+
+    .scaliePage .sectionTop {
+        margin-top: 71px;
+    }
+
+    .scaliePage .mainBanner {
+        padding: 60px 0px 60px;
+    }
+
+    .scaliePage .padding75,
+    .scaliePage .padding110 {
+        padding: 55px 0;
+    }
+
+    .scaliePage .fontSize22 {
+        font-size: 19px;
+    }
+
+    .scaliePage .fontSize36 {
+        font-size: 28px;
+    }
+
+    .scaliePage .fontSize32 {
+        font-size: 27px;
+    }
+
+    .scaliePage .fontSize28 {
+        font-size: 23px;
+    }
+
+    .scaliePage .fontSize26 {
+        font-size: 22px;
+    }
+
+    .scaliePage .statsInner p br {
+        display: none;
+    }
+
+    .scaliePage .techLists .techListBox {
+        width: 33%;
+    }
+
+    .scaliePage .buildTeamInner .buildTeamLeft,
+    .scaliePage .buildTeamInner .buildTeamRight {
+        width: 100%;
+    }
+
+    .scaliePage .teamCards {
+        padding: 15px;
+    }
+
+    .scaliePage .teamCardBox {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .scaliePage .easyHiring .hiringArror,
+    .scaliePage .becomePartnersLeft .becomePartnersBtm {
+        display: none;
+    }
+
+    .scaliePage .aboutDeveloper {
+        padding-right: 5px;
+    }
+
+    .scaliePage .becomePartnersRight {
+        margin-top: 50px;
+    }
+
+    .scaliePage .fontSize16 {
+        font-size: 14px;
+    }
+
+    .scaliePage .buildTeamInner .buildTeamRight {
+        margin-top: 30px;
+    }
+
+    .scaliePage .forClientsTable {
+        overflow-x: auto;
+    }
+
+    .scaliePage .forClientsTable tbody tr td {
+        white-space: nowrap;
+    }
+
+    .scaliePage .forClientsTable tbody tr td:first-child {
+        white-space: inherit;
+    }
+
+    .scaliePage .shareServiceRight span {
+        padding-right: 0px;
+    }
+
+    .scaliePage .becomePartnersRight .becomePartnersTile {
+        padding: 25px 20px;
+    }
+
+    .scaliePage .easyHiring2 .easyHiringBox .hiringSteps p {
+        padding-right: 0;
+    }
+
+    .scaliePage .profileViewBox2 .profileViewInner .col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    .scaliePage .selectedItems.techLists.techLists .techListItem {
+        padding-right: 20px;
+    }
+
+    .scaliePage .selectedItems .form-control {
+        padding: 12px 10px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .scaliePage .selectedItems .counterBox {
+        margin: 0px 5px;
+        min-width: 80px;
+        width: 80px;
+    }
+
+    .scaliePage .formSections .bodyLeftContent {
+        padding-right: 0px;
+        margin-top: 0px;
+    }
+
+    .scaliePage .statsInner {
+        margin-bottom: 50px;
+    }
+
+    .scaliePage .teamCardBox .col-md-8 .teamCards {
+        width: 46%;
+    }
+
+    .scaliePage .teamCardBox .col-md-8 .teamCards:first-child {
+        margin-right: 15px;
+    }
+
+    .scaliePage .teamCardBox .col-md-8 .teamCards:last-child {
+        margin-left: 15px;
+    }
+
+    .scaliePage .buildTeamInner .buildTeamLeft {
+        padding-right: 0px;
+    }
+
+    .scaliePage .teamCards {
+        margin-bottom: 0px;
+    }
+
+    .scaliePage .formDesignNew {
+        padding: 40px 30px;
+    }
+
+    .scaliePage .contactBannerContent {
+        padding-right: 32vw;
+    }
+
+    .scaliePage .contactBannerContent br {
+        display: none;
+    }
+
+    .scaliePage .contactBannerContent .contactBannerIcon {
+        width: 180px;
+    }
+
+    .scaliePage .contactUsBanner {
+        margin-bottom: 60px;
+    }
+
+    .scaliePage .formDesign .form-control {
+        padding: 12px 16px;
+    }
+
+    .scaliePage .selectedItems.techLists {
+        padding-right: 10px;
+    }
+
+    .scaliePage .contentSectionDetail .sideSection {
+        min-width: 220px;
+        width: 220px;
+        margin-right: 35px;
+    }
+
+    .scaliePage .companyStats {
+        padding: 75px 0px 75px;
+    }
+
+    .scaliePage .statsSection {
+        padding: 0 0px;
+    }
+
+    .scaliePage .statsSection .statsBox {
+        padding: 20px 2px;
+    }
+
+    .scaliePage .bannerLeft h4 {
+        padding-right: 0;
+    }
+
+    .scaliePage .scalieInfoInner span {
+        margin: 0px 18px;
+    }
+
+    .scaliePage .footerLogo a {
+        width: 180px;
+    }
+
+    .scaliePage .frameLeft {
+        padding-right: 20px;
+    }
+
+    .scaliePage .frameLeft {
+        margin-bottom: 0px;
+    }
+
+    .scaliePage .frameRight2 {
+        padding: 50px 30px;
+    }
+
+    .scaliePage .thankyouPage2 .thankyouHeading br {
+        display: none;
+    }
+
+    .scaliePage .formSecBanner {
+        text-align: center;
+    }
+
+    .scaliePage .formSections.signupSection .bodyLeftContent {
+        margin-top: 0px;
+    }
+
+    .scaliePage .connectUsRight .connectHeading h2 {
+        line-height: normal;
+    }
+
+    .scaliePage .connectUsInner {
+        padding: 0px 0px 50px;
+    }
+
+    .scaliePage .formSections.signupSteps.stepsContainer,
+    .scaliePage .newFormHeaderSec {
+        padding: 40px 0px 135px;
+        padding: 30px 0px 50px;
+    }
+
+    .scaliePage .newFormHeaderSec {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .scaliePage .skillsListsSection .skillsListsItems {
+        width: 31%;
+    }
+
+    .scaliePage .footerLogo a {
+        width: 146px;
+    }
+
+    .scaliePage .blogbannerSection .bannerRight span {
+        width: 100%;
+    }
+
+    .scaliePage .thankyouInnerNew .pageHeadings,
+    .scaliePage .thankyouInnerNew .calendlyBox {
+        width: 100%;
+    }
+
+    .scaliePage .thankyouInnerNew .pageHeadings {
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+
+    .scaliePage .thankyouInnerNew .calendlyBox {
+        margin-top: 30px;
+        margin-top: 0px;
+    }
+
+    .scaliePage .detailBlogSection {
+        padding-left: 30px;
+    }
+
+    .scaliePage .techsContentRight {
+        width: 310px;
+        min-width: 310px;
+    }
+
+    .scaliePage .techsContentLeft {
+        width: calc(100% - 310px);
+        padding-right: 30px;
+    }
+
+    .scaliePage .techLists .techListBox {
+        width: 100%;
+    }
+
+    .scaliePage .techsEditorSection p,
+    .scaliePage .techsEditorSection ul li {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+
+    .scaliePage .techsEditorSection:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .scaliePage .techsEditorSection h2 {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .scaliePage .techsBannerRight {
+        padding-left: 20px;
+    }
+
+    .scaliePage .technologyListsBox .techListBox:nth-last-child(-n+2) .techListItem {
+        margin-bottom: 20px;
+    }
+
+    .scaliePage .technologyListsBox .techListBox:nth-last-child(-n+1) .techListItem {
+        margin-bottom: 0px;
+    }
+    
+    .scaliePage .workEmailBox{
+        width: 300px;
+    }
+    
+
+}
+
+@media (max-width: 900px) {
+    .scaliePage .partnersPage .partnersPageChild,
+    .scaliePage .partnersPage .partnersPageForm {
+        width: 100%;
+    }
+    .scaliePage .partnersPageContent {
+        padding: 80px 0px 80px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .scaliePage .forClientsTable {
+        overflow-x: auto;
+    }
+
+    .scaliePage .bannerRight {
+        margin-top: 40px;
+    }
+
+    .scaliePage .headingFont,
+    .scaliePage .fontSize48 {
+        font-size: 36px;
+    }
+
+    .scaliePage .mainBanner {
+        padding: 40px 0px 40px;
+    }
+
+    .scaliePage .statsSection .col-sm-4 {
+        width: 50%;
+    }
+
+    .scaliePage .fontSize22 {
+        font-size: 18px;
+    }
+
+    .scaliePage .techLists .techListBox {
+        width: 50%;
+    }
+
+    .scaliePage .buildTeamLeft {
+        margin-top: 0px;
+    }
+
+    .scaliePage .fontSize36 {
+        font-size: 25px;
+    }
+
+    .scaliePage .fontSize32 {
+        font-size: 23px;
+    }
+
+    .scaliePage .fontSize28 {
+        font-size: 20px;
+    }
+
+    .scaliePage .fontSize26 {
+        font-size: 19px;
+    }
+
+    .scaliePage .sectionHeading2 {
+        margin-bottom: 30px;
+    }
+
+    .scaliePage .teamCards {
+        max-width: 227px;
+    }
+
+    .scaliePage .hiringSteps .hiringCounter {
+        font-size: 14px;
+        height: 30px;
+        width: 38px;
+        min-width: 38px;
+    }
+
+    .scaliePage .easyHiringBox .col-lg-6,
+    .scaliePage .easyHiringBox .col-lg-6:nth-last-child(-n+2) {
+        margin-bottom: 20px;
+    }
+
+    .scaliePage .fontSize20 {
+        font-size: 18px;
+    }
+
+    .scaliePage .profileView .col-sm-4 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .scaliePage .profileView .col-sm-4:last-child {
+        margin-bottom: 0px;
+    }
+
+    .scaliePage .profileViewTop .viewTopDeveloper {
+        margin-bottom: 13px;
+    }
+
+    .scaliePage .footerSection .footerBox {
+        padding: 50px 0px 50px;
+    }
+
+    .scaliePage .footerRight {
+        margin-top: 40px;
+    }
+
+    .scaliePage .footerRight .col-sm-12 {
+        width: 33%;
+    }
+
+    .scaliePage .padding75,
+    .scaliePage .padding110 {
+        padding: 50px 0;
+    }
+
+    .scaliePage .becomePartnersRight .col-sm-6 {
+        width: 50%;
+    }
+
+    .scaliePage .teamCardBox {
+        padding: 0 0;
+    }
+
+    .scaliePage .shareServicesBox .shareServiceLeft {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .scaliePage .shareServicesBox .shareServiceRight {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .scaliePage .shareServicesBox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .scaliePage .shareServiceRight.sectionHeading h2 br {
+        display: none;
+    }
+
+    .scaliePage .outStaffBanner {
+        margin-bottom: 40px;
+    }
+
+    .scaliePage .easyHiringBox .col-sm-12 {
+        margin-bottom: 20px;
+    }
+
+    .scaliePage .viewBottomLists .col-sm-6 {
+        width: 50%;
+    }
+
+    .scaliePage .profileViewBox2 .profileViewTop .viewTopDeveloper {
+        margin-bottom: 13px;
+    }
+
+    .scaliePage .shareServiceLeft .leftHeading {
+        text-align: left;
+    }
+
+    .scaliePage .servicesLists ul {
+        justify-content: flex-start;
+    }
+
+    .scaliePage .servicesLists ul li {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+    .scaliePage .sectionTop {
+        margin-top: 62px;
+    }
+
+    .scaliePage .bannerLeft h4 {
+        padding-right: 0px;
+    }
+
+    .scaliePage .multipleOption .col-sm-6 {
+        width: 33%;
+    }
+
+    .scaliePage .multipleOption .selectOption label {
+        padding: 20px 10px;
+    }
+
+    .scaliePage .multipleOption .selectOption .optionName {
+        font-size: 14px;
+        margin-top: 14px;
+    }
+
+    .scaliePage .partnerDetailsStep {
+        width: 460px;
+    }
+
+    .scaliePage .formGroupSec {
+        width: 50%;
+    }
+
+    .scaliePage .formDesign label {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 9px;
+    }
+
+    .scaliePage .formDesign .form-group {
+        margin-bottom: 22px;
+    }
+
+    .scaliePage .formHeading {
+        margin-bottom: 15px;
+    }
+
+    .scaliePage .selectedTechs .selectedTechbox.webViewSection {
+        display: none;
+    }
+
+    .scaliePage .mobileSection {
+        display: block;
+    }
+
+    .scaliePage .selectedTechbox .col-sm-4 {
+        width: 50%;
+    }
+
+    .scaliePage .selectedTechbox .col-sm-4:first-child {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .scaliePage .selectedTechbox .col-sm-4:last-child {
+        margin-bottom: 0px;
+    }
+
+    .scaliePage .selectedTechs .selectedTechbox {
+        padding: 20px;
+        background: var(--colorWhite);
+        border-radius: 12px;
+    }
+
+    .scaliePage .selectedItems button,
+    .scaliePage .selectedItems .form-control {
+        border: 1px solid var(--colorGrey6);
+    }
+
+    .scaliePage .selectedItems button {
+        padding: 8px 15px;
+    }
+
+    .scaliePage .selectedItems .form-control {
+        padding: 9px 10px;
+    }
+
+    .scaliePage .selectedItems.techLists .techListItem {
+        width: auto;
+    }
+
+    .scaliePage .statsSection .col-sm-3 {
+        width: 50%;
+    }
+
+    .scaliePage .teamCardBox .col-md-4.col-lg-6 {
+        display: none;
+    }
+
+    .scaliePage .footerBtmInner {
+        flex-direction: column;
+    }
+
+    .scaliePage .copyRight {
+        margin-bottom: 10px;
+    }
+
+    .scaliePage .footerBottomMenu ul li {
+        margin-right: 35px;
+    }
+
+    .scaliePage .contactUsSection {
+        margin-bottom: 30px;
+    }
+
+    .scaliePage .contactUsRight {
+        margin-top: 20px;
+    }
+
+    .scaliePage .contactBannerContent {
+        padding-right: 27vw;
+    }
+
+    .scaliePage .contactBannerContent .contactBannerIcon {
+        width: 130px;
+        top: 14vh;
+    }
+
+    .scaliePage .contactUsBanner {
+        padding: 60px 0px;
+    }
+
+    .scaliePage .contentSectionDetail .sideSection {
+        display: none;
+    }
+
+    .scaliePage .contentSecDetails .secContents {
+        margin-bottom: 20px;
+    }
+
+    .scaliePage .statsSection {
+        padding: 0 10%;
+    }
+
+    .scaliePage .container.container2 {
+        padding: 0px 30px;
+    }
+
+    .scaliePage .joinUsBtm span {
+        margin-right: 18px;
+    }
+
+    .scaliePage .sectionHeading h2 {
+        margin-bottom: 13px;
+    }
+
+    .scaliePage .buildTeamInner .buildTeamLeft .sectionHeading span {
+        margin-bottom: 0;
+    }
+
+    .scaliePage .scalieInfoInner {
+        flex-wrap: wrap;
+    }
+
+    .scaliePage .scalieInfoInner span {
+        width: 50%;
+        margin: 0px 10px;
+        margin: 0px;
+        padding: 0px 10px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 21px;
+    }
+
+    .scaliePage .scalieInfoInner span:nth-last-child(-n+2) {
+        margin-bottom: 0px;
+    }
+
+    .scaliePage .frameLeft,
+    .scaliePage .frameRight {
+        width: 100%;
+    }
+
+    .scaliePage .frameLeft {
+        padding-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .scaliePage .monthlyStatsBox .monthlyStatsBtm .monthlyStatsBtmInner {
+        width: 260px;
+    }
+
+    .scaliePage .frameBox {
+        margin-top: 0px;
+    }
+
+    .scaliePage .selectedItems.techLists .techListItem {
+        min-height: 42px;
+    }
+
+    .scaliePage .techLists .techListItem span img {
+        height: 25px;
+        width: 25px;
+        min-width: 25px;
+    }
+
+    .scaliePage .footerMenus {
+        justify-content: flex-start;
+    }
+
+    .scaliePage .formGroupSec.formGroupSecCode {
+        width: 30%;
+    }
+
+    .scaliePage .formGroupSec.formGroupSecCode2 {
+        width: 70%;
+    }
+
+    .scaliePage .thankyouModal .modal-dialog {
+        max-width: 80%;
+        margin: 30px auto;
+    }
+
+    .scaliePage .connectUsLeft span {
+        text-align: center;
+    }
+
+    .scaliePage .ourTestimonialsBox{
+        display: none;
+    }
+
+    .scaliePage .stepsContainerPage,
+    .scaliePage .stepsContainer {
+        width: 100%;
+    }
+
+    .scaliePage .formSections.signupSteps.stepsContainer,
+    .scaliePage .newFormHeaderSec {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .scaliePage .workEmailBox {
+        width: 50%;
+    }
+
+    .scaliePage .skillsListsSection .skillsListsItems {
+        width: 23%;
+    }
+
+    .scaliePage .newFormHeader {
+        margin-bottom: 35px;
+        margin-bottom: 0;
+    }
+
+    .scaliePage .footerLogo a {
+        width: 120px;
+    }
+
+    .scaliePage .newFormHeaderSec {
+        width: 100%;
+    }
+
+    .scaliePage .stepsContainer {
+        margin-top: 58px;
+        margin-top: 48px;
+    }
+
+    .scaliePage .formSections.signupSteps.stepsContainer,
+    .scaliePage .newFormHeaderSec {
+        padding: 40px 0px 135px;
+        padding: 20px 0px 50px;
+    }
+
+    .scaliePage .newFormHeaderSec {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .scaliePage .techLists .techListItem {
+        padding: 9px 9px;
+    }
+
+    .scaliePage .partnersPageContent {
+        padding: 50px 0px 50px 0;
+    }
+
+    .scaliePage .partnersPageContent h1 {
+        margin-bottom: 28px;
+    }
+
+    .scaliePage .bannerCard {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .scaliePage .partnersPageContent.partnersPageContent2 {
+        padding-top: 50px;
+    }
+
+    .scaliePage .blogbannerSection .bannerRight {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .scaliePage .blogbannerSection .bannerRight span {
+        width: 56%;
+        margin: 0 auto;
+        float: unset;
+        position: relative;
+    }
+
+    .scaliePage .mainBanner.blogPageBanner {
+        margin-bottom: 0;
+    }
+
+    .scaliePage .blogsLists .col-sm-12 {
+        width: 50%;
+    }
+
+    .scaliePage .blogsListsHeading {
+        margin-bottom: 30px;
+    }
+
+    .scaliePage .blogsListingsBox {
+        padding: 30px 0 50px;
+    }
+
+    .scaliePage .blogDetailBanner {
+        margin-bottom: 45px;
+    }
+
+    .scaliePage .blogDetailChild .blogDetailItems {
+        display: none;
+    }
+
+    .scaliePage .detailBlogSection {
+        padding-left: 0px;
+    }
+
+    .scaliePage .blogDetailText,
+    .scaliePage .blogDetailPoints {
+        margin-bottom: 40px;
+    }
+
+    .scaliePage .faqList {
+        padding: 25px 0;
+    }
+
+    .scaliePage .techsContentRight {
+        width: 100%;
+        min-width: 100%;
+        position: relative;
+        top: 0;
+    }
+
+    .scaliePage .techsDetailsChild {
+        flex-direction: column-reverse;
+    }
+
+    .scaliePage .techsContentLeft {
+        width: 100%;
+        padding-right: 0;
+        margin-top: 50px;
+    }
+
+    .scaliePage .techsBannerRight {
+        padding-left: 0px;
+        margin-top: 30px;
+    }
+
+    .scaliePage .technologyListsBox .techListBox:nth-last-child(-n+2) .techListItem {
+        margin-bottom: 0;
+    }
+
+    .scaliePage .techsBannerRight {
+        text-align: center;
+    }
+
+    .scaliePage .techsBannerRight img {
+        float: unset;
+    }
+    .scaliePage.scaliePageNew .customCheckList{
+        margin-right: 15px;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .scaliePage .headingFont,
+    .scaliePage .fontSize48 {
+        font-size: 32px;
+    }
+
+    .scaliePage .teamCards {
+        max-width: 184px;
+        padding: 10px;
+    }
+
+    .scaliePage .teamCardBox .teamCards:first-child {
+        margin-left: 0px;
+    }
+
+    .scaliePage .teamCardBox {
+        padding-left: 0;
+    }
+
+    .scaliePage .fontSize16 {
+        font-size: 14px;
+    }
+
+    .scaliePage .fontSize20 {
+        font-size: 16px;
+    }
+
+    .scaliePage .profileView {
+        padding: 20px 20px;
+    }
+
+    .scaliePage .joinUsBtm {
+        flex-direction: column;
+    }
+
+    .scaliePage .joinUsBtm span {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .scaliePage .joinUsBtm span:last-child {
+        margin-bottom: 0px;
+    }
+
+    .scaliePage .footerRight .col-sm-12 {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .scaliePage .footerRight .col-sm-12:last-child {
+        margin-bottom: 0px;
+    }
+
+    .scaliePage .footerBtmInner {
+        flex-direction: column;
+    }
+
+    .scaliePage .copyRight {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .scaliePage .footerBottom {
+        padding: 30px 0 30px;
+    }
+
+    .scaliePage .becomePartnersRight .col-sm-6 {
+        width: 100%;
+    }
+
+    .scaliePage .becomePartnersRight .col-sm-6,
+    .scaliePage .becomePartnersRight .col-sm-6:nth-last-child(-n+2) {
+        margin-bottom: 20px;
+    }
+
+    .scaliePage .joinUsInner h2 br {
+        display: none;
+    }
+
+    .scaliePage .becomePartnersRight .col-sm-6 {
+        width: 50%;
+    }
+
+    .scaliePage .becomePartnersRight .becomePartnersTile {
+        padding: 25px 15px;
+    }
+
+    .scaliePage .startUpSliderTop .sectionHeading h2 br {
+        display: none;
+    }
+
+    .scaliePage .becomePartnersLeft .becomePartnerLogo {
+        margin-left: 10px;
+        margin-bottom: 25px;
+    }
+
+    .scaliePage .becomePartnersLeft .becomePartnersContent {
+        margin-bottom: 38px;
+    }
+
+    .scaliePage .viewBottomLists .row .col-sm-6 {
+        width: 50%;
+    }
+
+    .scaliePage .techLists .techListItem {
+        height: 100%;
+        margin-bottom: 0px;
+    }
+
+    .scaliePage .techLists .techListBox {
+        margin-bottom: 15px;
+    }
+
+    .scaliePage .fontSize18 {
+        font-size: 15px;
+    }
+
+    .scaliePage .forClientsTable thead tr th {
+        font-size: 15px;
+    }
+
+    .scaliePage .forClientsTable tbody tr td {
+        font-size: 14px;
+    }
+
+    .scaliePage .forClientsTable thead tr th,
+    .forClientsTable tbody tr td:not(:first-child) {
+        white-space: nowrap;
+    }
+
+    .scaliePage .padding75,
+    .scaliePage .padding110 {
+        padding: 40px 0;
+    }
+
+    .scaliePage .bannerLeft h1 br {
+        display: none;
+    }
+
+    .scaliePage .techLists .techListItem span {
+        display: inline-block;
+        width: 22px;
+        margin-right: 8px;
+    }
+
+    .scaliePage .servicesLists ul li {
+        font-size: 12px;
+        padding: 12px 14px;
+    }
+
+    .scaliePage .servicesLists ul li span img {
+        width: 22px;
+        margin-right: 8px;
+    }
+
+    .scaliePage .techLists .techListItem span img {
+        width: 100%;
+    }
+
+    .scaliePage .footerMenus .footerMenuList ul li:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .scaliePage .easyHiringBox .hiringSteps h5 {
+        margin-bottom: 8px;
+    }
+
+    .scaliePage .profileViewBox2 .profileView {
+        padding: 20px 20px;
+    }
+
+    .scaliePage .profileViewBox2 .profileView .profileViewTop,
+    .scaliePage .profileViewBox2 .profileView .profileViewMid {
+        margin-bottom: 20px;
+    }
+
+    .scaliePage .multipleOption .col-sm-6 {
+        width: 50%;
+    }
+
+    .scaliePage .formSections {
+        padding: 30px 0px 80px;
+    }
+
+    .scaliePage .formHeading .formHeadingSec {
+        margin-bottom: 10px;
+        margin-bottom: 5px;
+    }
+
+    .scaliePage .partnerDetailsStep {
+        width: 100%;
+    }
+
+    .scaliePage .formDesign .form-control {
+        padding: 10px 15px;
+    }
+
+    .scaliePage .formDesign .form-control {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .scaliePage .selectedTechbox .col-sm-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .scaliePage .selectedTechbox .col-sm-4:last-child {
+        margin-bottom: 0px;
+    }
+
+    .scaliePage .formSecBanner {
+        display: none;
+    }
+
+    .scaliePage .formBox {
+        padding: 30px 20px;
+    }
+
+    .scaliePage .fontSize24 {
+        font-size: 20px;
+    }
+
+    .scaliePage .footerBottomMenu ul li {
+        margin-right: 25px;
+    }
+
+    .scaliePage .statsInner {
+        margin-bottom: 30px;
+    }
+
+    .scaliePage .teamCardBox .col-md-8 .teamCards {
+        width: 48%;
+    }
+
+    .scaliePage .teamCardBox .col-md-8 .teamCards:first-child {
+        margin-right: 5px;
+    }
+
+    .scaliePage .teamCardBox .col-md-8 .teamCards:last-child {
+        margin-left: 5px;
+    }
+
+    .scaliePage .sectionPointbox h5 {
+        margin-bottom: 6px;
+    }
+
+    .scaliePage .contactBannerContent h2 {
+        margin-bottom: 26px;
+    }
+
+    .scaliePage .contactBannerContent {
+        padding-right: 0;
+    }
+
+    .scaliePage .contactUsBanner {
+        padding: 50px 0px 150px;
+    }
+
+    .scaliePage .contactBannerContent .contactBannerIcon {
+        top: 18vh;
+    }
+
+    .scaliePage .selectedItems .form-control {
+        padding: 7px 10px;
+    }
+
+    .scaliePage .selectedItems button {
+        padding: 9px 15px;
+        line-height: 18px;
+    }
+
+    .scaliePage .statsSection {
+        padding: 0 7%;
+    }
+
+    .scaliePage .servicesLists ul li {
+        margin-bottom: 10px;
+    }
+
+    .scaliePage .btnStyle {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 14px 18px;
+    }
+
+    .scaliePage .becomePartnersLeft {
+        padding-right: 0px;
+    }
+
+    .scaliePage .startupSlides {
+        padding: 25px;
+    }
+
+    .scaliePage .select2-container {
+        height: 44px;
+        line-height: 44px !important;
+    }
+
+    .scaliePage .select2-container .select2-selection--single,
+    .scaliePage .select2-container--default .select2-selection--single .select2-selection__rendered,
+    .scaliePage .select2-container--default .select2-selection--single .select2-selection__arrow {
+        line-height: 44px;
+    }
+
+    .scaliePage .thankyouModal .modal-dialog {
+        max-width: 90%;
+    }
+
+    .scaliePage .successImage img {
+        width: 40%;
+    }
+
+    .scaliePage .connectUsRight .connectHeading {
+        padding-bottom: 20px;
+    }
+
+    .scaliePage .connectUsRight .connectSubHeading {
+        padding-bottom: 30px;
+    }
+
+    .scaliePage .formSections.signupSteps.stepsContainer {
+        padding-bottom: 60px;
+    }
+
+    .scaliePage .workEmailBox {
+        width: 100%;
+    }
+
+    .scaliePage .skillsListsSection .skillsListsItems {
+        width: 22%;
+    }
+
+    .scaliePage .multipleOption .selectOption .optionName {
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 13px;
+    }
+
+    .scaliePage .multipleOption .selectOption label {
+        padding: 10px 5px;
+    }
+
+    .scaliePage .skillsListsSection .skillsListsItems .selectOption {
+        height: 86px;
+    }
+
+    .scaliePage .blogsLists .col-sm-12 {
+        width: 100%;
+    }
+
+    .scaliePage .blogCardImage span img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .scaliePage .blogsLists .row {
+        row-gap: 20px;
+    }
+
+    .scaliePage .blogbannerSection .bannerRight span {
+        width: 80%;
+    }
+
+    .scaliePage .blogbannerSection .bannerRight {
+        margin-top: 30px;
+    }
+
+    .scaliePage .mainBanner.blogPageBanner {
+        padding: 35px 0px 35px;
+    }
+
+    .scaliePage .blogDetailsLink {
+        height: 30px;
+        width: 30px;
+        padding: 7px;
+    }
+
+    .scaliePage .blogDetailsLink img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .scaliePage .blogDetailBanner {
+        margin-bottom: 35px;
+    }
+
+    .scaliePage .blogDetailTitle {
+        margin-bottom: 20px;
+    }
+
+    .scaliePage .blogCreationDate {
+        margin-bottom: 25px;
+    }
+
+    .scaliePage .blogDetailText,
+    .scaliePage .blogDetailPoints {
+        margin-bottom: 30px;
+    }
+
+    .scaliePage .blogDetailPoints p,
+    .scaliePage .blogDetailText {
+        line-height: 24px;
+    }
+
+    .scaliePage .blogDetailBanner span {
+        height: 230px;
+    }
+
+    .scaliePage .blogDetailBanner span img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .scaliePage .mainBanner.techsPageBanner,
+    .scaliePage .techsDetailsSection {
+        padding: 30px 0px 30px;
+    }
+
+    .scaliePage .technologyListsBox .techListBox:nth-last-child(-n+2) {
+        margin-bottom: 0;
+    }
+    .scaliePage.scaliePageNew .newFormDesign{
+        padding: 30px 25px;
+    }
+    .scaliePage.scaliePageNew .newFormDesignChild .form-group {
+        margin-bottom: 20px;
+    }
+    .scaliePage.scaliePageNew .customCheckList{
+        margin-right: 8px;
+        margin-bottom: 8px;
+        height: 42px;
+    }
+
+}
+
+@media (max-width: 414px) {
+
+    .scaliePage .headingFont,
+    .scaliePage .fontSize48 {
+        font-size: 28px;
+    }
+
+    .scaliePage .bannerLeft h1,
+    .scaliePage .bannerLeft h4 {
+        margin-bottom: 20px;
+    }
+
+    .scaliePage .smallHeading {
+        font-size: 15px;
+    }
+
+    .scaliePage .smallFont {
+        font-size: 13px;
+    }
+
+    .scaliePage .btnStyle,
+    .scaliePage .btnStyle2 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .scaliePage .fontSize22 {
+        font-size: 16px;
+    }
+
+    .scaliePage .fontSize36 {
+        font-size: 24px;
+    }
+
+    .scaliePage .fontSize32 {
+        font-size: 23px;
+    }
+
+    .scaliePage .statsBox h6 {
+        font-size: 14px;
+    }
+
+    .scaliePage .statsSection .statsBox {
+        padding: 20px 20px;
+    }
+
+    .scaliePage .techLists .techListItem {
+        font-size: 12px;
+    }
+
+    .scaliePage .teamCards {
+        max-width: 100%;
+    }
+
+    .scaliePage .teamCardBox {
+        padding: 0px;
+    }
+
+    .scaliePage .teamCardBox .teamCards:nth-child(2) {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .scaliePage .teamCardBox .teamCards:last-child {
+        right: 0px;
+        margin-top: 0px;
+    }
+
+    .scaliePage .teamCardBox .teamCards:first-child .memberDetail {
+        padding-right: 0px;
+    }
+
+    .scaliePage .teamCardBox .teamCards:last-child {
+        margin-bottom: 0px;
+    }
+
+    .scaliePage .sectionHeading h2 {
+        margin-bottom: 12px;
+    }
+
+    .scaliePage .hiringSteps .hiringCounter {
+        font-size: 12px;
+        height: 24px;
+        width: 24px;
+        min-width: 24px;
+    }
+
+    .scaliePage .fontSize14 {
+        font-size: 12px;
+    }
+
+    .scaliePage .expertListing .expertListBox {
+        font-size: 12px;
+    }
+
+    .scaliePage .profileView .col-sm-4 {
+        margin-bottom: 20px;
+    }
+
+    .scaliePage .becomePartnersLeft .becomePartnersHeading {
+        margin-bottom: 15px;
+    }
+
+    .scaliePage .socialLists ul li a {
+        font-size: 18px;
+    }
+
+    .scaliePage .subHeadingFont {
+        font-size: 16px;
+    }
+
+    .scaliePage .mainBanner {
+        padding: 28px 0px 40px;
+    }
+
+    .scaliePage .becomePartnersRight .col-sm-6 {
+        width: 100%;
+    }
+
+    .scaliePage .multipleOption .selectOption .optionName {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+
+    .scaliePage .formGroupSec {
+        width: 100%;
+        margin-bottom: 13px;
+    }
+
+    .scaliePage .formGroupSec:last-child {
+        margin-bottom: 0px;
+    }
+
+    .scaliePage .formDesign label {
+        font-size: 13px;
+        line-height: 19px;
+        margin-bottom: 9px;
+    }
+
+    .scaliePage .formTopBox {
+        margin-bottom: 30px;
+    }
+
+    .scaliePage .formTopBox .subHeadBox {
+        margin-bottom: 22px;
+    }
+
+    .scaliePage .formDesign .form-group {
+        margin-bottom: 18px;
+    }
+
+    .scaliePage .contactBannerContent h2 br {
+        display: initial;
+    }
+
+    .scaliePage .contactBannerContent .contactBannerIcon {
+        top: 23vh;
+    }
+
+    .scaliePage .statsSection {
+        padding: 0px 0px;
+    }
+
+    .scaliePage .statsSection .statsBox {
+        padding: 20px 10px;
+    }
+
+    .scaliePage .companyStats {
+        padding: 50px 0px 40px;
+    }
+
+    .scaliePage .scalieInfoInner span {
+        padding: 0px 11%;
+    }
+
+    .scaliePage .monthlyStatsBox .monthlyStatsBtm .monthlyStatsBtmInner {
+        width: 100%;
+    }
+
+    .scaliePage .joinUsBtm span {
+        margin-bottom: 10px;
+    }
+
+    .scaliePage .becomePartnersTile .partnerTileText br {
+        display: none;
+    }
+
+    .scaliePage .scalieInfoInner span span {
+        padding: 0px;
+    }
+
+    .scaliePage .scalieInfoInner span {
+        padding: 0px;
+        font-size: 13px;
+    }
+
+    .scaliePage .skillsListsSection .skillsListsItems {
+        width: 22%;
+        margin: 4px 4px;
+        height: 85px;
+    }
+
+    .scaliePage .skillsListsSection .skillsListsItems .selectOption {
+        height: 100%;
+        width: 100%;
+    }
+
+}

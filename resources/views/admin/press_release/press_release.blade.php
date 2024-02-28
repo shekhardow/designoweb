@@ -47,7 +47,7 @@
                             <tr>
                                 <td><?php echo $i; ?></td>
                                 <td><?php echo !empty($value->press_release_title) ? ucwords($value->press_release_title) : ""; ?></td>
-                                <td><a href="<?php echo asset('uploads/admin/press_release/'.$value->image_url); ?>" download>
+                                <td><a href="<?php echo asset('uploads/admin/press_release/'.$value->image_url); ?>">
                                         <img style="width: 180px; height: 100px;" src="<?php echo url('uploads/admin/press_release/'.$value->image_url); ?>">
                                     </a>
                                 </td>

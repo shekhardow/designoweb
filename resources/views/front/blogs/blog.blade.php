@@ -8,9 +8,9 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="mainBannerLeft blogBannerLeft boxs">
-                            <span class="fontSize20 topSubHeading boxs">#BLOG</span>
+                            <span class="fontSize18 topSubHeading boxs">#BLOG</span>
                             <div class="bannerHeading bannerHeading3 boxs">
-                                <h1 class="fontSize52">Inspired by an extra opportunity to extend your insight?</h1>
+                                <h1 class="fontSize38">Inspired by an extra opportunity to extend your insight?</h1>
                             </div>
                             <p class="bannerSubHeading bannerSubHeading2 fontSize28 boxs boldFont">Spend your time around the table and read some words and letters</p>
                             <p class="bannerSmallContent fontSize18 fadeBlackFont boxs ">AT Designoweb, read some blogs to lighten up your mood and extend the lane of knowledge.</p>
@@ -64,7 +64,7 @@
                                         <span class="fontSize12 blogTiming boxs"><?php echo !empty($value->added_date) ? date('M d, Y',strtotime($value->added_date)) : ''; ?></span>
                                         <div class="bloginfo boxs">
                                             <h3 class="blogHeading fontSize22 boxs"><a class="boxs" href="<?php echo route('front/blog_details',['slug' => $value->slug]); ?>"><?php echo !empty($value->blog_title) ? $value->blog_title : ''; ?></a></h3>
-                                            <p class="blogDescription fontSize16 boxs"><?php echo !empty($value->blog_description) ? substr(strip_tags($value->blog_description),0,235).'...' : ''; ?></p>
+                                            <p class="blogDescription fontSize18 boxs"><?php echo !empty($value->blog_description) ? substr(strip_tags($value->blog_description),0,235).'...' : ''; ?></p>
                                         </div>
                                     </div>
                                 </div>

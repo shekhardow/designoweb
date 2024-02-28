@@ -34,6 +34,7 @@
                             <th>Name</th>
                             <th>Image</th>
                             <th>Description</th>
+                            <th>Highlighted</th>
                             <th>Status</th>
                             <th>Action</th>
                         </tr>
@@ -45,11 +46,24 @@
                             <tr>
                                 <td><?php echo $i; ?></td>
                                 <td><?php echo !empty($value->blog_title) ? ucwords($value->blog_title) : ""; ?></td>
-                                <td><a href="<?php echo asset('uploads/admin/blogs/'.$value->image_url); ?>" download>
+                                <td><a href="<?php echo asset('uploads/admin/blogs/'.$value->image_url); ?>">
                                         <img style="width: 180px; height: 100px;" src="<?php echo url('uploads/admin/blogs/'.$value->image_url); ?>">
                                     </a>
                                 </td>
                                 <td><?php echo !empty($value->blog_description) ? substr($value->blog_description,0,270).'...' : ""; ?></td>
+                                <?php
+                                if ($value->highlighted == 'Yes') {
+                                    $class = "m-badge--info";
+                                    $highlighted = "Yes";
+                                    $change_to = "No";
+                                } else {
+                                    $class = "m-badge--danger";
+                                    $highlighted = "No";
+                                    $change_to = "Yes";
+                                } ?>
+                                <td>
+                                    <a href="<?php echo url('admin/change_status/' . $value->blog_id . '/' . $change_to . '/blogs/blog_id/highlighted'); ?>" title="Home Screening" msg-type="<?php echo $change_to; ?>" class="m-badge status btn <?php echo $class; ?> m-badge--wide"><?php echo $highlighted ?></a>
+                                </td>
                                 <?php
                                 if ($value->status == 'Active') {
                                     $class = "m-badge--info";
@@ -63,16 +77,6 @@
                                 <td>
                                     <a href="<?php echo url('admin/change_status/' . $value->blog_id . '/' . $change_to . '/blogs/blog_id/status'); ?>" title="Change Status" msg-type="<?php echo $change_to; ?>" class="m-badge status btn  <?php echo $class; ?> m-badge--wide"><?php echo $status ?></a>
                                 </td>
-                                <?php
-                                if (@$value->is_block === 'Blocked') {
-                                    $class = "m-badge--danger";
-                                    $status1 = "Blocked";
-                                    $change_to1 = "Unblock";
-                                } else {
-                                    $class = "m-badge--success";
-                                    $status1 = "Unblock";
-                                    $change_to1 = "Blocked";
-                                } ?>
                                 <td>
                                     <a href="<?php echo url('admin/update_blog/' . encryptionID($value->blog_id)); ?>" class="m-badge btn m-badge--info m-badge--wide" title="Edit Blog"><i class="fa fa-edit"></i> Edit</a>
                                     <a href="<?php echo url('admin/change_status/' . $value->blog_id . '/Deleted/blogs/blog_id/status'); ?>" class="m-badge btn m-badge--danger m-badge--wide status" title="Delete Blog"><i class="fa fa-trash"></i> Delete</a>

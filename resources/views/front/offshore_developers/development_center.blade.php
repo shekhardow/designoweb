@@ -44,7 +44,7 @@
                             <p class="fontSize14">SERVICES</p>
                         </span> -->
                         <div class="sectionHeading mainSecHeading mainSecHeading3 boxs">
-                            <h2 class="blackFont fontSize48 pb-0">Why To Hire Offshore Development From Us?</h2>
+                            <h2 class="blackFont fontSize48 pb-0">Accelerate Growth and Scale with Our Offshore Development Center</h2>
                         </div>
                         <div class="subHeading boxs">
                             <p class="regularFont fontSize18">Designoweb’s team provides a great result according to your prerequisites.</p>

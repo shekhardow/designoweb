@@ -21,7 +21,7 @@ use Spatie\Honeypot\ProtectAgainstSpam;
 
 // ============================== Admin Site Routes ==================================
 
-\URL::forceScheme('https');
+// \URL::forceScheme('https');
 
 Route::get('/clear-cache', function () {
    Artisan::call('cache:clear');
@@ -74,7 +74,7 @@ Route::group(['prefix' => 'admin', 'middleware' => AdminAuth::class], function (
     Route::get('view_case_studies/{id}',[AdminController::class,'viewCaseStudies'])->name('admin/view_case_studies');
 
     // Portfolio
-     Route::get('portfolio',[AdminController::class,'portfolio'])->name('admin/portfolio');
+    Route::get('portfolio',[AdminController::class,'portfolio'])->name('admin/portfolio');
   
     Route::get('add_project',[AdminController::class,'open_portfolio_form'])->name('admin/add_project');
     Route::get('update_project/{id}',[AdminController::class,'open_portfolio_form'])->name('admin/update_project');
@@ -99,6 +99,7 @@ Route::group(['prefix' => 'admin', 'middleware' => AdminAuth::class], function (
 
 Route::get('/',[FrontController::class,'index'])->name('front/index');
 // Route::get('index',[FrontController::class,'index'])->name('front/index');
+Route::get('index2',[FrontController::class,'index2'])->name('front/index2');
 Route::get('about',[FrontController::class,'about'])->name('front/about');
 Route::get('our-process',[FrontController::class,'our_process'])->name('front/our_process');
 Route::get('testimonials',[FrontController::class,'testimonials'])->name('front/testimonials');
@@ -117,7 +118,9 @@ Route::get('case-studies',[FrontController::class,'case_studies'])->name('front/
 Route::get('case-study-detail/{slug}',[FrontController::class,'case_study_details'])->name('front/case_study_details');
 
 // Route::get('portfolio',[FrontController::class,'portfolio'])->name('front/portfolio');
-Route::get('portfolio',[FrontController::class,'case_studies'])->name('front/portfolio');
+// Route::get('portfolio1',[FrontController::class,'case_studies'])->name('front/portfolio1');
+Route::get('portfolio',[FrontController::class,'portfolio'])->name('front/portfolio');
+// Route::get('portfolio2',[FrontController::class,'case_studies2'])->name('front/portfolio2');
 
 // --------------------------------- UI UX Design ------------------------------------
 Route::get('ui-ux-design-services',[FrontController::class,'services_ui_ux_design'])->name('front/services_ui_ux_design');
@@ -252,12 +255,206 @@ Route::get('faqs',[FrontController::class,'faqs'])->name('front/faqs');
 Route::get('coupons',[FrontController::class,'coupons'])->name('front/coupons');
 
 Route::post('send-consultation-mail',[FrontController::class,'sendConsultationMail'])->name('front/send_consultation_mail');
+Route::post('sendConsultationMailV2',[FrontController::class,'sendConsultationMailV2'])->name('front/sendConsultationMailV2');
+Route::post('sendConsultationMailV3',[FrontController::class,'sendConsultationMailV3'])->name('front/sendConsultationMailV3');
+
 Route::post('send-mail',[FrontController::class,'sendMail'])->name('front/send_mail');
+
+
+//--------------------------------------------------Scalie Routes-------------------------------------------
+// Route::get('scaliehome',[FrontController::class,'scalieHome'])->name('scalie/scalieHome');
+// Route::get('scalie-become-partner',[FrontController::class,'scalieBecomePartner'])->name('scalie/scalieBecomePartner');
+Route::get('step1',[FrontController::class,'hiringStep1'])->name('scalie/hiringStep1');
+Route::get('step2',[FrontController::class,'hiringStep2'])->name('scalie/hiringStep2');
+Route::get('thank-you',[FrontController::class,'thankyou'])->name('scalie/thankyou');
+Route::get('contact-us',[FrontController::class,'contactus'])->name('scalie/contactus');
+
+Route::post('doStep1',[FrontController::class,'doStep1'])->name('Front/doStep/1');
+Route::post('doStep2',[FrontController::class,'doStep2'])->name('Front/doStep/2');
+
+
+Route::get('build-team',[FrontController::class,'scalieHome'])->name('scalie/build-team');
+Route::get('become-partner',[FrontController::class,'scalieBecomePartner'])->name('scalie/become-partner');
+
+
+
+// Route::get('partner-login',[FrontController::class,'partnerLogin'])->name('scalie/partnerLogin');
+// Route::get('partner-signup',[FrontController::class,'partnerSignup'])->name('scalie/partnerSignup');
 
 
 Route::get('/404', function () {
     abort(404);
 });
+
+
+// Pages Redirect Rules For SEO
+Route::redirect('/services-mobile-app-design', '/mobile-app-design-services', 301);
+Route::redirect('/services-web-app-development', '/web-app-development-services', 301);
+Route::redirect('/services-web-app-development-2', '/web-app-development-services', 301);
+Route::redirect('/services-saas-website', '/saas-website-development-services', 301);
+Route::redirect('/services-ecommerce-website', '/ecommerce-website-development-services', 301);
+Route::redirect('/services-tv-apps', '/tv-app-development-services', 301);
+Route::redirect('/services-quality-assurance', '/quality-assurance-services', 301);
+Route::redirect('/services-idea-consulting', '/idea-consulting-services', 301);
+Route::redirect('/services-mvp-development', '/mvp-development-services', 301);
+Route::redirect('/services-brand-design', '/brand-design-services', 301);
+
+Route::redirect('/offshore-hire-app-developers', '/hire-app-developers', 301);
+Route::redirect('/offshore-magento', '/hire-magento-developers', 301);
+Route::redirect('/case-study/amarooms', '/case-study-detail/amarooms', 301);
+Route::redirect('/services-manual-testing', '/manual-testing-services', 301);
+Route::redirect('/services-growth-hacking', '/growth-hacking-services', 301);
+Route::redirect('/case-study/teksmart', '/case-study-detail/teksmart', 301);
+Route::redirect('/offshore-ios', '/hire-ios-developers', 301);
+
+
+
+// Old urls to new urls redirection start
+Route::redirect('/services_ui_ux_design', '/ui-ux-design-services', 301);
+Route::redirect('/services_product_design', '/product-design-services', 301);
+Route::redirect('/services_web_design', '/web-design-services', 301);
+Route::redirect('/services_mobile_app_design', '/mobile-app-design-services', 301);
+Route::redirect('/services_brand_design', '/brand-design-services', 301);
+Route::redirect('/services_web_app_development', '/web-app-development-services', 301);
+Route::redirect('/services_saas_website', '/saas-website-development', 301);
+Route::redirect('/services_cms_website', '/cms-website-development', 301);
+Route::redirect('/services_ecommerce_website', '/ecommerce-website-development', 301);
+Route::redirect('/services_custom_website', '/custom-website-development', 301);
+Route::redirect('/services_custom_crm', '/custom-crm-development', 301);
+Route::redirect('/services_mobile_app_development', '/mobile-app-development-services', 301);
+Route::redirect('/services_native_apps', '/native-app-development', 301);
+Route::redirect('/services_hybrid_apps', '/hybrid-app-development', 301);
+Route::redirect('/services_tv_apps', '/tv-app-development', 301);
+Route::redirect('/services_wearable_apps', '/wearable-app-development', 301);
+Route::redirect('/services_iot_apps', '/iot-app-development', 301);
+Route::redirect('/services_ar_vr_apps', '/ar-vr-app-development', 301);
+Route::redirect('/services_quality_assurance', '/quality-assurance-services', 301);
+Route::redirect('/services_manual_testing', '/manual-testing-services', 301);
+Route::redirect('/services_automation_testing', '/automation-testing-services', 301);
+Route::redirect('/services_user_experience_testing', '/user-experience-testing-services', 301);
+Route::redirect('/services_growth_hacking', '/growth-hacking-services', 301);
+Route::redirect('/services_seo', '/seo-services', 301);
+Route::redirect('/services_performance_marketing', '/performance-marketing-services', 301);
+Route::redirect('/services_google_ads', '/google-ads-services', 301);
+Route::redirect('/services_meta_ads', '/meta-ads-services', 301);
+Route::redirect('/services_idea_consulting', '/idea-consulting-services', 301);
+Route::redirect('/services_prototyping', '/prototyping-services', 301);
+Route::redirect('/services_mvp_development', '/mvp-development-services', 301);
+Route::redirect('/services_product_development', '/product-development-services', 301);
+
+Route::redirect('/offshore_hire_web_developers', '/hire-web-developers', 301);
+Route::redirect('/offshore_hire_java_developers', '/hire-java-developers', 301);
+Route::redirect('/offshore_hire_python_developers', '/hire-python-developers', 301);
+Route::redirect('/offshore_hire_php_developers', '/hire-php-developers', 301);
+Route::redirect('/offshore_hire_dotnet_developers', '/hire-dotnet-developers', 301);
+Route::redirect('/offshore_hire_ruby_on_rails_developers', '/hire-ruby-on-rails-developers', 301);
+Route::redirect('/offshore_hire_laravel_developers', '/hire-laravel-developers', 301);
+Route::redirect('/offshore_hire_magento_developers', '/hire-magento-developers', 301);
+Route::redirect('/offshore_hire_shopify_developers', '/hire-shopify-developers', 301);
+Route::redirect('/offshore_hire_wordpress_developers', '/hire-wordpress-developers', 301);
+Route::redirect('/offshore_hire_app_developers', '/hire-app-developers', 301);
+Route::redirect('/offshore_hire_android_developers', '/hire-android-developers', 301);
+Route::redirect('/offshore_hire_ios_developers', '/hire-ios-developers', 301);
+Route::redirect('/offshore_hire_react_native_developers', '/hire-react-native-developers', 301);
+Route::redirect('/offshore_hire_flutter_developers', '/hire-flutter-developers', 301);
+Route::redirect('/offshore_hire_js_developers', '/hire-js-developers', 301);
+Route::redirect('/offshore_hire_react_js_developers', '/hire-react-js-developers', 301);
+Route::redirect('/offshore_hire_angular_js_developers', '/hire-angular-js-developers', 301);
+Route::redirect('/offshore_hire_node_js_developers', '/hire-node-js-developers', 301);
+Route::redirect('/offshore_hire_fullstack_developers', '/hire-full-stack-developers', 301);
+Route::redirect('/offshore_hire_mean_stack_developers', '/hire-mean-stack-developers', 301);
+Route::redirect('/offshore_hire_mern_stack_developers', '/hire-mern-stack-developers', 301);
+Route::redirect('/offshore_ui_ux_designer', '/hire-ui-ux-designers', 301);
+Route::redirect('/offshore_business_analyst', '/hire-business-analysts', 301);
+Route::redirect('/offshore_project_manager', '/hire-project-managers', 301);
+Route::redirect('/offshore_blockchain_developer', '/hire-blockchain-developers', 301);
+Route::redirect('/offshore_salesforce_developer', '/hire-salesforce-developers', 301);
+Route::redirect('/offshore_development_center', '/offshore-development-center', 301);
+Route::redirect('/offshore_dedicated_teams', '/offshore-dedicated-teams', 301);
+Route::redirect('/offshore_staff_augmentation', '/offshore-staff-augmentation', 301);
+
+Route::redirect('/technology_ios', '/technology-ios', 301);
+Route::redirect('/technology_android', '/technology-android', 301);
+Route::redirect('/technology_flutter', '/technology-flutter', 301);
+Route::redirect('/technology_react_native', '/technology-react-native', 301);
+Route::redirect('/technology_iot', '/technology-iot', 301);
+Route::redirect('/technology_ar', '/technology-ar', 301);
+Route::redirect('/technology_vr', '/technology-vr', 301);
+Route::redirect('/technology_java', '/technology-java', 301);
+Route::redirect('/technology_php', '/technology-php', 301);
+Route::redirect('/technology_python', '/technology-python', 301);
+Route::redirect('/technology_ruby_on_rails', '/technology-ruby-on-rails', 301);
+Route::redirect('/technology_laravel', '/technology-laravel', 301);
+Route::redirect('/technology_mean', '/technology-mean', 301);
+Route::redirect('/technology_mern', '/technology-mern', 301);
+Route::redirect('/technology_angular_js', '/technology-angular-js', 301);
+Route::redirect('/technology_react_js', '/technology-react-js', 301);
+Route::redirect('/technology_shopify', '/technology-shopify', 301);
+Route::redirect('/technology_wordpress', '/technology-wordpress', 301);
+Route::redirect('/technology_aws', '/technology-aws', 301);
+Route::redirect('/technology_azure', '/technology-azure', 301);
+Route::redirect('/technology_docker', '/technology-docker', 301);
+
+Route::redirect('/foodX', '/foodx', 301);
+Route::redirect('/grocerX', '/grocerx', 301);
+Route::redirect('/medX', '/medx', 301);
+
+Route::redirect('/services-product-development', '/product-development-services', 301);
+Route::redirect('/blogs/powerful-it-tools', '/blog-detail/powerful-it-tools', 301);
+Route::redirect('/offshore-project-manager', '/hire-project-managers', 301);
+
+
+
+
+Route::redirect('/ui-ux-design-services', '/design-solutions', 301);
+Route::redirect('/mobile-app-development-services', '/mobile-solutions', 301);
+Route::redirect('/web-app-development-services', '/web-solutions', 301);
+Route::redirect('/case-studies', '/portfolio', 301);
+
+
+// -------------------Designowb New Urls----------------------
+Route::get('design-solutions',[FrontController::class,'designSolutions'])->name('designSolutions');
+Route::get('mobile-solutions',[FrontController::class,'mobileSolutions'])->name('mobileSolutions');
+Route::get('web-solutions',[FrontController::class,'webSolutions'])->name('webSolutions');
+
+
+
+Route::get('offshore-development',[FrontController::class,'offshoreDevelopment'])->name('offshoreDevelopment');
+Route::get('mobile-app-developers',[FrontController::class,'mobileAppDevelopers'])->name('mobileAppDevelopers');
+Route::get('frontend-developers',[FrontController::class,'frontendDevelopers'])->name('frontendDevelopers');
+Route::get('backend-developers',[FrontController::class,'backendDevelopers'])->name('backendDevelopers');
+Route::get('fullstack-developers',[FrontController::class,'fullstackDevelopers'])->name('fullstackDevelopers');
+Route::get('javascript-developers',[FrontController::class,'javascriptDevelopers'])->name('javascriptDevelopers');
+Route::get('automation-engineers',[FrontController::class,'automationEngineers'])->name('automationEngineers');
+Route::get('software-architects',[FrontController::class,'softwareArchitects'])->name('softwareArchitects');
+Route::get('ai-developers',[FrontController::class,'aiDevelopers'])->name('aiDevelopers');
+Route::get('machine-learning-engineers',[FrontController::class,'machineLearningEngineers'])->name('machineLearningEngineers');
+Route::get('blockchain-developers',[FrontController::class,'blockchainDevelopers'])->name('blockchainDevelopers');
+Route::get('dev-ops-engineers',[FrontController::class,'devOpsEngineers'])->name('devOpsEngineers');
+Route::get('data-engineers',[FrontController::class,'dataEngineers'])->name('dataEngineers');
+Route::get('data-scientists',[FrontController::class,'dataScientists'])->name('dataScientists');
+Route::get('tableau-developers',[FrontController::class,'tableauDevelopers'])->name('tableauDevelopers');
+Route::get('bi-developers',[FrontController::class,'biDevelopers'])->name('biDevelopers');
+
+Route::get('nearshore-development',[FrontController::class,'nearshoreDevelopment'])->name('nearshoreDevelopment');
+
+Route::get('contractual_staffing',[FrontController::class,'contractualStaffing'])->name('contractualStaffing');
+Route::get('leadership_hiring',[FrontController::class,'leadershipHiring'])->name('leadershipHiring');
+Route::get('permanent_staffing',[FrontController::class,'permanentStaffing'])->name('permanentStaffing');
+Route::get('recruitment_process_outsourcing',[FrontController::class,'recruitmentProcessOutsourcing'])->name('recruitmentProcessOutsourcing');
+
+Route::get('metaverse',[FrontController::class,'metaverseService'])->name('front/metaverse');
+Route::get('3d-product-design',[FrontController::class,'threedProductDesign'])->name('front/threedProductDesign');
+Route::get('virtual-space-creation',[FrontController::class,'virtualSpaceCreation'])->name('front/virtualSpaceCreation');
+Route::get('unity-solutions',[FrontController::class,'unitySolutions'])->name('front/unitySolutions');
+Route::get('animations',[FrontController::class,'animations'])->name('front/animations');
+
+
+Route::get('it-staffing',[FrontController::class,'itStaffing'])->name('front/it-staffing');
+Route::get('team-extension',[FrontController::class,'teamExtension'])->name('front/team-extension');
+Route::get('virtual-cto',[FrontController::class,'virtualCto'])->name('front/virtual-cto');
+Route::get('developer-cost-optimization',[FrontController::class,'developerCostOptimization'])->name('front/developer-cost-optimization');
+
 
 
 

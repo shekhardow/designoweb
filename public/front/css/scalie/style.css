@@ -1,0 +1,3365 @@
+@font-face {
+    font-family: "Gordita-Regular";
+    src: url(../../fonts/scalie/Gordita-Regular.otf);
+}
+
+@font-face {
+    font-family: "Gordita-Medium";
+    src: url(../../fonts/scalie/Gordita-Medium.otf);
+}
+
+@font-face {
+    font-family: "Gordita-Bold";
+    src: url(../../fonts/scalie/Gordita-Bold.otf);
+}
+
+@font-face {
+    font-family: "Gordita-Light";
+    src: url(../../fonts/scalie/Gordita-Light.otf);
+}
+
+@font-face {
+    font-family: "CircularStd-Book";
+    src: url(../../fonts/scalie/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: "CircularStd-BookItalic";
+    src: url(../../fonts/scalie/CircularStd-BookItalic.otf);
+}
+
+@font-face {
+    font-family: "CircularStd-Medium";
+    src: url(../../fonts/scalie/CircularStd-Medium.otf);
+}
+
+@font-face {
+    font-family: "CircularStd-Bold";
+    src: url(../../fonts/scalie/CircularStd-Bold.otf);
+}
+
+@font-face {
+    font-family: "CircularStd-Light";
+    src: url(../../fonts/scalie/CircularStd-Light.otf);
+}
+
+@font-face {
+    font-family: "CircularStd-Light-Italic";
+    src: url(../../fonts/scalie/CircularStd-Light-Italic.otf);
+}
+
+/* Variables for color and font family Start */
+
+:root {
+    /* Colors */
+    --colorWhiteUpdate: #fff;
+    --colorBlackUpdate: #000;
+    --colorOffBlackUpdate: #121212;
+    --colorOffBlack2Update: #0d0d0d;
+    --colorOffBlack3Update: #333333;
+    --colorOffBlack4Update: #141414;
+    --colorOffBlack5Update: #222233;
+    --offGreyColorUpdate: #4d4d4d;
+    --primaryColorUpdate: #f26522;
+    --colorGreyUpdate: #f2f2f2;
+    --colorGrey2Update: #f7f7f7;
+    --colorGrey3Update: #555555;
+    --colorGrey4Update: #808080;
+    --colorGrey5Update: #444444;
+    --colorGrey6Update: #e6e6e6;
+    --colorGrey7Update: #cccccc;
+    --colorGrey8Update: #4b4b4b;
+    --colorGrey9Update: #f3f3f3;
+    --colorGrey10Update: #818181;
+    --colorGrey11Update: #b3b3b3;
+    --colorGrey12Update: #dddddd;
+    --colorYellowUpdate: #ffcf3f;
+    --colorBlueDarkUpdate: #070b2f;
+    --colorGreyNewUpdate: #f1f1f1;
+    /* Font Family */
+    --regularFontUpdate: "CircularStd-Book";
+    --regularItalicFontUpdate: "CircularStd-BookItalic";
+    --mediumFontUpdate: "CircularStd-Medium";
+    --boldFontUpdate: "CircularStd-Bold";
+    --lightFontUpdate: "CircularStd-Light";
+    --lightItalicFontUpdate: "CircularStd-Light-Italic";
+}
+
+/* Variables for color and font family End */
+
+body {
+    font-family: var(--regularFontUpdate);
+    color: var(--colorBlackUpdate);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+button,
+a {
+    transition: all 0.35s ease;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: var(--primaryColorUpdate);
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+/* Common Style Start */
+/* .navbar-expand-md .navbar-nav .nav-link,
+.navbar-nav .nav-link{
+    padding-left: 0px;
+    padding-right: 0px;
+} */
+.loader-admin {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../loader_wbg.gif') 50% 50% no-repeat rgb(249, 249, 249);
+    opacity: .8;
+}
+
+.boxs {
+    float: left;
+    width: 100%;
+    display: block;
+}
+
+.scaliePage .flexBox {
+    display: flex;
+}
+
+.scaliePage .sectionTop {
+    margin-top: 72px;
+}
+
+.scaliePage .primaryColor {
+    color: var(--primaryColorUpdate);
+}
+
+.scaliePage .colorWhite {
+    color: var(--colorWhiteUpdate);
+}
+
+.scaliePage .colorBlack {
+    color: var(--colorBlackUpdate);
+}
+
+.scaliePage .btnStyle {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: var(--mediumFontUpdate);
+    color: var(--colorWhiteUpdate);
+    background: var(--primaryColorUpdate);
+    border: 2px solid var(--primaryColorUpdate);
+    border-radius: 5px;
+    padding: 14px 24px;
+    text-transform: uppercase;
+}
+
+.scaliePage .btnStyle:hover,
+.scaliePage .btnStyle:focus {
+    background: transparent;
+    color: var(--primaryColorUpdate);
+}
+
+.scaliePage
+
+/* .btnStyle2{
+    font-size: 16px;
+    line-height: 16px;
+} .scaliePage  */
+.blueBtn {
+    background: var(--colorBlueDarkUpdate);
+    border-color: var(--colorBlueDarkUpdate);
+    color: var(--colorWhiteUpdate);
+}
+
+.scaliePage .blueBtn:hover,
+.scaliePage .blueBtn:focus {
+    color: var(--colorBlueDarkUpdate);
+}
+
+/* Common Classes Start */
+.scaliePage .headingFont {
+    font-size: 48px;
+    line-height: 127%;
+    line-height: normal;
+    font-family: var(--mediumFontUpdate);
+    color: var(--colorWhiteUpdate);
+}
+
+.scaliePage .subHeadingFont {
+    font-size: 20px;
+    line-height: normal;
+    color: var(--colorWhiteUpdate);
+}
+
+.scaliePage .smallHeading {
+    font-size: 18px;
+    line-height: normal;
+    color: var(--colorWhiteUpdate);
+    margin-top: 20px;
+}
+
+.scaliePage .smallFont {
+    font-size: 14px;
+    line-height: normal;
+    font-family: var(--regularFontUpdate);
+    color: var(--colorBlackUpdate);
+}
+
+.scaliePage .regularFont {
+    font-family: var(--regularFontUpdate);
+}
+
+.scaliePage .mediumFont {
+    font-family: var(--mediumFontUpdate);
+}
+
+.scaliePage .boldFont {
+    font-family: var(--boldFontUpdate);
+}
+
+.scaliePage .lightFont {
+    font-family: var(--lightFontUpdate);
+}
+
+.scaliePage .regularItalicFont {
+    font-family: var(--regularItalicFontUpdate);
+}
+
+.scaliePage .fontSize48 {
+    font-size: 48px;
+    line-height: normal;
+    line-height: 127%;
+    font-family: var(--mediumFontUpdate);
+}
+
+.scaliePage .fontSize36 {
+    font-size: 36px;
+    line-height: normal;
+    font-family: var(--mediumFontUpdate);
+}
+
+.scaliePage .fontSize32 {
+    font-size: 32px;
+    line-height: normal;
+    font-family: var(--mediumFontUpdate);
+}
+
+.scaliePage .fontSize28 {
+    font-size: 28px;
+    line-height: normal;
+}
+
+.scaliePage .fontSize26 {
+    font-size: 26px;
+    line-height: normal;
+}
+
+.scaliePage .fontSize24 {
+    font-size: 24px;
+    line-height: normal;
+    font-family: var(--mediumFontUpdate);
+}
+
+.scaliePage .fontSize22 {
+    font-size: 22px;
+    line-height: normal;
+}
+
+.scaliePage .fontSize20 {
+    font-size: 20px;
+    line-height: normal;
+}
+
+.scaliePage .fontSize18 {
+    font-size: 18px;
+    line-height: normal;
+}
+
+.scaliePage .fontSize16 {
+    font-size: 16px;
+    line-height: normal;
+}
+
+.scaliePage .fontSize14 {
+    font-size: 14px;
+    line-height: normal;
+}
+
+.scaliePage .fontSize15 {
+    font-size: 15px;
+    line-height: normal;
+}
+
+.scaliePage .fontSize12 {
+    font-size: 12px;
+    line-height: normal;
+}
+
+.scaliePage .fontSize10 {
+    font-size: 10px;
+    line-height: normal;
+}
+
+/* Common Style End */
+
+/* Landing Page Start */
+/* Banner Start */
+.scaliePage .bannerLeft {
+    /* padding-right: 90px; */
+}
+
+.scaliePage .bannerLeft h1 {
+    margin-bottom: 35px;
+}
+
+.scaliePage .bannerLeft h4 {
+    margin-bottom: 60px;
+}
+
+.scaliePage .bannerLeft h4 {
+    padding-right: 120px;
+}
+
+.scaliePage .bannerLeft .hireDeveloperBtn {
+    /* margin-bottom: 20px; */
+}
+
+.scaliePage .bannerLeft .banerBottom {
+    margin-top: 70px;
+}
+
+.scaliePage .devsImgs ul li {
+    display: inline-block;
+    float: left;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-left: -6px;
+}
+
+.scaliePage .devsImgs ul li:first-child {
+    margin-left: 0px;
+}
+
+.scaliePage .banerBottom .devsImgs {
+    margin-bottom: 7px;
+}
+
+.scaliePage .mainBanner {
+    padding: 80px 0px 75px;
+}
+
+.scaliePage .companyStats {
+    background: url('../../images/scalie/statsBanner.png') no-repeat center center;
+    background-size: cover;
+    padding: 88px 0px 109px;
+}
+
+.scaliePage .sectionHeading {
+    margin-bottom: 60px;
+}
+
+.scaliePage .sectionHeading2 {
+    margin-bottom: 50px;
+}
+
+.scaliePage .sectionHeading3 {
+    margin-bottom: 20px;
+}
+
+.scaliePage .sectionHeading h2 {
+    margin-bottom: 20px;
+}
+
+.scaliePage .statsSection .col-sm-4 {
+    margin-bottom: 30px;
+}
+
+.scaliePage .statsSection .statsBox {
+    text-align: center;
+}
+
+.scaliePage .statsSection .statsBox h4 {
+    margin-bottom: 17px;
+}
+
+.scaliePage .statsSection .statsBox h6 {
+    font-family: var(--regularFontUpdate);
+    color: var(--colorWhiteUpdate);
+}
+
+.scaliePage .statsInner {
+    margin-bottom: 73px;
+}
+
+.scaliePage .statsSection {
+    padding: 0 200px;
+}
+
+.scaliePage .techLists {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -13px;
+    margin-right: -13px;
+}
+
+.scaliePage .techLists .techListBox {
+    flex: 0 0 auto;
+    width: 20%;
+    padding-left: 13px;
+    padding-right: 13px;
+    max-width: 100%;
+}
+
+.scaliePage .techLists .techListItem {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 11px 18px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border: 1px solid var(--colorGrey12Update);
+}
+
+.scaliePage .techLists .techListItem span {
+    margin-right: 12px;
+}
+
+.scaliePage .techListsItems {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.scaliePage .technologiesBox p {
+    color: var(--offGreyColor);
+}
+
+.scaliePage .techSections {
+    margin-bottom: 40px;
+}
+
+.scaliePage .techSections:last-child {
+    margin-bottom: 0px;
+}
+
+.scaliePage .techSections h3 {
+    font-family: var(--mediumFontUpdate);
+    margin-bottom: 15px;
+}
+
+.scaliePage .techSections h5 {
+    margin-bottom: 35px;
+    font-family: var(--lightFontUpdate);
+}
+
+.scaliePage .forClientsTable thead tr th {
+    background-color: var(--primaryColorUpdate);
+    color: var(--colorWhiteUpdate);
+    font-size: 20px;
+    font-family: var(--boldFontUpdate);
+    padding: 14px 30px;
+    border-right: 1px solid var(--colorGrey12Update);
+}
+
+.scaliePage .forClientsTable thead tr th:last-child {
+    border-right: none;
+}
+
+.scaliePage .forClientsTable table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.scaliePage .forClientsTable tbody {
+    border: 1px solid var(--colorGreyUpdate);
+}
+
+.scaliePage .forClientsTable tbody tr td {
+    font-size: 18px;
+    font-family: var(--regularFontUpdate);
+    padding: 14px 30px;
+    /*border-right: 1px solid var(--colorGreyUpdate);*/
+    border-right: 1px solid var(--colorGrey12Update);
+
+}
+
+.scaliePage .forClientsTable tbody tr td:last-child {
+    border-right: none;
+}
+
+.scaliePage .forClientsTable tbody tr td:first-child {
+    font-family: var(--mediumFontUpdate);
+}
+
+.scaliePage .forClientsTable tbody tr td:nth-child(2) {
+    background-color: #ffece2;
+}
+
+.scaliePage .forClientsTable tbody tr:nth-child(even) td:nth-child(2) {
+    background-color: #f8d3c2;
+}
+
+.scaliePage .forClientsTable tbody tr:nth-child(even) td {
+    background-color: var(--colorGreyUpdate);
+}
+
+.scaliePage .padding110 {
+    padding: 110px 0;
+}
+
+.scaliePage .padding75 {
+    padding: 75px 0;
+}
+
+.scaliePage .padding54 {
+    padding: 54px 0;
+}
+
+.scaliePage .greyBg {
+    background-color: var(--colorGrey2Update);
+}
+
+.scaliePage .blackBg {
+    background-color: var(--colorBlackUpdate);
+}
+
+.scaliePage .blackBg2 {
+    background-color: var(--colorOffBlackUpdate);
+}
+
+.scaliePage .blackBg3 {
+    background-color: #070a28;
+}
+
+.scaliePage .blueBg ,
+.scaliePage.blueBgNew {
+    background: var(--colorBlueDarkUpdate);
+}
+
+.scaliePage .orangeBg {
+    background-color: var(--primaryColorUpdate);
+}
+
+.scaliePage .sectionPointbox h5 {
+    /* font-family: var(--mediumFontUpdate); */
+    color: var(--primaryColorUpdate);
+    margin-bottom: 12px;
+}
+
+.scaliePage .sectionPointbox p {
+    color: var(--colorGrey3Update);
+}
+
+.scaliePage .sectionPoints {
+    padding-right: 50px;
+}
+
+.scaliePage .sectionPoints .col-sm-6 {
+    margin-bottom: 38px;
+    /* padding: 25px 30px; */
+}
+
+.scaliePage .teamCards {
+    background-color: var(--colorWhiteUpdate);
+    /* max-width: 240px; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+    border: 1px solid var(--colorGrey6Update);
+    margin-bottom: 24px;
+}
+
+.scaliePage .teamCards:last-child {
+    margin-bottom: 0px;
+}
+
+.scaliePage .teamCards .teamImage {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.scaliePage .teamCards .teamImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.scaliePage .memberDetail .memberName {
+    font-family: var(--mediumFontUpdate);
+    margin-bottom: 5px;
+}
+
+.scaliePage .memberDetail .memberDesignation {
+    color: #1c2833;
+    margin-bottom: 9px;
+    font-family: var(--regularFontUpdate);
+}
+
+.scaliePage .memberDetail .experienceHeading {
+    color: #1c2833;
+    /* margin-bottom: 8px; */
+    font-family: var(--regularFontUpdate);
+    padding-right: 10px;
+}
+
+.scaliePage .memberDetail .totalExperience {
+    color: var(--colorGrey5Update);
+    font-family: var(--mediumFontUpdate);
+}
+
+.scaliePage .teamCardBox {
+    /* padding-left: 20px; */
+}
+
+.scaliePage .teamCardBox .teamCards:first-child {
+    /* margin-left: 70px; */
+    position: relative;
+    /* z-index: 8; */
+}
+
+.scaliePage .teamCardBox .teamCards:first-child .memberDetail {
+    /* padding-right: 68px; */
+}
+
+.scaliePage .teamCardBox .teamCards:nth-child(2) {
+    /* margin-left: -83px; */
+    /* margin-top: 215px; */
+    position: relative;
+    /* z-index: 9; */
+}
+
+.scaliePage .teamCardBox .teamCards:last-child {
+    /* margin-top: -245px; */
+    position: relative;
+    /* z-index: 7; */
+}
+
+.scaliePage .teamCardBox .col-sm-6 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.scaliePage .teamCardBox .col-sm-6 .teamCards {
+    margin-bottom: 30px;
+}
+
+.scaliePage .teamCardBox .col-sm-6 .teamCards:last-child {
+    margin-bottom: 0px;
+}
+
+.scaliePage .buildTeamLeft {
+    /* margin-top: 25px; */
+}
+
+.scaliePage .buildTeamInner .buildTeamLeft .sectionHeading span {
+    margin-bottom: 25px;
+}
+
+/* Build Teams End */
+/* Easy Hiring Start */
+.scaliePage .easyHiring .sectionHeading {
+    position: relative;
+    display: inline-block;
+}
+
+.scaliePage .easyHiring .hiringArror {
+    position: absolute;
+    /* right: -8vw; */
+    right: -4vw;
+}
+
+.scaliePage .easyHiringBox .hiringSteps {
+    display: flex;
+}
+
+.scaliePage .easyHiringBox .hiringSteps h5 {
+    color: var(--colorWhiteUpdate);
+    margin-bottom: 12px;
+}
+
+.scaliePage .easyHiringBox .hiringSteps p {
+    color: var(--colorGrey6Update);
+    font-family: var(--regularFontUpdate);
+}
+
+.scaliePage .hiringSteps .hiringCounter {
+    height: 33px;
+    width: 44px;
+    min-width: 44px;
+    background-color: var(--primaryColorUpdate);
+    color: var(--colorWhiteUpdate);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: normal;
+    font-family: var(--mediumFontUpdate);
+    border-radius: 58px;
+    margin-right: 22px;
+}
+
+/* Easy Hiring End */
+/* Profile View Start */
+.scaliePage .developerImage span {
+    height: 60px;
+    width: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+.scaliePage .developerImage span img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.scaliePage .developerDetails .developerName {
+    font-family: var(--mediumFontUpdate);
+    color: var(--colorGrey5Update);
+    margin-bottom: 4px;
+}
+
+.scaliePage .developerDetails .developerDesignation {
+    color: var(--colorGrey4Update);
+}
+
+.scaliePage .profileViewTop .viewTopDeveloper {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.scaliePage .aboutDeveloper {
+    color: var(--colorGrey5Update);
+    /* padding-right: 40px; */
+    padding-right: 22px;
+    line-height: 20px;
+}
+
+.scaliePage .expertListing .expertListBox {
+    font-size: 14px;
+    line-height: normal;
+    font-family: var(--lightFontUpdate);
+    color: var(--colorGrey5Update);
+    background: #fff7e0;
+    padding: 5px 10px;
+    border-radius: 32px;
+    border: solid 1px var(--colorYellow);
+    margin-right: 6px;
+    margin-bottom: 8px;
+    display: inline-block;
+    float: left;
+}
+
+.scaliePage .expertListing .expertListBox:last-child {
+    margin-right: 0px;
+}
+
+.scaliePage .expertListBox.expertListBox2 {
+    background: var(--colorWhiteUpdate);
+    border: solid 0.5px #808080;
+}
+
+.scaliePage .expertRating {
+    margin-bottom: 15px;
+}
+
+.scaliePage .expertRatings {
+    padding: 6px 20px 5px 10px;
+    background: var(--colorGrey5Update);
+    position: relative;
+    color: var(--colorWhiteUpdate);
+    display: inline-block;
+    float: left;
+}
+
+.scaliePage .expertRatings::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    bottom: -1px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #fff;
+    border-top: 31px solid transparent;
+    border-bottom: 0px solid transparent;
+    right: 0px;
+}
+
+.scaliePage .ratingStar {
+    color: var(--colorYellow);
+    margin-right: 8px;
+}
+
+.scaliePage .expertRatings span {
+    font-family: var(--mediumFontUpdate);
+}
+
+.scaliePage .workedHeading {
+    font-family: var(--mediumFontUpdate);
+    margin-bottom: 8px;
+}
+
+.scaliePage .viewBottomLists {
+    margin-top: 22px;
+}
+
+.scaliePage .viewBtmListsBox .viewListHeading {
+    font-family: var(--mediumFontUpdate);
+    color: var(--colorGrey5Update);
+    margin-bottom: 12px;
+}
+
+.scaliePage .viewBtmListsBox .viewListContent {
+    font-family: var(--regularFontUpdate);
+    color: var(--colorGrey5Update);
+}
+
+.scaliePage .profileView {
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    background-color: var(--colorWhiteUpdate);
+    border: solid 1px var(--colorGrey7Update);
+    /* border-radius: 4px; */
+    border-radius: 8px;
+}
+
+.scaliePage .profileView:last-child {
+    margin-bottom: 0px;
+}
+
+/* Profile View Start */
+
+/* Become Partners Start */
+.scaliePage .becomePartners {
+    /*padding: 40px 110px 50px;*/
+    padding: 40px 110px 0px;
+}
+
+.scaliePage .becomePartners .row.commonRow {
+    align-items: flex-end;
+}
+
+.scaliePage .becomePartnersLeft {
+    padding-right: 30px;
+}
+
+.scaliePage .becomePartnersLeft .becomePartnerLogo {
+    margin-left: 42px;
+    margin-bottom: 56px;
+}
+
+.scaliePage .becomePartnersLeft .becomePartnersHeading {
+    margin-bottom: 20px;
+}
+
+.scaliePage .becomePartnersLeft .becomePartnersContent {
+    margin-bottom: 50px;
+}
+
+.scaliePage .becomePartnersLeft .becomePartnersBtm {
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.scaliePage .becomePartnersLeft .becomePartnersBtm img {
+    float: right;
+}
+
+.scaliePage .becomePartnersRight {
+    padding-left: 33px;
+}
+
+.scaliePage .becomePartnersRight .col-sm-6 {
+    margin-bottom: 30px;
+    /* height: auto; */
+
+}
+
+.scaliePage .becomePartnersRight .col-sm-6:nth-last-child(-n+2) {
+    margin-bottom: 0px;
+}
+
+.scaliePage .becomePartnersRight .becomePartnersTile {
+    /*padding: 25px 40px;*/
+    padding: 25px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border: 1px solid var(--colorGrey12Update);
+    height: 100%;
+}
+
+.scaliePage .becomePartnersTile .partnerTileImg {
+    margin-bottom: 12px;
+    height: 80px;
+}
+
+.scaliePage .becomePartnersTile .partnerTileText {
+    text-align: center;
+    font-family: var(--mediumFontUpdate);
+    color: var(--primaryColorUpdate);
+}
+
+.scaliePage .profileViewBox2 .profileView .aboutDeveloper {
+    padding-right: 0px;
+}
+
+.scaliePage .outStaffSection {
+    background-color: var(--colorBlueDarkUpdate);
+}
+
+/* Become Partners End */
+
+/* Startup Sliders Start */
+/* .startupsSlider{
+    padding: 75px 0px;
+} .scaliePage  */
+.scaliePage .startupSlides {
+    padding: 40px;
+    border-radius: 8px;
+    background-color: var(--colorGrey9Update);
+}
+
+.scaliePage .startupSlides .slidesTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scaliePage .clietnsInfo .clientName {
+    /* font-family: var(--mediumFontUpdate); */
+}
+
+.scaliePage .clietnsInfo .clientsCompany {
+    color: var(--colorGrey8Update);
+    font-family: var(--lightFontUpdate);
+}
+
+.scaliePage .slidesBtm {
+    margin-top: 65px;
+}
+
+.scaliePage .slidesBtm p {
+    /*font-family: var(--regularItalicFontUpdate);*/
+    font-family: var(--lightItalicFontUpdate);
+}
+
+.scaliePage .startupSlider .slick-slide {
+    margin: 0 10px;
+}
+
+/* Startup Sliders End */
+
+/* Join Us Start  */
+.scaliePage .joinUsBtm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scaliePage .joinUsBtm span {
+    margin-right: 27px;
+}
+
+.scaliePage .joinUsBtm span:last-child {
+    margin-bottom: 0px;
+}
+
+/* Join Us End  */
+
+/* Footer Start */
+/* .scaliePage .footerSection {
+    background-color: var(--colorBlueDarkUpdate);
+    margin-top: -1px;
+}
+
+.scaliePage .footerSection .footerBox {
+    padding: 75px 0px 50px;
+    border-bottom: 1px solid #4d4d4d;
+}
+
+.scaliePage .footerMenus .footerMenuHeading {
+    font-family: var(--mediumFontUpdate);
+    color: var(--colorWhiteUpdate);
+    margin-bottom: 18px;
+}
+
+.scaliePage .footerMenus .footerMenuList ul li:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.scaliePage .footerMenus .footerMenuList ul li a {
+    color: var(--colorGrey7Update);
+    font-family: var(--regularFontUpdate);
+}
+
+.scaliePage .footerMenus .footerMenuList ul li a:hover,
+.footerBottomMenu ul li a:hover {
+    color: var(--primaryColorUpdate);
+}
+
+.scaliePage .footerMenus .footerMenuList ul li a.active-link,
+.footerBottomMenu ul li a.active-link {
+    color: var(--primaryColorUpdate);
+}
+
+.scaliePage .socialLists {
+    margin-top: 25px;
+}
+
+.scaliePage .socialLists ul li {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+
+.scaliePage .socialLists ul li:last-child {
+    margin-right: 0px;
+}
+
+.scaliePage .socialLists ul li a {
+    color: var(--colorWhiteUpdate);
+    font-size: 22px;
+}
+
+.scaliePage .footerBottom {
+    background-color: var(--colorBlueDarkUpdate);
+    padding: 30px 0 30px;
+}
+
+.scaliePage .footerBtmInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scaliePage .footerBottomMenu ul li {
+    display: inline-block;
+    float: left;
+    margin-right: 50px;
+}
+
+.scaliePage .footerBottomMenu ul li:last-child {
+    margin-right: 0px;
+}
+
+.scaliePage .footerBottomMenu ul li a {
+    color: var(--colorWhiteUpdate);
+    border-bottom: 1px solid transparent;
+} */
+/* Footer End */
+
+.scaliePage .mainBanner {
+    background: var(--colorBlueDarkUpdate);
+}
+
+.scaliePage .bannerLeft .subHeadingFont {
+    font-family: var(--lightFontUpdate);
+}
+
+.scaliePage .bannerRight {
+    padding-left: 55px;
+}
+
+.scaliePage .bannerTopSubhead span {
+    color: var(--colorWhiteUpdate);
+    border-bottom: 1px solid var(--colorWhiteUpdate);
+    margin-bottom: 10px;
+    line-height: 25px;
+    display: inline-block;
+}
+
+.scaliePage .profileViewBoxMain .profileViewMid {
+    /* padding-right: 50px; */
+    padding-right: 30px;
+}
+
+.scaliePage .teamCardBox .col-lg-6 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* .becomePartnerBoxMain .becomePartnersContent h5{
+    font-family: var(--regularFontUpdate);
+} .scaliePage  */
+/* Landing Page End */
+
+/* Become Parter Page Start */
+
+.scaliePage .becomePartnerBox a {
+    display: inline-block;
+}
+
+.scaliePage .becomePartnerBox2 .becomePartners .row.commonRow {
+    align-items: center;
+    /* height: auto; */
+}
+
+/* .partnerBanner .bannerLeft{
+    padding-right: 30px;
+} .scaliePage  */
+.scaliePage .partnerBanner .bannerLeft h4 {
+    /* padding-right: 10px; */
+}
+
+.scaliePage .becomePartnerBox2 .becomePartners {
+    padding: 0px 0px;
+}
+
+.scaliePage .becomePartnersContent h5 {
+    margin-bottom: 20px;
+    /* font-family: var(--lightFontUpdate); */
+}
+
+.scaliePage .becomePartnersContent h5:last-child {
+    margin-bottom: 0px;
+}
+
+.scaliePage .becomePartnersTile .partnerTileDetail {
+    color: var(--colorGrey3Update);
+    margin-top: 12px;
+    text-align: center;
+    font-family: var(--regularFontUpdate);
+}
+
+.scaliePage .easyHiring2 .easyHiringBox .hiringSteps p {
+    /*padding-right: 100px;*/
+}
+
+.scaliePage .easyHiring.easyHiring2 {
+    background: #121212;
+}
+
+.scaliePage .easyHiring.easyHiring2 .hiringArror {
+    right: -2vw;
+    /* top: -50px; */
+}
+
+.scaliePage .profileViewBox2 .profileView .profileViewTop,
+.profileViewBox2 .profileView .profileViewMid {
+    margin-bottom: 30px;
+}
+
+.scaliePage .profileViewBox2 .profileViewTop .viewTopDeveloper {
+    margin-bottom: 20px;
+}
+
+.scaliePage .profileViewBox2 .viewBottomLists {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--colorGrey2Update);
+}
+
+.scaliePage .profileViewBox2 .profileView {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05);
+    border: solid 1px var(--colorGrey6Update);
+}
+
+.scaliePage .shareServicesBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.scaliePage .shareServiceLeft .leftHeading {
+    color: var(--colorGrey10Update);
+    text-align: right;
+    font-family: var(--lightFontUpdate);
+    margin-bottom: 10px;
+}
+
+.scaliePage .shareServiceRight span {
+    padding-right: 70px;
+    font-family: var(--lightFontUpdate);
+}
+
+.scaliePage .servicesLists ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.scaliePage .servicesLists ul li {
+    padding: 12px 24px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--colorGrey6Update);
+    display: inline-flex;
+    align-items: center;
+}
+
+.scaliePage .servicesLists ul li span {
+    margin-right: 10px;
+}
+
+.scaliePage .shareServicesBox .shareServiceLeft {
+    display: inline-block;
+    float: left;
+    width: 55%;
+    padding-right: 50px;
+    margin-top: 35px;
+}
+
+.scaliePage .shareServicesBox .shareServiceRight {
+    display: inline-block;
+    float: left;
+    width: 45%;
+}
+
+.scaliePage .shareServiceRight.sectionHeading h2 {
+    margin-bottom: 27px;
+    padding-right: 80px;
+}
+
+.scaliePage .shareServiceRight.sectionHeading.sectionHeading2 {
+    margin-bottom: 0px;
+}
+
+.scaliePage .profileViewBox2 .profileView {
+    /*padding: 30px 30px;*/
+    padding: 25px 25px;
+}
+
+.scaliePage .outStaffInner .row {
+    align-items: center;
+}
+
+.scaliePage .startupSlider2 .slidesTop {
+    flex-direction: column;
+}
+
+.scaliePage .startupSlider2 .slidesTop .quoteIcon {
+    margin-bottom: 15px;
+}
+
+.scaliePage .startupSlider2 .slidesTop p {
+    font-family: var(--lightItalicFontUpdate);
+}
+
+/* Become Parter Page End */
+/* Login/Sign Page Start */
+.scaliePage .bodySection {
+    /* min-height: calc(100vh - 185px); */
+    min-height: calc(100vh - 426px);
+}
+
+.scaliePage .formSections {
+    padding: 85px 0px 135px;
+}
+
+.scaliePage .formSections.signupSteps {
+    padding: 60px 0px 135px;
+}
+
+.scaliePage .formBox {
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    border: solid 1px var(--colorGrey6Update);
+    background-color: var(--colorWhiteUpdate);
+}
+
+.scaliePage .formDesign .form-group {
+    margin-bottom: 30px;
+}
+
+.scaliePage .formDesign .form-group2 {
+    margin-bottom: 12px;
+}
+
+.scaliePage .formDesign .form-control {
+    padding: 12px 24px;
+    padding: 12px 12px;
+    /* border-radius: 109px; */
+    border-radius: 4px;
+    border: solid 1px var(--colorGrey11Update);
+    background-color: var(--ffffff);
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--colorBlackUpdate);
+}
+
+.scaliePage .formDesign .form-control::placeholder {
+    color: var(--colorGrey4Update);
+}
+
+.scaliePage .formDesign .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.scaliePage .formDesign label {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--colorOffBlack3Update);
+    font-family: var(--mediumFontUpdate);
+    margin-bottom: 12px;
+}
+
+.scaliePage .forgotPswd {
+    text-align: right;
+}
+
+.scaliePage .acceptBox span {
+    display: inline-block;
+}
+
+.scaliePage .formSections .bodyLeftContent {
+    /*padding-right: 138px;*/
+}
+
+.scaliePage .formMainHeading h3 {
+    display: flex;
+    align-items: flex-start;
+    line-height: 24px;
+}
+
+.scaliePage .formMainHeading h3 span {
+    display: inherit;
+    margin-right: 12px;
+    /*margin-top: 2px;*/
+}
+
+.scaliePage .formTopBox {
+    margin-bottom: 50px;
+}
+
+.scaliePage .formTopBox .subHeadBox {
+    text-align: right;
+    margin-bottom: 34px;
+}
+
+.scaliePage .formTopBox .subHeadBox span {
+    color: var(--offGreyColor);
+}
+
+.scaliePage .formSections .bodyLeftContent {
+    margin-top: 50px;
+}
+
+.scaliePage .formSecBanner {
+    margin-top: 70px;
+}
+
+.scaliePage .companyAddress .row .col-sm-6,
+.scaliePage .companyAddress .row .col-sm-12 {
+    margin-bottom: 15px;
+}
+
+.scaliePage .intl-tel-input {
+    display: block;
+}
+
+.scaliePage .intl-tel-input.allow-dropdown .flag-container,
+.scaliePage .intl-tel-input.allow-dropdown .flag-container:focus,
+.scaliePage .intl-tel-input.allow-dropdown .selected-flag,
+.scaliePage .intl-tel-input.allow-dropdown .selected-flag:focus {
+    outline: none;
+}
+
+.scaliePage .intl-tel-input.allow-dropdown .flag-container:hover .selected-flag {
+    background: transparent;
+}
+
+.scaliePage .passwordConditions {
+    margin-top: 10px;
+    color: var(--offGreyColor);
+}
+
+.scaliePage .intl-tel-input.allow-dropdown .selected-flag {
+    width: 60px;
+}
+
+.scaliePage .intl-tel-input .selected-flag {
+    padding: 0 0 0 20px;
+}
+
+.scaliePage .intl-tel-input.allow-dropdown input,
+.scaliePage .intl-tel-input.allow-dropdown input[type=text] {
+    padding-left: 67px;
+}
+
+/* Login/Sign Page End */
+/* Signup Steps Start */
+.scaliePage .multipleOption .selectOption {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.scaliePage .multipleOption .selectOption label {
+    padding: 29px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.01);
+    border: 1px solid var(--colorGrey12Update);
+    background: var(--colorWhiteUpdate);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    width: 100%;
+}
+
+.scaliePage .multipleOption .selectOption input[type="checkbox"]:checked+label .multipleOption .selectOption input[type="checkbox"]:not(:checked)+label {
+    position: relative;
+}
+
+.scaliePage .multipleOption .selectOption input[type="checkbox"]:checked+label {
+    border: 1px solid var(--primaryColorUpdate);
+    box-shadow: 0 4px 10px 0 rgba(46 110 223 / 25%);
+}
+
+.scaliePage .multipleOption .selectOption span {
+    text-align: center;
+}
+
+.scaliePage .multipleOption .selectOption input {
+    display: none;
+}
+
+.scaliePage .multipleOption .selectOption .optionName {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--colorBlackUpdate);
+    margin-top: 16px;
+}
+
+.scaliePage .multipleOption .col-lg-2 {
+    margin-bottom: 15px;
+}
+
+.scaliePage .formHeading {
+    margin-bottom: 25px;
+}
+
+.scaliePage .formHeading .formHeadingSec {
+    font-family: var(--mediumFontUpdate);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.scaliePage .formHeading .formSubHeadSec {
+    color: var(--colorGrey4Update);
+}
+
+.scaliePage .signupSteps {
+    background-color: var(--colorGrey2Update);
+    min-height: calc(100vh - 186px);
+}
+
+.scaliePage .header2 {
+    background-color: var(--colorGrey2Update);
+}
+
+.scaliePage .multipleOption {
+    margin-bottom: 35px;
+}
+
+/* .otherSkillsBox{
+    margin-bottom: 25px;
+} .scaliePage  */
+.scaliePage .formSecDesign .form-control {
+    padding: 12px 24px;
+    /* border-radius: 109px; */
+    border-radius: 4px;
+    border: solid 1px var(--colorGrey11Update);
+    background-color: var(--ffffff);
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--colorBlackUpdate);
+    background-color: var(--colorWhiteUpdate);
+}
+
+.scaliePage .formSecDesign .form-control::placeholder {
+    color: var(--colorGrey4Update);
+}
+
+.scaliePage .formSecDesign .dropdown-menu {
+    left: 0px;
+    /* top: 47px; */
+    bottom: 100%;
+}
+
+.scaliePage .selectedItems .ms-ctn .ms-trigger {
+    border: none;
+}
+
+.scaliePage .selectedItems.techLists {
+    display: inline-flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    padding-right: 80px;
+}
+
+.scaliePage .selectedItems.techLists.techLists .techListItem {
+    padding: 7px 11px;
+    padding-right: 50px;
+    background: var(--colorWhiteUpdate);
+    margin-bottom: 0px;
+    min-height: 51px;
+}
+
+.scaliePage .selectedItems button {
+    padding: 13px 20px;
+    border-radius: 4px;
+    background-color: var(--colorWhiteUpdate);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    line-height: 24px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 6%);
+}
+
+.scaliePage .selectedItems .form-control {
+    padding: 12px 24px;
+    /* border-radius: 66px; */
+    border-radius: 4px;
+    background-color: var(--colorWhiteUpdate);
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 6%);
+    border: none;
+    text-align: center;
+}
+
+.scaliePage .selectedItems .form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.scaliePage .selectedItems .selectedItemsInner {
+    display: flex;
+    align-items: center;
+}
+
+.scaliePage input::-webkit-outer-spin-button,
+.scaliePage input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.scaliePage input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.scaliePage .selectedItems .counterBox {
+    margin: 0px 10px;
+    min-width: 110px;
+    width: 110px;
+}
+
+.scaliePage .selectedTechs .selectedTechbox {
+    margin-bottom: 20px;
+}
+
+.scaliePage .selectTechsHeading {
+    color: var(--colorOffBlack3Update);
+    font-family: var(--mediumFontUpdate);
+}
+
+.scaliePage .mobileSection {
+    margin-bottom: 15px;
+    display: none;
+}
+
+.scaliePage .formDesignNew .form-control {
+    background-color: var(--colorWhiteUpdate);
+}
+
+/*.partnerDetailsStep,*/
+.scaliePage .partnerDetailsStep {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.scaliePage .partnerDetailsStep .formDesign {
+    width: 524px;
+}
+
+
+/* Signup Steps End */
+
+/* Thankyou Page Start */
+.scaliePage .thankyouInner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.scaliePage .thankyouInner span {
+    text-align: center;
+}
+
+.scaliePage .buildTeamInner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.scaliePage .buildTeamInner .buildTeamLeft {
+    width: 55%;
+}
+
+.scaliePage .buildTeamInner .buildTeamRight {
+    width: 45%;
+}
+
+/* Thankyou Page End */
+
+/* ----------- */
+.scaliePage .copyRight,
+.scaliePage .footerBottomMenu ul li a {
+    font-family: var(--regularFontUpdate);
+}
+
+.scaliePage .frameBoxInner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.scaliePage .frameRight {
+    width: 49%;
+    display: inline-block;
+    float: left;
+}
+
+.scaliePage .frameLeft {
+    width: 51%;
+    display: inline-block;
+    float: left;
+    padding-right: 70px;
+}
+
+.scaliePage .memberExp {
+    display: flex;
+    align-items: center;
+}
+
+.scaliePage .footerLogo a {
+    display: inline-block;
+    width: 220px;
+}
+
+.scaliePage .easyHiringBox .hiringSteps h5 {
+    /* font-family: var(--mediumFontUpdate); */
+}
+
+/* Contact Us Page Start */
+.scaliePage .formDesignNew {
+    background: var(--colorWhiteUpdate);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    padding: 50px 50px;
+}
+
+.scaliePage .formDesignNew .form-control {
+    border-radius: 4px;
+}
+
+.scaliePage textarea {
+    resize: none;
+}
+
+.scaliePage .contactUsSection {
+    margin-bottom: 50px;
+}
+
+.scaliePage .contactUsSection .contactUsHeading {
+    margin-bottom: 15px;
+}
+
+.scaliePage .contactUsSection .contactUsHeading h4 {
+    color: var(--primaryColorUpdate);
+    font-family: var(--mediumFontUpdate);
+}
+
+.scaliePage .contactUsSection .contactUsInfo span,
+.scaliePage .contactUsSection .contactUsInfo span a {
+    margin-bottom: 10px;
+    color: var(--colorOffBlack5);
+}
+
+.scaliePage .contactUsSection .contactUsInfo span:last-child {
+    margin-bottom: 0px;
+}
+
+.scaliePage .contactUsBanner {
+    background: url('../../images/scalie/contactBanner.png') no-repeat center center;
+    background-size: cover;
+    padding: 90px 0px;
+    margin-bottom: 103px;
+}
+
+.scaliePage .contactBannerContent {
+    padding-left: 102px;
+    position: relative;
+}
+
+.scaliePage .contactBannerContent h2 {
+    margin-bottom: 34px;
+}
+
+.scaliePage .contactBannerContent .contactBannerIcon {
+    position: absolute;
+    right: 117px;
+}
+
+.scaliePage .contactBannerContent h2 br {
+    display: none;
+}
+
+/* Contact Us Page End */
+.scaliePage .addMoreTechInner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 1%);
+    border: 1px solid var(--colorGrey12Update);
+    background: var(--colorWhiteUpdate);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* .otherSkillsBox{
+    display: none;
+} .scaliePage  */
+.scaliePage .frameLeft .thankyouInfo {
+    margin-bottom: 37px;
+}
+
+.scaliePage .frameLeft .thankyouInfo:last-child {
+    margin-bottom: 0px;
+}
+
+.scaliePage .scalieInfo {
+    background: var(--primaryColorUpdate);
+    padding: 20px 0px;
+}
+
+.scaliePage .scalieInfoInner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scaliePage .scalieInfoInner span {
+    color: var(--colorWhiteUpdate);
+    margin: 0px 50px;
+}
+
+.scaliePage .scalieInfo2 {
+    margin-top: 50px;
+}
+
+/* Terms and privacy page start */
+.scaliePage .compDetailPage .contentSectionDetail {
+    display: flex;
+}
+
+.scaliePage .contentSectionDetail .sideSection {
+    min-width: 250px;
+    width: 250px;
+    margin-right: 50px;
+}
+
+.scaliePage .sideSection ul li a {
+    padding: 10px 10px 10px 0px;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    border-bottom: 1px solid var(--colorGrey7Update);
+    font-size: 18px;
+    line-height: normal;
+    font-family: var(--mediumFontUpdate);
+    color: var(--colorGrey10Update);
+}
+
+.scaliePage .sideSection ul {
+    position: sticky;
+    top: 90px;
+    display: block;
+    float: left;
+    margin-bottom: 100px;
+}
+
+.scaliePage .contentSecDetails .secContHeading {
+    margin-bottom: 15px;
+}
+
+.scaliePage .contentSecDetails .secContents {
+    margin-bottom: 40px;
+}
+
+.scaliePage .contentSectionDetail .secContents .secContText p {
+    margin-bottom: 15px;
+}
+
+.scaliePage .sideSection ul li a.activeLink {
+    color: var(--primaryColorUpdate);
+}
+
+/* Terms and privacy page end */
+
+.scaliePage .slick-slider .slick-track {
+    display: flex;
+}
+
+.scaliePage .slick-slider .slick-track .startupSlides {
+    height: auto;
+}
+
+.scaliePage .joinUsBtm span:last-child {
+    margin-right: 0px;
+}
+
+.scaliePage .partnerBanner .bannerLeft h4 {
+    padding-right: 0px;
+}
+
+.scaliePage .servicesLists ul li span img {
+    margin-right: 10px;
+}
+
+.scaliePage .servicesLists ul li span img:last-child {
+    margin-right: 0px;
+}
+
+.scaliePage .profileViewBox2 .profileView {
+    height: 100%;
+}
+
+.scaliePage .frameRight2 {
+    padding: 50px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.scaliePage .monthlyStatsBox h4 {
+    color: #22d9f2;
+}
+
+.scaliePage .monthlyStatsBox {
+    margin-bottom: 60px;
+}
+
+.scaliePage .monthlyStatsBox:last-child {
+    margin-bottom: 0px;
+}
+
+.scaliePage .monthlyStatsBox h4 {
+    margin-bottom: 15px;
+}
+
+.scaliePage .monthlyStatsBox .monthlyStatsBtm .monthlyStatsBtmOut:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.scaliePage .monthlyStatsBox .monthlyStatsBtm .monthlyStatsBtmInner {
+    display: inline-block;
+    float: left;
+    padding: 5px 10px 5px 10px;
+    background: #ffadad;
+    color: #8f0a0a;
+    border-radius: 4px;
+    width: 280px;
+}
+
+.scaliePage .monthlyStatsBox2 .monthlyStatsBtm .monthlyStatsBtmInner {
+    background: #adffc4;
+    color: #1c7635;
+    width: 220px;
+}
+
+.scaliePage .monthlyStatsBox .monthlyStatsSec span {
+    color: var(--colorWhiteUpdate);
+}
+
+.scaliePage .monthlyStatsSec {
+    margin-bottom: 20px;
+}
+
+.scaliePage .frameBox {
+    margin-top: 25px;
+}
+
+.scaliePage .signupSection2 .bodyLeftContent {
+    padding-right: 80px;
+}
+
+.scaliePage .signupSection2 .bodyLeftContent h2 {
+    padding-right: 20px;
+}
+
+.scaliePage .scalieInfoInner span span {
+    margin: 0px;
+}
+
+.scaliePage .formSections.signupSection .bodyLeftContent {
+    margin-top: 120px;
+}
+
+.scaliePage .slick-initialized .slick-slide {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+}
+
+/* .scaliePage .footerMenus {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.scaliePage .footerMenusInner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+} */
+
+/* .scaliePage .navbar.navbar-expand-md {
+    justify-content: space-between;
+} */
+
+.scaliePage .teamCards .teamImage {
+    border-radius: 4px;
+}
+
+.scaliePage .ms-res-ctn.dropdown-menu {
+    display: none;
+}
+
+.scaliePage .otherSkillsBox input {
+    width: auto !important;
+}
+
+.scaliePage #toast-container>div {
+    opacity: 1;
+}
+
+.scaliePage .companyContent .fontSize18,
+.scaliePage .companyContent .pointsLists ul li {
+    font-family: var(--lightFontUpdate);
+}
+
+.scaliePage .expertListing .expertListBox {
+    margin-right: 4px;
+    padding: 5px 8px;
+}
+
+.scaliePage .select2-container {
+    height: 50px;
+    line-height: 50px !important;
+}
+
+.scaliePage .select2-container .select2-selection--single,
+.scaliePage .select2-container--default .select2-selection--single .select2-selection__rendered,
+.scaliePage .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100%;
+    line-height: 50px;
+}
+
+.scaliePage .select2-results__option--selectable {
+    /*height: 35px;*/
+    line-height: 27px;
+}
+
+.scaliePage .select2-container--default .select2-search--dropdown .select2-search__field {
+    height: 100%;
+    line-height: 100%;
+    float: left;
+}
+
+.scaliePage .select2-search--dropdown {
+    height: 43px;
+    line-height: 43px;
+}
+
+.scaliePage .ms-sel-ctn {
+    line-height: 21px;
+}
+
+.scaliePage .ms-ctn .ms-sel-item,
+.scaliePage .ms-ctn-focus .ms-sel-item:hover,
+.scaliePage .ms-ctn .ms-sel-item:hover {
+    background: #fff;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.scaliePage .ms-sel-ctn .ms-sel-item .ms-close-btn {
+    margin-top: 7px;
+}
+
+.scaliePage .thankyouModal .modal-dialog {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.scaliePage .thankyouModal .modal-content {
+    padding: 30px;
+}
+
+.scaliePage .thankyouModal .modal-body {
+    padding: 0px;
+}
+
+.scaliePage .ms-sel-ctn .ms-sel-item .ms-close-btn {
+    background-image: url('../../images/scalie/closeIcon.png') !important;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 7px;
+    cursor: pointer;
+    height: 7px;
+}
+
+.scaliePage .ms-sel-ctn .ms-sel-item .ms-close-btn:hover {
+    background-position: 0 -7px;
+}
+
+.scaliePage .select2-dropdown {
+    z-index: 9;
+}
+
+/*.select2-results__option--selectable{*/
+/*    overflow: hidden;*/
+/*} .scaliePage */
+
+.scaliePage .airtableBox iframe:first-child {
+    display: none;
+}
+
+/*--------------*/
+
+.scaliePage .connectUsInner {
+    padding: 0px 140px 75px;
+}
+
+.scaliePage .connectUsRight .connectHeading {
+    padding-bottom: 30px;
+}
+
+.scaliePage .connectUsRight .connectHeading h2 {
+    line-height: 45px;
+}
+
+.scaliePage .connectUsRight .connectSubHeading {
+    padding-bottom: 50px;
+}
+
+.scaliePage .connectUsInner .row {
+    align-items: center;
+}
+
+/*---------------*/
+.scaliePage .followLinkedin {
+    margin: 20px 0px;
+}
+
+.scaliePage .followLinkedin a {
+    width: 130px;
+    display: inline-block;
+}
+
+.scaliePage .teamCards .teamImage img {
+    height: auto;
+}
+
+/* ------------- */
+.scaliePage .skillsListsChild {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.scaliePage .skillsListsSection .skillsListsItems {
+    width: auto;
+    margin: 4px 4px;
+    width: 11.5%;
+}
+
+.scaliePage .multipleOption .selectOption label {
+    padding: 13px 12px;
+}
+
+.scaliePage .skillsListsSection .skillsListsItems .selectOption {
+    height: 96px;
+    width: 110px;
+    width: 100%;
+}
+
+.scaliePage .multipleOption .selectOption .optionName {
+    font-size: 15px;
+}
+
+.scaliePage .skillsListsChild {
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+/* .stepsContainer{
+    max-width: calc(100% - 317px);
+} .scaliePage  */
+
+.scaliePage .newFormHeaderSec {
+    position: fixed;
+    z-index: 9;
+}
+
+.scaliePage .stepsContainerPage,
+.scaliePage .newFormHeaderSec {
+    width: calc(100% - 317px);
+}
+
+.scaliePage .stepsContainer,
+.scaliePage .newFormHeaderSec {
+    padding: 0px 111px;
+}
+
+.scaliePage .ourTestimonialsBox {
+    position: fixed;
+    right: 0;
+    top: 79px;
+    height: 100%;
+    width: 317px;
+    min-width: 317px;
+    background-color: var(--colorBlueDarkUpdate);
+    padding: 50px 21px;
+    padding: 25px 21px;
+    top: 0;
+    min-height: 100vh;
+}
+
+.scaliePage .ourTestimonialsBoxChild {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.scaliePage .sectionTop {
+    margin-top: 79px;
+    margin-top: 74px;
+}
+
+.scaliePage .mainFooter {
+    position: relative;
+}
+
+.scaliePage .ourTestimonialsBox {
+    /* height: auto; */
+}
+
+.scaliePage .ourTestimonialsBox .testimonialSecHeading {
+    margin-bottom: 30px;
+    margin-bottom: 24px;
+    /* margin-bottom: 20px; */
+}
+
+.scaliePage .ourTestimonialsBox .testimonialSecContent {
+    line-height: 23px;
+    margin-bottom: 55px;
+    margin-bottom: 40px;
+    /* margin-bottom: 30px; */
+}
+
+.scaliePage .clientsTestimonialsBox {
+    margin-bottom: 55px;
+    margin-bottom: 40px;
+}
+
+.scaliePage .clientsTestimonialsBox .clientsTestsHeading {
+    margin-bottom: 10px;
+}
+
+.scaliePage .testimonialImage {
+    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.scaliePage .testimonialImageChild {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    /* height: 80px;
+    width: 80px; */
+}
+
+.scaliePage .testimonialImageChild img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.scaliePage .testimonialBy,
+.scaliePage .testimonialCompany {
+    margin-bottom: 7px;
+    /* margin-bottom: 4px; */
+}
+
+.scaliePage .formSections.signupSteps.stepsContainer {
+    padding: 40px 111px 135px;
+    padding: 30px 111px 50px;
+}
+
+.scaliePage .ourTestimonialsSec {
+    /*display: flex;*/
+}
+
+.scaliePage .clientsTestimonialsBox {
+    margin-bottom: 55px;
+    margin-bottom: 40px;
+    /* margin-bottom: 25px; */
+}
+
+.scaliePage .clientsHeading {
+    margin-bottom: 37px;
+    margin-bottom: 25px;
+    margin-bottom: 10px;
+}
+
+.scaliePage .clientsLists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.scaliePage .clientsLists .clientListBox {
+    width: 30%;
+    min-width: 30%;
+    margin: 4px 4px;
+    /*border: 1px solid #A0A0A0;*/
+    padding: 5px 5px;
+}
+
+.scaliePage .clientsLists .clientListBox .clientIcon {
+    margin-bottom: 7px;
+}
+
+.scaliePage .testimonialSlider .slick-dots li button,
+.scaliePage .slick-dots li {
+    background: var(--colorWhiteUpdate);
+    height: 7px;
+    width: 7px;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+.scaliePage .slick-dots li.slick-active button {
+    background: var(--primaryColorUpdate);
+}
+
+.scaliePage .workEmailBox {
+    width: 35%;
+    margin-bottom: 30px;
+}
+
+.scaliePage .workEmailBox .form-control {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 15px 15px;
+}
+
+.scaliePage .workEmailBox .form-control::placeholder {
+    color: #CCCCCC;
+}
+
+/* Step2 Start */
+.scaliePage .newFormDesign {
+    padding: 40px 47px;
+    background: var(--colorWhiteUpdate);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.scaliePage .customCheckList input {
+    display: none;
+}
+
+.scaliePage .customCheckList {
+    margin-right: 20px;
+    height: 48px;
+    width: 68px;
+}
+.scaliePage .customCheckList:last-child{
+    margin-right: 0;
+}
+
+.scaliePage .customCheckList label {
+    position: relative;
+    border: 1px solid var(--colorGrey12Update);
+    border-radius: 4px;
+    color: var(--colorGrey4Update);
+    font-size: 14px;
+    line-height: 16px;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scaliePage .customCheckList input[type="radio"]:checked+label {
+    border: 1px solid var(--primaryColorUpdate);
+    color: var(--primaryColorUpdate);
+}
+
+.scaliePage .newFormDesignChild .form-group {
+    margin-bottom: 30px;
+}
+
+.scaliePage .newFormDesignChild .form-group .fieldLabel {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: var(--mediumFontUpdate);
+    color: var(--colorOffBlack3Update);
+    margin-bottom: 12px;
+}
+
+.scaliePage .newFormDesignChild .form-control {
+    font-size: 14px;
+    line-height: 16px;
+    font-family: var(--regularFontUpdate);
+    color: var(--colorGrey4Update);
+    border: 1px solid var(--colorGrey12Update);
+    padding: 15px 15px;
+}
+
+.scaliePage .newFormDesignChild .form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.scaliePage .formFooter3 {
+    margin-top: 50px;
+}
+
+.scaliePage .formHeading {
+    margin-bottom: 0px;
+}
+
+.scaliePage .pageHeadings {
+    margin-bottom: 25px;
+}
+
+.scaliePage .pageHeadings .formSubHeadSec {
+    /* margin-bottom: 30px; */
+}
+
+.scaliePage .pageHeadings .formSubHeadSec {
+    color: #212121;
+    font-family: var(--mediumFontUpdate);
+}
+
+.scaliePage .pageHeadings .formHeadContentSec {
+    color: var(--colorGrey4Update);
+    margin-top: 30px;
+    margin-top: 20px;
+}
+
+/* --------New-------- */
+
+
+.scaliePage .skillsListsItems.selectOptionNew {
+    width: auto;
+    margin: 4px 4px;
+}
+
+.scaliePage .skillsListsItems.selectOptionNew .selectOption {
+    height: 96px;
+    width: 110px;
+}
+
+/* my stayling start */
+
+.scaliePage .tagContainer {
+    /* padding: 0px 10px; */
+    /* margin-bottom: 35px; */
+    margin-top: 10px;
+}
+
+.scaliePage .buttonBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.scaliePage .selectButton {
+    padding: 8px 15px 8px 15px;
+    background-color: #e3e1e1;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.scaliePage .hideButton {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.scaliePage .selectVelue,
+.scaliePage .hideButton {
+    display: flex;
+    align-items: center;
+}
+
+/* my stayling end */
+
+.scaliePage .clientsLists .clientListBox .clientIcon img {
+    height: 29px;
+    width: 34px;
+}
+
+.scaliePage .sectionTop.sectionTop2 {
+    margin-top: 0;
+}
+
+.scaliePage .signupSteps.signupStepsNew {
+    min-height: 100vh;
+}
+
+.scaliePage .newFormHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-bottom: 0px;
+}
+
+.scaliePage .formHEaderHelp a {
+    color: var(--colorBlueDarkUpdate);
+}
+
+.scaliePage .formHEaderHelp a:hover {
+    color: var(--primaryColorUpdate);
+}
+
+.scaliePage .otherSkillsBoxParent {
+    margin-bottom: 25px;
+    display: none;
+}
+
+.scaliePage .selectButton {
+    margin-bottom: 5px;
+}
+
+.scaliePage .workEmailBox label {
+    margin-bottom: 12px;
+}
+
+/* .skillsListsSection .skillsListsItems{
+    width: 10%;
+} .scaliePage 
+.skillsListsSection .skillsListsItems .selectOption{
+    width: 100%;
+} .scaliePage  */
+
+
+
+.scaliePage .customScroll::-webkit-scrollbar {
+    width: 3px;
+    visibility: hidden;
+    border-radius: 8px;
+}
+
+.scaliePage .customScroll::-webkit-scrollbar-track {
+    background: transparent;
+    visibility: hidden;
+    border-radius: 8px;
+}
+
+.scaliePage .customScroll::-webkit-scrollbar-thumb {
+    background: #808080;
+    visibility: hidden;
+    border-radius: 8px;
+}
+
+.scaliePage .customScroll:hover::-webkit-scrollbar,
+.scaliePage .customScroll:hover::-webkit-scrollbar-track,
+.scaliePage .customScroll:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+.scaliePage .customScroll2::-webkit-scrollbar,
+.scaliePage .customScroll2::-webkit-scrollbar-track,
+.scaliePage .customScroll2::-webkit-scrollbar-thumb,
+.scaliePage .customScroll2:hover::-webkit-scrollbar,
+.scaliePage .customScroll2:hover::-webkit-scrollbar-track,
+.scaliePage .customScroll2:hover::-webkit-scrollbar-thumb {
+    visibility: hidden;
+}
+
+.scaliePage .container2 {
+    max-width: 100%;
+}
+
+.scaliePage .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.scaliePage .form-control,
+.scaliePage .formSecDesign .form-control {
+    border: 1px solid var(--colorGrey12Update);
+}
+
+.scaliePage .newFormDesignChild .form-control::placeholder {
+    opacity: 0.5;
+}
+
+.scaliePage .footerLogo a {
+    width: 158px;
+}
+
+.scaliePage .newFormHeaderSec {
+    background-color: var(--colorGrey2Update);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.scaliePage .stepsContainer {
+    margin-top: 65px;
+}
+
+.scaliePage .newFormHeaderSec.newFormHeaderSec2 {
+    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 16%);
+}
+
+.scaliePage .techListItem span img {
+    height: 35px;
+    width: 35px;
+    min-width: 35px;
+}
+
+.scaliePage .blogbannerSection .bannerLeft h1 {
+    margin-bottom: 24px;
+}
+
+.scaliePage .blogbannerSection .bannerLeft .subHeadingFont {
+    margin-bottom: 24px;
+    padding-right: 110px;
+}
+
+.scaliePage .blogbannerSection .bannerLeft .subHeadingFont2 {
+    font-family: var(--regularFontUpdate);
+}
+
+.scaliePage .blogbannerSection .bannerRight {
+    position: relative;
+}
+
+.scaliePage .blogbannerSection .bannerRight span {
+    position: absolute;
+    top: -73px;
+    right: -67px;
+}
+
+.scaliePage .mainBanner.blogPageBanner {
+    margin-bottom: 85px;
+    padding: 91px 0px 92px;
+}
+
+.scaliePage .blogsListingsBox {
+    padding: 17px 0 70px;
+}
+
+.scaliePage .blogCardLink {
+    color: inherit;
+    height: 100%;
+}
+
+.scaliePage .blogCardLink {
+    padding: 12px;
+
+}
+
+.scaliePage .blogCardLink:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.09);
+}
+
+.scaliePage .blogCardImage {
+    margin-bottom: 14px;
+    /*height: 220px;*/
+}
+
+.scaliePage .blogCardDetails .blogDate {
+    padding-bottom: 8px;
+    color: #707070;
+}
+
+.scaliePage .blogCardDetails .blogTitle {
+    padding-bottom: 5px;
+    color: #141414;
+}
+
+.scaliePage .blogCardDetails .blogContent {
+    padding-bottom: 16px;
+    color: #585858;
+    padding-right: 8px;
+    line-height: 24px;
+}
+
+.scaliePage .partnersPage {
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+.scaliePage .partnersPage .partnersPageChild {
+    width: 57%;
+}
+
+.scaliePage .partnersPage .partnersPageForm {
+    width: 657px;
+    width: 43%;
+    float: right;
+    min-height: 100vh;
+    display: flex;
+}
+
+.scaliePage .partnersFormChild {
+    height: auto;
+}
+
+.scaliePage .partnersFormChild .formBoxNew {
+    height: 100%;
+}
+
+.scaliePage .partnersFormChild h2 {
+    margin-bottom: 30px;
+}
+
+.scaliePage .formBox.formBoxNew {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    padding: 40px 72px;
+}
+
+.scaliePage .partnersPage {
+    background: #070B2F;
+}
+
+.scaliePage .formBoxNew .formTopBox {
+    margin-bottom: 30px;
+}
+
+.scaliePage .formDesign.formDesignPartner label {
+    margin-bottom: 8px;
+}
+
+.scaliePage .formDesign.formDesignPartner .form-control {
+    padding: 11px 12px;
+}
+
+.scaliePage .formDesign.formDesignPartner .form-group {
+    margin-bottom: 15px;
+}
+
+.scaliePage .formDesignPartner .commonGroup .row .col-sm-6,
+.scaliePage .formDesignPartner .commonGroup .row .col-sm-12 {
+    margin-bottom: 20px;
+}
+
+.scaliePage .backOption {
+    margin-bottom: 50px;
+}
+
+.scaliePage .formDesignPartner .commonGroup2 .row .col-sm-6,
+.scaliePage .formDesignPartner .commonGroup2 .row .col-sm-12:last-child {
+    margin-bottom: 0;
+}
+
+.scaliePage .formDesignPartner .formButtonNew {
+    margin: 25px 0 20px;
+}
+
+.scaliePage .partnersPageContent {
+    padding: 217px 90px 82px 0;
+    padding: 190px 90px 82px 0;
+    padding: 70px 90px 50px 0;
+}
+
+.scaliePage .partnersPageContent h1 {
+    margin-bottom: 42px;
+}
+
+.scaliePage .btnStyle.smallCase {
+    text-transform: inherit;
+    min-width: max-content;
+}
+
+.scaliePage .bannerCard {
+    margin-top: 88px;
+    text-align: center;
+}
+
+.scaliePage .asPartnerRegister {
+    margin-top: 80px;
+}
+
+.scaliePage .scaliePartnerHeadline {
+    /*margin-bottom: 30px;*/
+}
+
+.scaliePage .partnersPageContent.partnersPageContent2 {
+    padding-top: 70px;
+}
+
+.scaliePage .partnersPage .partnersPageForm {
+    position: relative;
+}
+
+.scaliePage .partnersPage .partnersPageForm:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--colorWhiteUpdate);
+    z-index: 0;
+    top: 100%;
+}
+
+.scaliePage .modalDesign .modal-content {
+    padding: 40px 40px;
+}
+
+.scaliePage .modalDesign .closeModal {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.scaliePage .modalDesign .closeModalBtn {
+    height: 24px;
+    width: 24px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scaliePage .otpModal .modalBody h1 {
+    color: #121212;
+    margin-bottom: 8px;
+}
+
+.scaliePage .otpModal .modalBody p {
+    color: #444444;
+    margin-bottom: 50px;
+}
+
+.scaliePage .otpForm .form-group input {
+    height: 48px;
+    width: 48px;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.scaliePage .otpForm .form-group.otpFormGroup {
+    margin-bottom: 50px;
+}
+
+.scaliePage .otpModal .modal-dialog {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.scaliePage .blogsLists .row {
+    row-gap: 36px;
+}
+
+.scaliePage .blogDetailsLink {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background: var(--colorBlackUpdate);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scaliePage .blogCardLink:hover .blogDetailsLink {
+    background: var(--primaryColorUpdate);
+}
+
+.scaliePage .blogsListsHeading {
+    margin-bottom: 50px;
+}
+
+.scaliePage .blogDetailChild {
+    display: flex;
+}
+
+.scaliePage .blogDetailBanner {
+    margin-bottom: 70px;
+}
+
+.scaliePage .blogDetailBanner img {
+    width: 100%;
+}
+
+.scaliePage .blogDetailChild .blogDetailItems {
+    width: 260px;
+    min-width: 280px;
+    padding-right: 20px;
+    border-right: 2px solid #A8A8A8;
+    height: 100%;
+    position: sticky;
+    top: 120px;
+    margin-bottom: 50px;
+}
+
+.scaliePage .detailBlogSection {
+    padding-left: 73px;
+}
+
+.scaliePage .blogDetailItems span {
+    margin-bottom: 20px;
+}
+
+.scaliePage .blogDetailItems ul li:not(:last-child) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.scaliePage .blogDetailItems ul li a {
+    width: 100%;
+    display: block;
+    color: #33332C;
+}
+
+.scaliePage .blogDetailItems ul li a:hover {
+    color: var(--primaryColorUpdate);
+}
+
+.scaliePage .blogDetailTitle {
+    margin-bottom: 40px;
+    color: #141313;
+}
+
+.scaliePage .blogCreationDate {
+    margin-bottom: 35px;
+    color: #33332C;
+}
+
+.scaliePage .blogDetailText {
+    margin-bottom: 60px;
+    color: #444444;
+    line-height: 26px;
+}
+
+.scaliePage .blogDetailPoints {
+    margin-bottom: 60px;
+}
+
+.scaliePage .blogDetailPoints h2 {
+    margin-bottom: 10px;
+    color: #33332C;
+}
+
+.scaliePage .blogDetailPoints p {
+    color: #555;
+    white-space: break-spaces;
+    line-height: 26px;
+}
+
+.scaliePage .formMainHeading h3.formTopHead {
+    display: flex;
+    align-items: center;
+}
+
+.scaliePage .calendly-inline-widget iframe {
+    height: 810px !important;
+}
+
+.scaliePage .thankyouInnerNew {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    align-items: flex-start;
+}
+
+.scaliePage .thankyouInnerNew .pageHeadings,
+.scaliePage .thankyouInnerNew .calendlyBox {
+    width: 50%;
+}
+
+.scaliePage .thankyouInnerNew .pageHeadings {
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+/*--------------*/
+.scaliePage .blogCardChild {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.scaliePage .blogDetailItemsLink.active {
+    color: var(--primaryColorUpdate);
+}
+
+.scaliePage .moreBlogsSection {
+    padding: 50px 0;
+    /*margin-bottom: 60px;*/
+    background: #f8f8f8;
+}
+
+.scaliePage .blogsListsHeading2 {
+    margin: 0 0 25px;
+}
+
+.scaliePage .moreBlogsSection .blogCardLink {
+    background: white;
+}
+
+/*Faqs Start*/
+.scaliePage .faqSection {
+    padding: 80px 0 112px;
+    padding: 0px 0 112px;
+}
+
+.scaliePage .faqList.activeTab .faqQuestion a {
+    color: var(--primaryColorUpdate);
+}
+
+.scaliePage .faqList .faqQuestion a {
+    font-family: var(--regularFontUpdate);
+    color: var(--colorBlackUpdate);
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.scaliePage .faqList .faqAnswer {
+    font-family: var(--regularFontUpdate);
+    color: var(--colorBlackUpdate);
+    display: none;
+    margin-top: 18px;
+    line-height: 26px;
+}
+
+.scaliePage .faqList {
+    padding: 40px 0 40px;
+    border-bottom: 1px solid var(--colorBlackUpdate);
+}
+
+.scaliePage .faqSecList {
+    position: relative;
+    padding-left: 50px;
+}
+
+.scaliePage .faqSecList::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -4px;
+    height: 32px;
+    width: 32px;
+    border: solid 1px #ebebeb;
+    background-color: var(--colorGreyNewUpdate);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    line-height: 21px;
+    font-family: var(--boldFontUpdate);
+}
+
+.scaliePage .faqSecList.faqQuestion:before {
+    content: "Q";
+}
+
+.scaliePage .faqSecList.faqAnswer:before {
+    content: "A";
+    top: 0;
+}
+
+.scaliePage .faqList.activeTab .faqSecList.faqQuestion::before {
+    color: var(--primaryColorUpdate);
+    background: #f8e6e5;
+}
+
+.scaliePage .faqList .arrowIcon {
+    float: right;
+    padding-left: 30px;
+}
+
+.scaliePage .faqList .arrowIcon i {
+    transition: all 0.3s ease;
+    transform: rotate(0deg);
+}
+
+.scaliePage .faqList.activeTab .arrowIcon i {
+    transform: rotate(180deg);
+}
+
+.scaliePage .faqList .faqListInner {
+    transition: all 0.3s ease;
+    border-left: 2px solid transparent;
+}
+
+.scaliePage .faqList .faqAnswer span {
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.scaliePage .faqList .faqAnswer span:last-child {
+    margin-bottom: 0;
+}
+
+/*Techs Banner Start*/
+.scaliePage .techsPageBanner {
+    background: var(--colorWhiteUpdate);
+    /*padding-bottom: 120px;*/
+}
+
+.scaliePage .techsBannerLeft h1 {
+    margin-bottom: 16px;
+    font-family: var(--boldFontUpdate);
+}
+
+.scaliePage .techsBannerLeft p {
+    margin-bottom: 60px;
+    line-height: 30px;
+    padding-right: 25px;
+}
+
+.scaliePage .techsBannerLeft .btnStyle {
+    text-transform: inherit;
+}
+
+.scaliePage .techsBannerRight {
+    padding-left: 70px;
+}
+
+.scaliePage .techsBannerRight img {
+    float: right;
+    /*width: 100%;*/
+}
+
+.scaliePage .techsDetailsSection {
+    padding: 80px 0 60px;
+    background: #fafafa;
+}
+
+.scaliePage .techsPlatformsBox {
+    background: var(--colorWhiteUpdate);
+    border: 1px solid var(--colorGrey12Update);
+    box-shadow: 7px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    padding: 30px 24px;
+}
+
+.scaliePage .techsDetailsChild {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.scaliePage .techsContentRight {
+    /*padding-left: 95px;*/
+    width: 500px;
+    min-width: 500px;
+    position: sticky;
+    top: 120px;
+    height: 100%;
+}
+
+.scaliePage .techsPlatformsBox h2 {
+    margin-bottom: 12px;
+}
+
+.scaliePage .techsPlatformsBox p {
+    margin-bottom: 23px;
+    line-height: 21px;
+}
+
+.scaliePage .technologyListsBox .techLists {
+    width: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.scaliePage .technologyListsBox .techListBox {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.scaliePage .techsContentLeft {
+    width: calc(100% - 500px);
+    padding-right: 90px;
+}
+
+.scaliePage .header {
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+}
+
+.scaliePage .techsEditorSection p,
+.scaliePage .techsEditorSection ul li {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    color: #363636;
+}
+
+.scaliePage .techsEditorSection ul li span {
+    color: #151515;
+    font-family: var(--boldFontUpdate);
+}
+
+.scaliePage .techsEditorSection p:last-child {
+    margin-bottom: 0;
+}
+
+.scaliePage .techsEditorSection h2 {
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 8px;
+    font-family: var(--boldFontUpdate);
+}
+
+.scaliePage .techsEditorSection:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.scaliePage .technologyListsBox .techListBox:nth-last-child(-n+2) .techListItem {
+    margin-bottom: 0;
+}
+
+/*----------------*/
+.scaliePage .clientTestimonialTop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.scaliePage .clientTestimonialImg {
+    height: 56px;
+    width: 56px;
+    min-width: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 12px;
+}
+
+.scaliePage .clientTestimonialImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+
+.scaliePage .testClientCompany {
+    color: var(--primaryColorUpdate);
+}
+
+.scaliePage .clientTestimonialText {
+    color: #191919;
+    margin-bottom: 25px;
+    line-height: 24px;
+}
+
+.scaliePage .clientTestimonialSlide {
+    padding: 20px 20px;
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.04), 0px 3px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+.scaliePage .clientTestimonialRating span {
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+
+.scaliePage .clientTestimonialRating span i {
+    color: var(--primaryColorUpdate);
+}
+
+.scaliePage .clientTestimonialSlider.slick-initialized .slick-slide {
+    height: auto;
+    justify-content: space-between;
+}
+
+.scaliePage .testClientName {
+    margin-bottom: 5px;
+}
+
+.scaliePage .mainSubMenu {
+    position: relative;
+}
+
+.scaliePage .submenuDropdown {
+    position: absolute;
+    top: 40px;
+    background: white;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 8px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.scaliePage .submenuDropdown li {
+    min-width: max-content;
+    margin-bottom: 0;
+    display: block;
+    float: left;
+}
+
+.scaliePage .submenuDropdown li:last-child {
+    margin-bottom: 0;
+}
+
+.scaliePage .submenuDropdown li a {
+    padding: 5px 15px;
+    display: block;
+    float: left;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--colorBlackUpdate);
+}
+
+.scaliePage .submenuDropdown li a:hover {
+    color: var(--primaryColorUpdate);
+}
+
+.scaliePage .mainSubMenu.mainSubMenu2 .submenuDropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition: all 0.3s ease;
+}
+
+.scaliePage .mainSubMenuLink {
+    cursor: pointer;
+}
+
+.scaliePage .caretIcon {
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+.hireDeveloperBtnNew a{
+    margin-right: 10px;
+}
+.hireDeveloperBtnNew a:last-child{
+    margin-right: 0;
+}
+
+.scaliePageNew .formHeaderLogo .navbar-brand{
+    padding: 0;
+    margin: 0;
+}
+.scaliePage.scaliePageNew .stepsContainer{
+    margin-top: 62px;
+}
+.toast-top-right{
+    top: 0 !important;
+    /*left: 0 !important;*/
+    right: 0 !important;
+    width: 100% !important;
+    
+}
+#toast-container.toast-top-right > div{
+    margin: 0 auto !important;
+}

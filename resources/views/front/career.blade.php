@@ -8,9 +8,9 @@
                 <div class="row">
                     <div class="col col-12 col-lg-6">
                         <div class="mainBannerLeft serviceBannerLeft boxs">
-                            <span class="textRed fontSize20 semiboldFont boxs topSubHeading topSubHeading3 boxs">#CAREER</span>
+                            <span class="textRed fontSize18 semiboldFont boxs topSubHeading topSubHeading3 boxs">#CAREER</span>
                             <div class="bannerHeading boxs">
-                                <h1 class="fontSize52 blackFont">Design your dreams into a reality with the help of Designoweb</h1>
+                                <h1 class="fontSize38 blackFont">Design your dreams into a reality with the help of Designoweb</h1>
                             </div>
                             <p class="bannerSubHeading bannerSubHeading2 bannerSubHeading3 fontSize28 boxs">
                                 A spot for individuals who love computerized innovation and are enthusiastic with regards to it.
@@ -19,7 +19,8 @@
                                 We're a quickly developing tech organization constantly searching for inventive individuals with abilities of extremely great and a rich association in its realm.
                             </p>
                             <span class="discussIdea discussIdeaBtn boxs">
-                                <a class="btnStyle" data-bs-target="#careerLinkModal" data-bs-toggle="modal" href="javascript:void(0)">Apply here<span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a>
+                                <!--<a class="btnStyle" data-bs-target="#careerLinkModal" data-bs-toggle="modal" href="javascript:void(0)">Apply here<span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a>-->
+                                 <a class="btnStyle" href="<?php echo url('/contact') ?>">Consult Us<span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a>
                             </span>
 
                         </div>
@@ -41,12 +42,12 @@
     <div class="lifeAtSec boxs">
         <div class="container">
             <p class="textRed fontSize18 semiboldFont">Designoweb Technologies</p>
-            <h2 class="mt-1 text-white fontSize48 blackFont">Life @Designoweb</h2>
+            <h2 class="mt-1 text-white fontSize38 blackFont">Life @Designoweb</h2>
             <div class="imgGrdCont">
                 <div class="row">
                     <div class="col col-12 col-md-6">
                         <div class="imgCont">
-                            <img src="<?php echo url('public/front/img/leftAt.webp'); ?>" alt="career image" />
+                            <img src="<?php echo url('public/front/images/career/leftAt.webp'); ?>" alt="career image" loading="lazy"/>
                         </div>
                     </div>
                     <div class="col col-12 col-md-6">
@@ -59,7 +60,7 @@
                                 </div>
                                 <div class="col col-12 col-sm-6">
                                     <div class="txtCont">
-                                        <h3 class="fontSize30 blackFont">Open Communication</h3>
+                                        <h3 class="fontSize28 blackFont">Open Communication</h3>
                                         <p class="fontSize18 fadeWhiteFont">Takes a specific degree of obligation to complete your jobs consistently. We anticipate that you should think often about the nature of our work ,we have great discipline and do our part.</p>
                                     </div>
                                 </div>
@@ -72,7 +73,7 @@
                                 </div>
                                 <div class="col col-12 col-sm-6">
                                     <div class="txtCont">
-                                        <h3 class="fontSize30 blackFont">Authority</h3>
+                                        <h3 class="fontSize28 blackFont">Authority</h3>
                                         <p class="fontSize18 fadeWhiteFont">Strong pioneers show the benefit of imparting reliably. They dominate at tuning in, provide clear guidance, being available to criticism and retaining novel thoughts.</p>
                                     </div>
                                 </div>
@@ -84,7 +85,7 @@
                     <div class="col col-12 col-md-6">
                         <div class="h-100 d-flex flex-column">
                             <div class="mb-3 txtCont flex-grow-1">
-                                <h3 class="fontSize30 blackFont">Culture</h3>
+                                <h3 class="fontSize28 blackFont">Culture</h3>
                                 <p class="fontSize18 fadeWhiteFont">The way of life of a working environment - an association's qualities, standards and practices - enormously affects our satisfaction and achievement.</p>
                             </div>
                             <div>
@@ -95,7 +96,7 @@
                                                 <img src="<?php echo url('public/front/images/career/career-fun.webp'); ?>" class="img-fluid" alt="career image" loading="lazy" />
                                             </div>
                                             <div class="txtCont">
-                                                <h3 class="fontSize30 blackFont">Fun Activities</h3>
+                                                <h3 class="fontSize28 blackFont">Fun Activities</h3>
                                                 <p class="fontSize18 fadeWhiteFont">Time to time we do the exercises.It's an incredible method for letting your colleagues loosen up, live it up while expanding their bliss and making an extraordinary organization culture.</p>
                                             </div>
                                         </div>
@@ -106,7 +107,7 @@
                                                 <img src="<?php echo url('public/front/images/career/career-incorporation.webp'); ?>" class="img-fluid" alt="career image" loading="lazy" />
                                             </div>
                                             <div class="txtCont">
-                                                <h3 class="fontSize30 blackFont">Incorporation</h3>
+                                                <h3 class="fontSize28 blackFont">Incorporation</h3>
                                                 <p class="fontSize18 fadeWhiteFont">We treat each other with thought and regard, and we praise our disparities with resilience and consideration. You know, the manner in which we need to be dealt with.</p>
                                             </div>
                                         </div>
@@ -121,7 +122,7 @@
                                 <img src="<?php echo url('public/front/images/career/career-beliefe.webp'); ?>" class="img-fluid" alt="career image" loading="lazy" />
                             </div>
                             <div class="txtCont">
-                                <h3 class="fontSize30 blackFont">Central Beliefs</h3>
+                                <h3 class="fontSize28 blackFont">Central Beliefs</h3>
                                 <p class="fontSize18 fadeWhiteFont">Great excellencies are for the most significant from where love, certainty, and trust exist. This is the manner by which we work at Designoweb.</p>
                             </div>
                         </div>
@@ -136,7 +137,7 @@
     <div class="memberSec p60sec boxs">
         <div class="container">
             <p class="textRed fontSize18 semiboldFont">KNOW KEY</p>
-            <h2 class="mt-1 fontSize48 blackFont">Members of Our Team</h2>
+            <h2 class="mt-1 fontSize38 blackFont">Members of Our Team</h2>
             <div class="memberSlider">
                 <!-- <div class="memberArrBtns">
                     <button class="memberArrBtn memberArrLBtn"><i class="fas fa-chevron-left"></i></button>
@@ -147,7 +148,7 @@
                     <!-- <?php //while(has_sub_field('our_team_slide', 'option')): ?>
                         <div class="memberSlide">
                             <div class="memberImg">
-                                <img src="<?php //the_sub_field('team_member_image'); ?>" alt="member" class="img-fluid" />
+                                <img src="<?php //the_sub_field('team_member_image'); ?>" alt="member" class="img-fluid" loading="lazy"/>
                             </div>
                             <p><span><?php //the_sub_field('team_member_name'); ?></span><br />
                             <span class="textRed boldFont"><?php //the_sub_field('team_member_title'); ?></span></p>
@@ -156,59 +157,52 @@
                     
                     <div class="memberSlide">
                         <div class="memberImg">
-                            <img src="<?php echo url('public/front/img/teamMemberCeo.png'); ?>" alt="member" class="img-fluid" />
+                            <img src="<?php echo url('public/front/images/career/teamMemberCeo.webp'); ?>" alt="member" class="img-fluid" loading="lazy"/>
                         </div>
-                        <p><span>Bhavik Agarwal</span><br />
-                        <span class="textRed boldFont">CEO</span></p>
+                        <p class="fontSize18"><span>Bhavik Agarwal</span><br />
+                        <span class="fontSize18 textRed boldFont">CEO</span></p>
                     </div>
                     <div class="memberSlide">
                         <div class="memberImg">
-                            <img src="<?php echo url('public/front/img/teamMemberAnkita.png'); ?>" alt="member" class="img-fluid" />
+                            <img src="<?php echo url('public/front/images/career/teamMemberAnkita.webp'); ?>" alt="member" class="img-fluid" loading="lazy"/>
                         </div>
-                        <p><span>Ankita Chauhan</span><br />
-                        <span class="textRed boldFont">HR Manager</span></p>
+                        <p class="fontSize18"><span>Ankita Chauhan</span><br />
+                        <span class="fontSize18 textRed boldFont">HR Manager</span></p>
                     </div>
                     <div class="memberSlide">
                         <div class="memberImg">
-                            <img src="<?php echo url('public/front/img/teamMemberKriti.png'); ?>" alt="member" class="img-fluid" />
+                            <img src="<?php echo url('public/front/images/career/teamMemberKriti.webp'); ?>" alt="member" class="img-fluid" loading="lazy"/>
                         </div>
-                        <p><span>Kriti Sharma</span><br />
-                        <span class="textRed boldFont">HR Executive</span></p>
+                        <p class="fontSize18"><span>Kriti Sharma</span><br />
+                        <span class="fontSize18 textRed boldFont">HR Executive</span></p>
                     </div>
                     <div class="memberSlide">
                         <div class="memberImg">
-                            <img src="<?php echo url('public/front/img/teamMemberRuchika.png'); ?>" alt="member" class="img-fluid" />
+                            <img src="<?php echo url('public/front/images/career/teamMemberKalash.png'); ?>" alt="member" class="img-fluid" loading="lazy"/>
                         </div>
-                        <p><span>Ruchika Singh</span><br />
-                        <span class="textRed boldFont">Project Manager</span></p>
+                        <p class="fontSize18"><span>Kalash Pachauri</span><br />
+                        <span class="fontSize18 textRed boldFont">Project Manager</span></p>
                     </div>
                     <div class="memberSlide">
                         <div class="memberImg">
-                            <img src="<?php echo url('public/front/img/teamMemberBhuvan.png'); ?>" alt="member" class="img-fluid" />
+                            <img src="<?php echo url('public/front/images/career/teamMemberBhuvan.webp'); ?>" alt="member" class="img-fluid" loading="lazy"/>
                         </div>
-                        <p><span>Bhuvan Sharma</span><br />
-                        <span class="textRed boldFont">Frontend Developer</span></p>
+                        <p class="fontSize18"><span>Bhuvan Sharma</span><br />
+                        <span class="fontSize18 textRed boldFont">Frontend Developer</span></p>
                     </div>
                     <div class="memberSlide">
                         <div class="memberImg">
-                            <img src="<?php echo url('public/front/img/teamMemberAmbuj.png'); ?>" alt="member" class="img-fluid" />
+                            <img src="<?php echo url('public/front/images/career/teamMemberAmbuj.webp'); ?>" alt="member" class="img-fluid" loading="lazy"/>
                         </div>
-                        <p><span>Ambuj Mishra</span><br />
-                        <span class="textRed boldFont">Backend Team Lead</span></p>
+                        <p class="fontSize18"><span>Ambuj Mishra</span><br />
+                        <span class="fontSize18 textRed boldFont">Backend Team Lead</span></p>
                     </div>
                     <div class="memberSlide">
                         <div class="memberImg">
-                            <img src="<?php echo url('public/front/img/teamMemberAjeet.png'); ?>" alt="member" class="img-fluid" />
+                            <img src="<?php echo url('public/front/images/career/teamMemberBhavna.png'); ?>" alt="member" class="img-fluid" loading="lazy"/>
                         </div>
-                        <p><span>Ajeet Singh</span><br />
-                        <span class="textRed boldFont">UI/UX Designer</span></p>
-                    </div>
-                    <div class="memberSlide">
-                        <div class="memberImg">
-                            <img src="<?php echo url('public/front/img/teamMemberAnshul.png'); ?>" alt="member" class="img-fluid" />
-                        </div>
-                        <p><span>Anshul Katiyar</span><br />
-                        <span class="textRed boldFont">Business Analyst</span></p>
+                        <p class="fontSize18"><span>Bhavna Sharma</span><br />
+                        <span class="fontSize18 textRed boldFont">Technical Recruiter</span></p>
                     </div>
                 </div>
             </div>
@@ -262,8 +256,8 @@
 							<p class="fontSize14">Employee Benefits</p>
             			</div>
                         <div class="sectionHeading mainSecHeading mainSecHeading3 boxs">
-<!--                 		<h2 class="fontSize48 boxs pb-0">We Deliver Comprehensive Website Design Services</h2> -->
-							<h2 class="fontSize48 boxs pb-0">A complete suit of benefits supporting growth</h2>
+<!--                 		<h2 class="fontSize38 boxs pb-0">We Deliver Comprehensive Website Design Services</h2> -->
+							<h2 class="fontSize38 boxs pb-0">A complete suit of benefits supporting growth</h2>
             			</div>
                         <div class="subHeading boxs">
 <!--                 		<p class="regularFont fontSize18">Exemplary Website Designs for Startups, Entrepreneurs & Enterprises</p> -->
@@ -279,7 +273,7 @@
                                         <span class="listCounter2"></span>
                                     </div>
                                     <div class="deliverListContent boxs">
-                                        <h3 class="fontSize30 boxs">Wellbeing and Wellness</h3>
+                                        <h3 class="fontSize28 boxs">Wellbeing and Wellness</h3>
                                         <p class="fontSize18 boxs">Wellbeing is riches. Designoweb gives Group medical coverage and wellbeing camps for staff and families as we deal with the prosperity of our representatives.</p>
                                     </div>
                                 </div>
@@ -291,7 +285,7 @@
                                         <span class="listCounter2"></span>
                                     </div>
                                     <div class="deliverListContent boxs">
-                                        <h3 class="fontSize30 boxs">Fun And Engagement</h3>
+                                        <h3 class="fontSize28 boxs">Fun And Engagement</h3>
                                         <p class="fontSize18 boxs">Work and tomfoolery goes inseparably at Designoweb . There are Team excursions, fun at work, birthday slams, and more occurring in the premises or outside.</p>
                                     </div>
                                 </div>
@@ -303,7 +297,7 @@
                                         <span class="listCounter2"></span>
                                     </div>
                                     <div class="deliverListContent boxs">
-                                        <h3 class="fontSize30 boxs">Driving Technology Projects</h3>
+                                        <h3 class="fontSize28 boxs">Driving Technology Projects</h3>
                                         <p class="fontSize18 boxs">The group of Designoweb gives Opportunity to learn and chip away at the furthest down the line innovations to give you the best outcomes.</p>
                                     </div>
                                 </div>
@@ -401,14 +395,14 @@
                 <div class="row">
                     <div class="col col-12 col-md-7">
                         <div class="opprTxtCont opprTxtContNew boxs">
-                            <h2 class="fontSize48 blackFont">Explore Opportunities</h2>
+                            <h2 class="fontSize38 blackFont">Explore Opportunities</h2>
                             <div class="hrmCont boxs">
                                 <div class="hrmImg">
-                                    <img src="<?php echo url('public/front/img/career-hrm.png'); ?>" alt="hr manager" />
+                                    <img src="<?php echo url('public/front/img/career-hrm.png'); ?>" alt="hr manager" loading="lazy"/>
                                 </div>
                                 <div class="hrmcontent boxs">
                                     <div class="hrmInfo">
-                                        <p class="fontSize24 semiboldFont">Ankita Chauhan</p>
+                                        <p class="fontSize28 semiboldFont">Ankita Chauhan</p>
                                         <p class="mt-2 textRed fontSize18">HR Manager</p>
                                     </div>
                                     <div class="hrmContacts">
@@ -422,7 +416,7 @@
                     </div>
                     <div class="col col-12 col-md-5">
                         <div class="opprImgCont">
-                            <img src="<?php echo url('public/front/img/career-oppr.png'); ?>" alt="Opportunities" class="img-fluid" />
+                            <img src="<?php echo url('public/front/img/career-oppr.png'); ?>" alt="Opportunities" class="img-fluid" loading="lazy"/>
                         </div>
                     </div>
                 </div>

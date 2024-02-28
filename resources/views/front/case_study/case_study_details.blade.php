@@ -12,43 +12,51 @@
                     <div class="col-sm-6">
                         <div class="mainBannerLeft ourProcBannerLeft boxs">
                             <div class="caseStudyBannetTop boxs">
-                                <span class="textRed2 fontSize20 semiboldFont topSubHeading boxs">#CASE STUDY DETAIL</span>
+                                <span class="textRed2 fontSize18 semiboldFont topSubHeading boxs">#CASE STUDY DETAIL</span>
                                 <div class="bannerHeading boxs">
-                                    <h1 class="ourProcBannerTitle fontSize52 blackFont"><?php echo !empty($case_study_detail->project_name) ? $case_study_detail->project_name : ''; ?></h1>
+                                    <h1 class="ourProcBannerTitle fontSize38 blackFont"><?php echo !empty($case_study_detail->project_name) ? $case_study_detail->project_name : ''; ?></h1>
                                 </div>
-                                <p class="casestudySubHead fontSize18 fadeBlackFont  boldFont boxs"><?php echo !empty($case_study_detail->tagline) ? $case_study_detail->tagline : ''; ?></p>
+                                <p class="casestudySubHead fontSize18 fadeBlackFont boxs"><?php echo !empty($case_study_detail->tagline) ? $case_study_detail->tagline : ''; ?></p>
                             </div>
                             <div class="ourProcBannerInfoCont boxs">
                                 <div class="ourProcBannerInfo">
                                     <div class="row">
+                                        <?php if(!empty($case_study_detail->industry)){ ?>
                                         <div class="col-sm-6">
                                             <div class="studyBannerList boxs">
                                                 <p class="fontSize22 semiboldFont boxs">- Industry</p>
                                                 <p class="fontSize16 regularfont boxs"><?php echo !empty($case_study_detail->industry) ? $case_study_detail->industry : ''; ?></p>
                                             </div>
                                         </div>
+                                        <?php } ?>
+                                        <?php if(!empty($case_study_detail->required_services)){ ?>
                                         <div class="col-sm-6">
                                             <div class="studyBannerList boxs">
                                                 <p class="fontSize22 semiboldFont">- Services</p>
                                                 <p class="fontSize16 regularfont boxs"><?php echo !empty($case_study_detail->required_services) ? $case_study_detail->required_services : ''; ?></p>
                                             </div>
                                         </div>
+                                        <?php } ?>
                                     </div>
                                 </div>
                                 <div class="ourProcBannerInfo">
                                     <div class="row">
+                                        <?php if(!empty($case_study_detail->business_type)){ ?>
                                         <div class="col-sm-6">
                                             <div class="studyBannerList boxs">
                                                 <p class="fontSize22 semiboldFont">- Business type</p>
                                                 <p class="fontSize16 regularfont boxs"><?php echo !empty($case_study_detail->business_type) ? $case_study_detail->business_type : ''; ?></p>
                                             </div>
                                         </div>
+                                        <?php } ?>
+                                        <?php if(!empty($case_study_detail->build_your_idea)){ ?>
                                         <div class="col-sm-6">
                                             <div class="studyBannerList boxs">
                                                 <p class="fontSize22 semiboldFont">- Build Your Idea</p>
                                                 <p class="fontSize16 regularfont boxs"><?php echo !empty($case_study_detail->build_your_idea) ? $case_study_detail->build_your_idea : ''; ?></p>
                                             </div>
                                         </div>
+                                        <?php } ?>
                                     </div>
                                 </div>
                             </div>
@@ -74,10 +82,10 @@
                         <div class="indusInfoCont boxs">
                             <div class="mainSecHeading mainSecHeading3 boxs">
                                 <!-- <p class="textRed fontSize18 semiboldFont smallSubHeading">#DESIGNOWEB TECHNOLOGIES</p> -->
-                                <h2 class="fontSize48 blackFont">What The Client Wanted</h2>
+                                <h2 class="fontSize38 blackFont">What The Client Wanted</h2>
                             </div>
                             <div class="indusInfoContent boxs">
-                                <p class="fontSize24 boxs"><?php echo !empty($case_study_detail->client_requirement) ? $case_study_detail->client_requirement : ''; ?></p>
+                                <p class="fontSize18 boxs"><?php echo !empty($case_study_detail->client_requirement) ? $case_study_detail->client_requirement : ''; ?></p>
 
                             </div>
                         </div>
@@ -87,21 +95,21 @@
                             <div class="indusImg">
                                 <img src="<?php echo !empty($case_study_detail->client_wanted_banner) ? url('uploads/admin/case_studies/' . $case_study_detail->client_wanted_banner) : ''; ?>" alt="industry" class="img-fluid" loading="lazy" />
                             </div>
-                            <h3 class="fontSize30 blackFont">Services</h3>
+                            <h3 class="fontSize38 blackFont">Services</h3>
                             <div class="indusServListsCont">
-                                <?php echo $case_study_detail->given_services; ?>
-                                <!-- <ul class="indusServList indusServList2">
-                                    <li class="fontSize18 boxs">Logo Designing</li>
-                                    <li class="fontSize18 boxs">UI/UX Design</li>
-                                    <li class="fontSize18 boxs">Android Application</li>
-                                    <li class="fontSize18 boxs">Backend Development</li>
-                                    <li class="fontSize18 boxs">Quality Analyst</li>
-                                    <li class="fontSize18 boxs">Wireframes</li>
-                                    <li class="fontSize18 boxs">Web Application</li>
-                                    <li class="fontSize18 boxs">iOS Application</li>
-                                    <li class="fontSize18 boxs">MVP Development</li>
-                                    <li class="fontSize18 boxs">Final Build</li>
-                                </ul> -->
+                                <?php echo @$case_study_detail->given_services; ?>
+                                <!--<ul class="indusServList indusServList2">-->
+                                <!--    <li class="fontSize18 boxs">Logo Designing</li>-->
+                                <!--    <li class="fontSize18 boxs">UI/UX Design</li>-->
+                                <!--    <li class="fontSize18 boxs">Android Application</li>-->
+                                <!--    <li class="fontSize18 boxs">Backend Development</li>-->
+                                <!--    <li class="fontSize18 boxs">Quality Analyst</li>-->
+                                <!--    <li class="fontSize18 boxs">Wireframes</li>-->
+                                <!--    <li class="fontSize18 boxs">Web Application</li>-->
+                                <!--    <li class="fontSize18 boxs">iOS Application</li>-->
+                                <!--    <li class="fontSize18 boxs">MVP Development</li>-->
+                                <!--    <li class="fontSize18 boxs">Final Build</li>-->
+                                <!--</ul>-->
                             </div>
                         </div>
                     </div>
@@ -124,7 +132,7 @@
                 <div class="weDeliverContent boxs">
                     <div class="weDeliverTop boxs">
                         <div class="sectionHeading mainSecHeading mainSecHeading3 mainSecHeading6 boxs">
-                            <h2 class="fontSize48 boxs pb-0">Project Challenges And Their Quick Fix</h2>
+                            <h2 class="fontSize38 boxs pb-0">Project Challenges And Their Quick Fix</h2>
                         </div>
                     </div>
                     <div class="weDeliverListing listcounterSec boxs">
@@ -137,7 +145,7 @@
                                             <span class="listCounter2"></span>
                                         </div>
                                         <div class="deliverListContent boxs">
-                                            <h3 class="fontSize30 boxs"><?php echo !empty($value->challenge) ? $value->challenge : ''; ?></h3>
+                                            <h3 class="fontSize28 boxs"><?php echo !empty($value->challenge) ? $value->challenge : ''; ?></h3>
                                             <p class="fontSize18 boxs"><?php echo !empty($value->solutions) ? $value->solutions : ''; ?></p>
                                         </div>
                                     </div>
@@ -154,19 +162,21 @@
     <!-- Case Study Process Start -->
     <div class="caseProcSecCont boxs">
         <div class="container">
+            <?php if(!empty($case_study_detail->design_layout)){ ?>
             <div class="caseProcSec">
                 <div class="caseProcTitleCont caseProcTitleCont2 boxs">
-                    <h2 class="fontSize48 blackFont">Design Layout</h2>
+                    <h2 class="fontSize38 blackFont">Design Layout</h2>
                 </div>
                 <div class="caseProcDescCont caseProcDescCont2 boxs">
                     <p class="fontSize18 boxs"><?php echo !empty($case_study_detail->design_layout) ? $case_study_detail->design_layout : ''; ?></p>
                 </div>
             </div>
+            <?php } ?>
 
             <!-- Agile Process Start -->
             <div class="agileStepsSection p80sec pb-0 boxs">
                 <p class="mb-2 textRed fontSize18 semiboldFont">Designoweb Technologies</p>
-                <h2 class="agileProcTitle fontSize48 blackFont">Our Process</h2>
+                <h2 class="agileProcTitle fontSize38 blackFont">Our Process</h2>
                 <div class="agileProcStepsCont agileProcStepsCont2">
                     <div class="agileProcStep agileStepOne">
                         <span class="agileStepCircle"><img src="<?php echo url('public/front/images/agile-proc-1.png'); ?>" alt="agile process step 1" class="img-fluid" loading="lazy" /></span>
@@ -204,24 +214,31 @@
     <!-- Case Study Process End -->
 
     <!-- Case Study Description Start -->
+    <?php if(!empty($case_study_detail->palette || $case_study_detail->about_project)){ ?>
     <div class="caseDescSecCont boxs">
         <div class="container">
             <div class="caseDescContent boxs">
-                <h2 class="fontSize38 blackFont">Palette</h2>
-                <p class="fontSize20"><?php echo !empty($case_study_detail->palette) ? $case_study_detail->palette : ''; ?></p>
-                <h2 class="fontSize38 blackFont">About The Project</h2>
-                <p class="fontSize20"><?php echo !empty($case_study_detail->about_project) ? $case_study_detail->about_project : ''; ?></p>
+                <?php if(!empty($case_study_detail->palette)){ ?>
+                    <h2 class="fontSize38 blackFont">Palette</h2>
+                    <p class="fontSize20"><?php echo !empty($case_study_detail->palette) ? $case_study_detail->palette : ''; ?></p>
+                <?php } ?>
+                <?php if(!empty($case_study_detail->about_project)){ ?>
+                    <h2 class="fontSize38 blackFont">About The Project</h2>
+                    <p class="fontSize20"><?php echo !empty($case_study_detail->about_project) ? $case_study_detail->about_project : ''; ?></p>
+                <?php } ?>
             </div>
         </div>
     </div>
+    <?php } ?>
     <!-- Case Study Description End -->
 
     <!-- Tech Stack Start -->
+    <?php if(!empty($case_study_detail->technology_used)){ ?>
     <div class="p80sec techStackBox techStackBox2 boxs">
         <div class="container">
             <div class="mainSecHeading mainSecHeading3 boxs">
                 <p class="fontSize18 smallSubHeading boxs">TECHNOLOGY STACK</p>
-                <h2 class="agileProcTitle mainSubHeading fontSize48 boxs">Technology We Used</h2>
+                <h2 class="agileProcTitle mainSubHeading fontSize38 boxs">Technology We Used</h2>
                 <p class="fontSize20 boxs"><?php echo !empty($case_study_detail->technology_used) ? $case_study_detail->technology_used : ''; ?></p>
             </div>
             <!-- <div class="techStkCont boxs">
@@ -311,9 +328,11 @@
                 </div> -->
         </div>
     </div>
+    <?php } ?>
     <!-- Tech Stack End -->
 
     <!-- About us Slider Start -->
+    <?php if(!empty($case_study_detail->client_quote)){ ?>
     <div class="aboutUsSection boxs">
         <div class="container">
             <div class="aboutUsSlidebox boxs">
@@ -337,12 +356,13 @@
             </div>
         </div>
     </div>
+    <?php } ?>
     <!-- About us Slider End -->
 
     <!-- More Case Studies Section Start -->
     <div class="moreCasesSec productsListsBox boxs">
         <div class="container">
-            <h2 class="fontSize48 blackFont">More Case Studies</h2>
+            <h2 class="fontSize38 blackFont">More Case Studies</h2>
             <div class="moreCasesCont">
                 <div class="row">
                     <?php if(!empty($case_studies)){ foreach($case_studies as $value){ ?>
@@ -360,7 +380,7 @@
                                         </ul>
                                     </div> -->
                                     <div class="productDetail boxs">
-                                        <span class="productName fontSize30 boxs"><a class="caseStudyHeading" href="<?php echo route('front/case_study_details',['slug' => $value->slug]); ?>"><?php echo !empty($value->project_name) ? $value->project_name : ''; ?></a></span>
+                                        <span class="productName fontSize28 boxs"><a class="caseStudyHeading" href="<?php echo route('front/case_study_details',['slug' => $value->slug]); ?>"><?php echo !empty($value->project_name) ? $value->project_name : ''; ?></a></span>
                                         <span class="productDescription fontSize18 boxs"><?php echo !empty($value->description) ? $value->description : ''; ?></span>
                                         <span class="caseStudyLink"><a href="<?php echo route('front/case_study_details',['slug' => $value->slug]); ?>">View Case Study</a></span>
                                     </div>
@@ -396,8 +416,8 @@
                 <div class="row">
                     <div class="col col-12 col-md-7">
                         <div class="reqTeamTxtCont p80sec">
-                            <h2 class="fontSize48 blackFont">Request a team presentation</h2>
-                            <p class="fontSize24">Designoweb Technologies provides a dedicated team to brands worldwide to create products that your customers will love.</p>
+                            <h2 class="fontSize38 blackFont">Request a team presentation</h2>
+                            <p class="fontSize18">Designoweb Technologies provides a dedicated team to brands worldwide to create products that your customers will love.</p>
                             <div class="reqTeamBtnCont">
                                 <a href="<?php echo route('front/contact'); ?>" class="btnStyle btnStyle2 btnBlue">Book A Session<span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a>
                             </div>

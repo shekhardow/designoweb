@@ -1,0 +1,32 @@
+[18-Jul-2023 12:14:18 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home3/lvjipdmy/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home3/lvjipdmy/public_html/config/cache.php on line 21
+[16-Dec-2023 16:50:33 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home3/lvjipdmy/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home3/lvjipdmy/public_html/config/cache.php on line 21
+[25-Dec-2023 18:02:48 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home3/lvjipdmy/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home3/lvjipdmy/public_html/config/cache.php on line 21
+[09-Jan-2024 21:51:49 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home3/lvjipdmy/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home3/lvjipdmy/public_html/config/cache.php on line 21
+[12-Jan-2024 05:15:52 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home3/lvjipdmy/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home3/lvjipdmy/public_html/config/cache.php on line 21
+[12-Jan-2024 18:23:06 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home3/lvjipdmy/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home3/lvjipdmy/public_html/config/cache.php on line 21
+[13-Jan-2024 09:24:42 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home3/lvjipdmy/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home3/lvjipdmy/public_html/config/cache.php on line 21
+[13-Jan-2024 12:34:01 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home3/lvjipdmy/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home3/lvjipdmy/public_html/config/cache.php on line 21

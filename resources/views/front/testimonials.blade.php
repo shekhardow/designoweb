@@ -8,11 +8,11 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
                         <div class="mainBannerLeft serviceBannerLeft boxs">
-                            <span class="boxs textRed2 fontSize20 topSubHeading boxs">#TESTIMONIAL</span>
+                            <span class="boxs textRed2 fontSize18 topSubHeading boxs">#TESTIMONIAL</span>
                             <div class="bannerHeading boxs">
-                                <h1 class="fontSize52 blackFont">Over 2,00,000 Professionals Trust us Worldwide</h1>
+                                <h1 class="fontSize38 blackFont">Over 2,00,000 Professionals Trust us Worldwide</h1>
                             </div>
-                            <p class="bannerSubHeading bannerSubHeading2 fontSize22 boxs">To demonstrate the worth of what we bring to the table, why not let our blissful clients communicate everything?</p>
+                            <p class="bannerSubHeading bannerSubHeading2 fontSize18 boxs">To demonstrate the worth of what we bring to the table, why not let our blissful clients communicate everything?</p>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6">
@@ -29,7 +29,7 @@
     <!-- Client Says Start -->
     <div class="p80sec boxs bgGrey6">
         <div class="container">
-            <h2 class="fontSize48 blackFont">What Client Say About Us</h2>
+            <h2 class="fontSize38 blackFont">What Client Say About Us</h2>
             <div class="clientQuotesList testimonialsListsBox">
                 <div class="row g-0 gx-md-4">
                     <?php if(!empty($testimonials_without_video_and_images)){ foreach($testimonials_without_video_and_images->skip(0)->take(3) as $value){ ?>
@@ -685,7 +685,7 @@
     <!-- Project Assign Start -->
     <div class="p60sec boxs">
         <div class="container">
-            <h2 class="fontSize48 blackFont">Do You Have a Project To Assign? <br />Let’s Talk.</h2>
+            <h2 class="fontSize38 blackFont">Do You Have a Project To Assign? <br />Let’s Talk.</h2>
             <a href="<?php echo route('front/contact'); ?>" class="mt-5 btnStyle btnBlue">Let’s Discuss Your Idea<span class="arrowIcn"><i class="fas fa-arrow-right"></i></span></a>
         </div>
     </div>
@@ -695,7 +695,7 @@
     <div class="companyBlogs boxs">
         <div class="container">
         <div class="mainSecHeading boxs">
-                <h2 class="fontSize48 boxs">More Blogs</h2>
+                <h2 class="fontSize38 boxs">More Blogs</h2>
             </div>
             <div class="blogsSection boxs">
                 <div class="row">

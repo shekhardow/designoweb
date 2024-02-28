@@ -148,6 +148,10 @@
                                             <div class="form-group col-lg-12 mt-2">
                                                 <img style="width: 180px; height:100px;" src="<?php echo asset('uploads/admin/case_studies/'.$case_study_detail->client_image); ?>" alt="Client Image">
                                             </div>
+                                        <?php }else{ ?>
+                                            <div class="form-group col-lg-12 mt-2">
+                                                <img style="width: 180px; height:100px;" src="<?php echo url('public/front/img/client-default-image.webp'); ?>" alt="Client Image">
+                                            </div>
                                         <?php } ?>
                                     </div>
                                     <div class="form-group col-lg-6">

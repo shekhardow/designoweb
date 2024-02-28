@@ -56,14 +56,7 @@ class FrontModel extends Model{
         return DB::getPdo()->lastInsertId();
     }
     
-    public function insertConsultationData($request){
-        $data = [
-            'name'          => $request['name'],
-            'email'         => $request['email'],
-            'phone'         => $request['phone'],
-            'requirements'  => $request['requirements'],
-            'type'          => 'consultation',
-        ];
+    public function insertConsultationData($data){
         DB::table('email_leads')->insert($data);
         return DB::getPdo()->lastInsertId();
     }
@@ -75,6 +68,30 @@ class FrontModel extends Model{
         ];
         DB::table('email_leads')->insert($data);
         return DB::getPdo()->lastInsertId();
+    }
+    
+     public function getTechnologies(){
+        return DB::table('technology')->get();
+    }
+    public function getAddedTechnologies($otherTechs){
+        return DB::table('technology')->whereIn('name', $otherTechs)->get()->count();
+    }
+    public function getSkillinfoBycId($id)
+    {
+        return DB::table('skills_information')
+            ->select('skills_information.*', 'technology.*')
+            ->join('technology', 'technology.tech_id', '=', 'skills_information.tech_id')
+            ->where('skills_information.contact_id', $id)
+            ->get();
+    }
+
+    public function getOtherSkillinfoBycId($id)
+    {
+        return DB::table('skills_information')
+            ->select('*')
+            ->where('skills_information.contact_id', $id)
+            ->where('tech_id', '-1')
+            ->get();
     }
     
 }
